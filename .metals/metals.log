@@ -458,3 +458,149 @@ WARN  no build target for: /home/stefan/Documents/github/Scala/ProjectBSScala/Ma
 WARN  no build target for: /home/stefan/Documents/github/Scala/ProjectBSScala/Main.scala
 WARN  no build target for: /home/stefan/Documents/github/Scala/ProjectBSScala/Main.scala
 INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/home/stefan/Documents/github/Scala'
+INFO  time: initialize in 0.88s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/ProjectBSScala/Main.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/HelloWorld/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Feb 23, 2020 7:26:46 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Feb 23, 2020 7:26:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 305, 305, 311)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 310, 310, 317)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 310, 310, 324)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 310, 310, 317)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Int]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 310, 310, 319)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Int]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 310, 310, 319)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Int]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 310, 310, 319)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 543, 543, 549)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 630, 630, 636)
+Feb 23, 2020 7:44:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1545
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 735, 735, 749)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 735, 735, 742)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 735, 735, 744)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 735, 735, 745)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 735, 735, 747)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 735, 735, 745)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 740, 740, 754)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 740, 740, 747)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Int]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 740, 740, 749)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Int]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 740, 740, 749)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Int]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 740, 740, 749)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 773, 773, 787)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 773, 773, 780)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Int]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 773, 773, 782)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Int]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 773, 773, 782)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Int]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 773, 773, 782)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Int]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 811, 811, 820)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 773, 773, 783)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 773, 773, 783)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 773, 773, 783)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 773, 773, 784)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 805, 805, 815)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 805, 805, 824)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 805, 805, 820)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 805, 805, 816)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 805, 805, 815)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 805, 805, 815)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Float]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 805, 805, 816)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 560, 560, 571)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 560, 560, 571)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 716, 716, 727)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 716, 716, 727)
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 610, 610, 624)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 610, 610, 617)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 610, 610, 618)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 610, 610, 619)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 610, 610, 622)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 610, 610, 622)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 610, 610, 622)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 787, 787, 864)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 787, 787, 796)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 787, 787, 797)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 787, 787, 798)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 787, 787, 799)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 787, 787, 800)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 787, 787, 801)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 787, 787, 799)
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 1819, 1819, 1833)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 1819, 1819, 1826)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 1819, 1819, 1827)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 1819, 1819, 1828)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 1819, 1819, 1829)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 1819, 1819, 1831)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 1819, 1819, 1831)
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 1819, 1819, 1831)
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala in List[Double]RangePosition(file:///home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala, 1239, 1239, 1251)
+WARN  no build target for: /home/stefan/Documents/github/Scala/NeuralNetwork/Main.scala
+INFO  shutting down Metals
