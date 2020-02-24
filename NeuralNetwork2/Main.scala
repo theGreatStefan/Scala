@@ -28,23 +28,25 @@ object NN {    // Requires a main for an entry point
                                                List(1, 0, 1),
                                                List(0, 1, 1))
 
-    var training_out: List[Double] = List(0, 1, 1, 0)
+    var training_out: List[List[Double]] = List(List(0),
+                                                List(1),
+                                                List(1),
+                                                List(0))
 
     var r = scala.util.Random
 
-    var weights:List[Double] = (List(2 * r.nextDouble() - 1,
-                                     2 * r.nextDouble() - 1,
-                                     2 * r.nextDouble() - 1,
-                                     2 * r.nextDouble() - 1,
-                                     2 * r.nextDouble() - 1,
-                                     2 * r.nextDouble() - 1))
+    var weights:List[List[Double]] = List(List(2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1),
+                                          List(2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1),
+                                          List(2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1))
 
     var input_layer:List[List[Double]] = List(List(0))
 
     var hidden_layer:List[List[Double]] = List(List(-100))
 
-    var hidden_weights:List[Double] = List(2 * r.nextDouble() - 1,
-                                           2 * r.nextDouble() - 1)
+    var hidden_weights:List[List[Double]] = List(List(2 * r.nextDouble() - 1),
+                                                 List(2 * r.nextDouble() - 1),
+                                                 List(2 * r.nextDouble() - 1),
+                                                 List(2 * r.nextDouble() - 1))
 
     var output_layer:List[Double] = List(0)
 
@@ -54,7 +56,7 @@ object NN {    // Requires a main for an entry point
 
     var hidden_adjustments:List[Double] = List(0)
 
-
+//Go from here at 28:01
     def main(args: Array[String]): Unit = {
         for (i <- 0 to 100000) {
             input_layer = training_in
@@ -83,9 +85,8 @@ object NN {    // Requires a main for an entry point
             hidden_weights = (for (j <- 0 to hidden_weights.size-1) yield (hidden_weights(j) + new_hidden_weights(j))).toList
 
             var sigDeriv_2:List[Double] = sigmoidDeriv(hidden_layer)
-
-            //adjustments = (for (j <- 0 to errors.size-1) yield (errors(j) * sigDeriv_2(j))).toList
-            adjustments = (for (j <- 0 to new_hidden_weights.size-1) yield (new_hidden_weights(j) * sigDeriv_2(j))).toList
+            //adjustments = (for (j <- 0 to errors.size-1) yield (errors(j) * sigDeriv(j))).toList
+            adjustments = (for (j <- 0 to new_hidden_weights.size-1) yield (new_hidden_weights(j) * sigDeriv(j))).toList
             //var new_weights = dotProduct(adjustments, input_layer)
             weights = (for (j <- 0 to weights.size-1) yield (
                 if (j<3) {
