@@ -918,3 +918,1129 @@ WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The 
 WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
 WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
 INFO  shutting down Metals
+INFO  started: Metals version 0.8.0 in workspace '/home/20273401/Documents/Scala'
+INFO  time: initialize in 1.75s
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+INFO  no build target: using presentation compiler with only scala-library
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in Array[String]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 2553, 2553, 2566)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 624, 624, 636)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 629, 629, 641)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 663, 663, 675)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 663, 663, 675)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 801, 801, 813)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 55, 55, 61)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 191, 191, 205)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 191, 191, 198)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 191, 191, 199)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 191, 191, 200)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 191, 191, 200)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 191, 191, 200)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 111, 111, 125)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 111, 111, 118)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 111, 111, 120)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 111, 111, 121)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 116, 116, 130)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 116, 116, 123)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 116, 116, 124)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 116, 116, 132)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 116, 116, 131)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 116, 116, 125)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 116, 116, 124)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 116, 116, 125)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 116, 116, 125)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 116, 116, 125)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 493, 493, 507)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 493, 493, 500)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 493, 493, 501)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 493, 493, 502)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 493, 493, 503)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 498, 498, 512)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 498, 498, 505)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 498, 498, 506)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 498, 498, 507)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 498, 498, 507)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 498, 498, 507)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+Feb 25, 2020 9:27:26 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Feb 25, 2020 9:27:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 631, 631, 645)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 631, 631, 638)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 631, 631, 640)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 631, 631, 641)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 636, 636, 650)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 636, 636, 643)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 636, 636, 645)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 636, 636, 645)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 636, 636, 645)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 662, 662, 671)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 662, 662, 671)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 662, 662, 670)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 662, 662, 669)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 662, 662, 676)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 662, 662, 669)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 662, 662, 670)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 662, 662, 674)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 662, 662, 674)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 662, 662, 674)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 636, 636, 645)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 636, 636, 645)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 767, 767, 781)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 767, 767, 774)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 767, 767, 775)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 767, 767, 776)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 767, 767, 777)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 767, 767, 779)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 767, 767, 779)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 767, 767, 779)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 887, 887, 899)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 779, 779, 791)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 287)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 280)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 282)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 283)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 285)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 286)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 287)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 288)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 290)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 291)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 291)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 746)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 746)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 746)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 746)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 273, 273, 289)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 278, 278, 290)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 278, 278, 290)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 278, 278, 290)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 278, 278, 290)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 974, 974, 988)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 974, 974, 981)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 974, 974, 983)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 974, 974, 984)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 979, 979, 993)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 979, 979, 986)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 979, 979, 987)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 979, 979, 988)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 979, 979, 990)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 979, 979, 991)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 979, 979, 991)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 979, 979, 991)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1383, 1383, 1395)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1156, 1156, 1174)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1222, 1222, 1236)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1222, 1222, 1229)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1222, 1222, 1231)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1222, 1222, 1232)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1227, 1227, 1241)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1227, 1227, 1234)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1227, 1227, 1235)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1227, 1227, 1236)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1227, 1227, 1237)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1227, 1227, 1239)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1227, 1227, 1239)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1227, 1227, 1239)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1498, 1498, 1512)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1498, 1498, 1505)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1498, 1498, 1506)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1498, 1498, 1507)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1498, 1498, 1508)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1498, 1498, 1509)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1498, 1498, 1510)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1498, 1498, 1510)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1498, 1498, 1510)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+Feb 25, 2020 10:00:12 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 1858, count -1, length 1932
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 455, 455, 467)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Feb 25, 2020 10:19:35 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: offset 4028, count -1, length 5689
+java.lang.StringIndexOutOfBoundsException: offset 4028, count -1, length 5689
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 5269, 5269, 5281)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 2842, 2842, 2860)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 1667, 1667, 1679)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 1667, 1667, 1679)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 1667, 1667, 1684)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 1667, 1667, 1684)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 1672, 1672, 1684)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 1672, 1672, 1684)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 1729, 1729, 1741)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 2156, 2156, 2173)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 2156, 2156, 2173)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3936, 3936, 3953)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3936, 3936, 3953)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3941, 3941, 3953)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3941, 3941, 3953)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3941, 3941, 3953)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3941, 3941, 3953)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3987, 3987, 4004)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3987, 3987, 4004)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3992, 3992, 4004)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3992, 3992, 4004)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 3992, 3992, 4004)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 4043, 4043, 4060)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork3/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork3/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork3/Main.scala, 459, 459, 471)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork3/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork3/Main.scala, 374, 374, 386)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork3/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork3/Main.scala, 631, 631, 649)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork2/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 402, 402, 420)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 841, 841, 856)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 841, 841, 849)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 841, 841, 850)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 841, 841, 851)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 841, 841, 852)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 841, 841, 853)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 847, 847, 862)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 847, 847, 855)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 847, 847, 856)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 847, 847, 857)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 847, 847, 858)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 847, 847, 859)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 847, 847, 860)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 847, 847, 860)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 847, 847, 860)
+Feb 25, 2020 12:16:00 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Feb 25, 2020 12:16:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+Feb 25, 2020 12:16:07 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:07 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:07 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:08 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:08 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:09 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:09 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:09 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:09 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:09 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:11 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:12 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:12 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:12 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:12 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 25, 2020 12:16:12 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:1068)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:404)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:396)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:381)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:413)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:91)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 54, 54, 69)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 54, 54, 62)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 54, 54, 63)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 54, 54, 64)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 54, 54, 65)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 54, 54, 66)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 75)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 68)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 69)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 70)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 71)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 72)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 73)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 73)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 73)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 73)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 60, 60, 73)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 726, 726, 744)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 274, 274, 292)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 274, 274, 294)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Feb 25, 2020 12:34:34 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 2718, count -1, length 2763
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1483, 1483, 1498)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1483, 1483, 1491)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1483, 1483, 1493)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1483, 1483, 1494)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1483, 1483, 1495)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1489, 1489, 1504)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1489, 1489, 1497)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1489, 1489, 1498)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1489, 1489, 1499)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1489, 1489, 1502)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1489, 1489, 1502)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1489, 1489, 1502)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 721, 721, 736)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 721, 721, 729)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 721, 721, 730)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 721, 721, 731)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 721, 721, 732)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 721, 721, 733)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 727, 727, 742)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 727, 727, 735)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 727, 727, 736)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 727, 727, 737)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 727, 727, 739)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 727, 727, 740)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 727, 727, 740)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 727, 727, 740)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1487, 1487, 1502)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1487, 1487, 1495)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1487, 1487, 1496)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1487, 1487, 1497)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1487, 1487, 1498)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1487, 1487, 1499)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1493, 1493, 1508)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1493, 1493, 1501)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1493, 1493, 1502)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1493, 1493, 1503)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1493, 1493, 1504)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1493, 1493, 1505)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1493, 1493, 1506)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1493, 1493, 1506)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1493, 1493, 1506)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork2/Main.scala, 1667, 1667, 1685)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1839, 1839, 1851)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 2805, 2805, 2825)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[List[Double]]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 2804, 2804, 2822)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 2810, 2810, 2822)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 2912, 2912, 2924)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 3073, 3073, 3085)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 3164, 3164, 3176)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1027, 1027, 1040)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1864, 1864, 1884)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1088, 1088, 1097)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1230, 1230, 1239)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1230, 1230, 1239)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Int]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1088, 1088, 1097)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 726, 726, 739)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 726, 726, 739)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 726, 726, 739)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 726, 726, 739)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 726, 726, 739)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 726, 726, 739)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+Feb 25, 2020 2:02:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19661
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 936, 936, 949)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1833, 1833, 1840)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1915, 1915, 1922)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1915, 1915, 1929)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1915, 1915, 1929)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1915, 1915, 1929)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1915, 1915, 1929)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1915, 1915, 1929)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1915, 1915, 1929)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1915, 1915, 1929)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1915, 1915, 1930)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1915, 1915, 1930)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in (Double, <error>)RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1921, 1921, 1939)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in (Double, Double)RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1921, 1921, 1937)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 1973, 1973, 1986)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in List[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 2304, 2304, 2316)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 866, 866, 879)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+Feb 25, 2020 3:01:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 22358
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 3673, 3673, 3686)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 3205, 3205, 3225)
+something's wrong: no file:///home/20273401/Documents/Scala/Testing/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/Testing/Main.scala, 3418, 3418, 3431)
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/Testing/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1030, 1030, 1043)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1029, 1029, 1042)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3205, 3205, 3212)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3211, 3211, 3226)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3211, 3211, 3219)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3211, 3211, 3220)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3211, 3211, 3221)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3211, 3211, 3224)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3211, 3211, 3224)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3211, 3211, 3224)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3221)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3214)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3215)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3216)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3217)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3227)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3228)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3220)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3221)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3222)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3224)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3225)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3225)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3225)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3225)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3225)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2920, 2920, 2933)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3206, 3206, 3225)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+Feb 25, 2020 3:33:11 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 3494, count -1, length 3819
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2914, 2914, 2934)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3999, 3999, 4014)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3999, 3999, 4007)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3999, 3999, 4008)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3999, 3999, 4009)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3999, 3999, 4010)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3999, 3999, 4011)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4005, 4005, 4020)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4005, 4005, 4013)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4005, 4005, 4014)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4005, 4005, 4015)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4005, 4005, 4016)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4005, 4005, 4018)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4005, 4005, 4018)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4005, 4005, 4018)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4140, 4140, 4153)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2920, 2920, 2933)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2608, 2608, 2623)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2608, 2608, 2616)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2608, 2608, 2617)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2608, 2608, 2618)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2608, 2608, 2619)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2608, 2608, 2620)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2614, 2614, 2629)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2614, 2614, 2622)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2614, 2614, 2623)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2614, 2614, 2624)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[<error>]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2614, 2614, 2626)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2614, 2614, 2627)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2614, 2614, 2627)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2614, 2614, 2627)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+Feb 25, 2020 3:49:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25749
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3560, 3560, 3580)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3560, 3560, 3580)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2965, 2965, 2978)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 619, 619, 639)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 619, 619, 639)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 619, 619, 639)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 619, 619, 639)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 619, 619, 639)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3802, 3802, 3815)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 1930, 1930, 1950)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3855, 3855, 3868)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3855, 3855, 3868)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3719, 3719, 3732)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4639, 4639, 4659)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4639, 4639, 4659)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3781, 3781, 3794)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 2154, 2154, 2167)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Array[Double]]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4344, 4344, 4364)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4984, 4984, 4997)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 3870, 3870, 3883)
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/20273401/Documents/Scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4973, 4973, 4986)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 4973, 4973, 4986)
+something's wrong: no file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala in Array[Double]RangePosition(file:///home/20273401/Documents/Scala/NeuralNetwork/Main.scala, 5114, 5114, 5127)
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+WARN  no build target for: /home/20273401/Documents/Scala/NeuralNetwork/Main.scala
+INFO  shutting down Metals
