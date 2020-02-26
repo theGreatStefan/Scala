@@ -20,8 +20,9 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
     var output_nodes: Array[node] = Array()
 
     var numWeights:Int = hiddenLength*hiddenIncomming + outputLength*outputIncomming
+    
     var r = new Random(123)
-
+    
     // Populate arrays
     // Hidden nodes
     for (i <- 0 to hiddenLength-1) {
@@ -37,6 +38,8 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
     for (i <- 0 to numWeights-1) {
         weights = weights :+ (2 * r.nextDouble() - 1)
     }
+
+    def activationFunc(x:Double): Double = sigmoid(x)
 
     def sigmoid(x:Double): Double = { 
         (1/(1+Math.exp(-x)))
@@ -78,7 +81,7 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
 
         // Activated number
         for (i <- 0 to hiddenLength-1) {
-            hidden_nodes(i).setActivatedNum( sigmoid(hidden_nodes(i).sum()) )
+            hidden_nodes(i).setActivatedNum( activationFunc(hidden_nodes(i).sum()) )
         }
 
     }
@@ -97,7 +100,7 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
 
         // Activated number
         for (i <- 0 to outputLength-1) {
-            output_nodes(i).setActivatedNum( sigmoid(output_nodes(i).sum()) )
+            output_nodes(i).setActivatedNum( activationFunc(output_nodes(i).sum()) )
         }
     }
 
