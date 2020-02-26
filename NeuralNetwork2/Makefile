@@ -1,7 +1,7 @@
 all: compile
 
 compile:
-	scalac -d classes Main.scala
+	scalac -d classes *.scala
 
 clean:
 	rm classes/*

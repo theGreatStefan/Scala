@@ -1,18 +1,22 @@
-import java.lang.Math
+// A basic Neural Network
 
-object NN {
+import java.lang.Math
+import scala.util.Random
+
+object NN extends App{
 
     def sigmoid(x:Array[Array[Double]], deriv:Boolean): Array[Array[Double]] = {
+        var returnMatrix:Array[Array[Double]] = Array.ofDim[Double](x.length, x(0).length)
         if (deriv){
             for (i <- 0 to x.length-1) {
-                x(i) = x(i).map(el => (el*(1-el)))
+                returnMatrix(i) = x(i).map(el => (el*(1-el)))
             }
         } else {
             for (i <- 0 to x.length-1) {
-                x(i) = x(i).map(el => (1/(1+Math.exp(-el))))
+                returnMatrix(i) = x(i).map(el => (1/(1+Math.exp(-el))))
             }
         }
-        return x
+        return returnMatrix
     }
 
     def dotProductMatrices(matrix1: Array[Array[Double]], matrix2: Array[Array[Double]]): Array[Array[Double]] = {
@@ -31,6 +35,11 @@ object NN {
         return returnMat
     }
 
+    var input:Array[Array[Double]] = Array(Array(1,0,1),
+                                           Array(1,1,1),
+                                           Array(0,1,1),
+                                           Array(0,0,1) )
+
     var input_data:Array[Array[Double]] = Array(Array(0,0,1),
                                                 Array(0,1,1),
                                                 Array(1,0,1),
@@ -41,7 +50,7 @@ object NN {
                                                  Array(0),
                                                  Array(1))
 
-    var r = scala.util.Random
+    var r = new Random(123)
 
     var syn0:Array[Array[Double]] = Array(Array(2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1),
                                           Array(2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1, 2 * r.nextDouble() - 1),
@@ -51,27 +60,20 @@ object NN {
                                           Array(2 * r.nextDouble() - 1),
                                           Array(2 * r.nextDouble() - 1),
                                           Array(2 * r.nextDouble() - 1))
-    /*var syn0:Array[Array[Double]] = Array(Array(6.38866509, 6.32696724, -3.58124886, -3.82780347),
-                                          Array(-7.03092137, -5.62771339, 1.876251, -4.09604335),
-                                          Array(-3.08689442, 2.61721117, -0.24907715, 0.84759576))
-
-    var syn1:Array[Array[Double]] = Array(Array(-13.10552019),
-                                          Array(7.04077103),
-                                          Array(-7.16393713),
-                                          Array(4.38937447))*/
     
     var l2:Array[Array[Double]] = output_data
 
-    def main(args: Array[String]): Unit = {
+    def train(epochs:Int): Unit = {
 
-        /*var l0 = input_data
-        var l1 = sigmoid(dotProductMatrices(l0, syn0), false)
-        l2 = sigmoid(dotProductMatrices(l1, syn1), false)*/
-        for (i <- 0 to 10000) {
+        for (i <- 0 to epochs) {
             // layers
             var l0 = input_data
             var l1 = sigmoid(dotProductMatrices(l0, syn0), false)
             l2 = sigmoid(dotProductMatrices(l1, syn1), false)
+            
+            println("l0 x: " +l0.length+", l0 y: "+l0(0).length)
+            println("l1 x: " +l1.length+", l1 y: "+l1(0).length)
+            println("l2 x: " +l2.length+", l2 y: "+l2(0).length)
 
             // backpropogation
             var l2_error:Array[Array[Double]] = Array.ofDim[Double](l2.length, l2(0).length)
@@ -79,7 +81,7 @@ object NN {
                 var l2_error_vec:Array[Double] = output_data(j).zip(l2(j)).map{case (a,b) => a-b}
                 l2_error(j) = l2_error_vec
             }
-
+            
             var l2_sigDiv:Array[Array[Double]] = sigmoid(l2, deriv=true)
             var l2_delta:Array[Array[Double]] = Array.ofDim[Double](l2_sigDiv.length, l2_sigDiv(0).length)
             for (j <- 0 to l2_delta.length-1) {
@@ -123,6 +125,22 @@ object NN {
         println()
         
     }
+
+    def runNN(): Unit = {
+        train(10000)
+        var l0 = input
+        var l1 = sigmoid(dotProductMatrices(l0, syn0), false)
+        var output = sigmoid(dotProductMatrices(l1, syn1), false)
+
+        for (j <- 0 to output.length-1) {
+            for (k <- 0 to output(0).length-1) {
+                print(output(j)(k)+" ")
+            }
+            println()
+        }
+        println()
+    }
     
+    runNN()
     
 }

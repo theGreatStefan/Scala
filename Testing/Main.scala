@@ -28,13 +28,16 @@ object NN {
         println("My list:  "+myList)
         var newList:List[Int] = myList.map(el => el+1)
         println("New List: "+newList)
+        println("------------------------------------------------------")
 
         println("My matrix:  "+myMatrix)
         var newMatrix:List[List[Int]] = myMatrix.map(matEl => matEl.map(el => el+1))
         println("New Matrix: "+newMatrix)
+        println("------------------------------------------------------")
 
         var mydotMatrix:List[List[Double]] = dotProductMatrices(matrix_1, matrix_2)
         println("My dot matrix: "+mydotMatrix)
+        println("------------------------------------------------------")
 
         var mydotMatrix_2:Array[Array[Double]] = dotProductMatrices_2(matrix_11, matrix_22)
         println("My dot matrix 2: ")
@@ -44,15 +47,35 @@ object NN {
             }
             println()
         }
+        println("------------------------------------------------------")
 
         // Zip
         var a: Array[Double] = Array(1,2,3)
         var b: Array[Double] = Array(4,5,6)
         //var a_zip_b: Array[(Double, Double)] = a.zip(b)
         var a_zip_b: Array[Double] = a.zip(b).map{case (a,b) => a+b}
-        println("a_zip_b:")
+        println("a_zip_b.map((a,b) => a+b):")
         for (i <- 0 to a_zip_b.length-1) print(a_zip_b(i)+" ")
         println()
+        println("------------------------------------------------------")
+
+        var c: Array[Double] = Array(1,2,3)
+        var d: Array[Double] = Array(4,5,6)
+        var c_zip_d: Array[(Double, Double)] = (c).zip(d)
+        println("c_zip_d:")
+        for (i <- 0 to c_zip_d.length-1) print(c_zip_d(i)+" ")
+        println()
+        println("------------------------------------------------------")
+
+        // 1D array to 2D array
+        var arr:Array[Double] = Array(1,2,3)
+        var twoDArr:Array[Array[Double]] = arr.map(el => Array(el))
+        for (i <- 0 to twoDArr.length-1) {
+            for (j <- 0 to twoDArr(0).length-1) {
+                println(twoDArr(i)(j))
+            }
+        }
+        println("--------------------------------------------------------")
     }
 
     // dot product using lists
