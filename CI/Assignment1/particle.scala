@@ -8,12 +8,24 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var c2:Double = ic2
     var w:Double = iw
     var r = scala.util.Random
-    var pbest_pos:Array[Double] = Array.fill(velocity_size){-100 + r.nextDouble()*200}
-    var pbest_score:Double = function(pbest_pos)
+    var pbest_pos:Array[Double] = Array.fill(velocity_size){-0.5 + r.nextDouble()*1}
+    var pbest_score:Double = f25(pbest_pos)
     var velocity:Array[Double] = Array.fill(velocity_size){0.0}
 
-    def function(x:Array[Double]):Double = {
+    def f1(x:Array[Double]):Double = {
         x.map(el => Math.abs(el)).sum
+    }
+
+    def f25(x:Array[Double]):Double = {
+        var step1:Array[Double] = Array()
+        var j:Int = 0
+        while (j < velocity_size-1) {
+            step1 = step1 :+  (for (i <- 1 to 20) yield (Math.pow(0.5,i)*Math.cos(2*Math.PI*Math.pow(3,i)*(x(j)+0.5)))).sum
+            j+=1
+        }
+        var step2:Double = (for (i <- 1 to 20) yield (Math.pow(0.5,i)*Math.cos(Math.PI*Math.pow(3,i)))).sum
+        (step1.sum - (velocity_size*step2))
+        
     }
 
     def updateVelocity(gbest_pos:Array[Double]):Unit = {
@@ -47,7 +59,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     }
 
     def checkBestPos():Unit = {
-        var pos_score:Double = function(pos)
+        var pos_score:Double = f25(pos)
         if (pos_score < pbest_score) {
             pbest_score = pos_score
             pbest_pos = pos
