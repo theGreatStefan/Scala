@@ -1,17 +1,26 @@
 import java.lang.Math
 import scala.util.Random
 
-class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, iw:Double) {
+class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, iw:Double, ilb:Double, iub:Double, function:String) {
+    var lb:Double = ilb
+    var ub:Double = iub
     var pos:Array[Double] = ipos
     var velocity_size:Int = ivelocity_size
     var c1:Double = ic1
     var c2:Double = ic2
     var w:Double = iw
     var r = scala.util.Random
-    var pbest_pos:Array[Double] = Array.fill(velocity_size){-100 + r.nextDouble()*200}
-    var pbest_score:Double = f1(pbest_pos)
+    var pbest_pos:Array[Double] = Array.fill(velocity_size){lb + r.nextDouble()*(ub-lb)}
+    var pbest_score:Double = function match{
+            case "f1" => f1(pbest_pos)
+            case "f2" => f2(pbest_pos)
+            case "f3" => f3(pbest_pos)
+            case "f24" => f24(pbest_pos)
+            case "f25" => f25(pbest_pos)
+        }
     var velocity:Array[Double] = Array.fill(velocity_size){0.0}
 
+    /*****************Functions******************/
     // [-100, 100]
     def f1(x:Array[Double]):Double = {
         x.map(el => Math.abs(el)).sum
@@ -49,6 +58,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         (step1.sum - (velocity_size*step2))
         
     }
+    /*****************END_Functions******************/
 
     def updateVelocity(gbest_pos:Array[Double]):Unit = {
         
@@ -81,11 +91,33 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     }
 
     def checkBestPos():Unit = {
-        var pos_score:Double = f1(pos)
+        var pos_score:Double = function match{
+            case "f1" => f1(pos)
+            case "f2" => f2(pos)
+            case "f3" => f3(pos)
+            case "f24" => f24(pos)
+            case "f25" => f25(pos)
+        }
         if (pos_score < pbest_score) {
             pbest_score = pos_score
             pbest_pos = pos
         }
+    }
+
+    def checkSearchSpace():Boolean = {
+        var outside:Boolean = false
+        var i:Int = 0
+        while (!outside && i < velocity_size) {
+            if (pos(i) > ub || pos(i) < lb) {
+                outside = true
+            }
+            i+=1
+        }
+        outside
+    }
+
+    def velocityMagnitude():Double = {
+        velocity.map(el => Math.pow(el, 2)).sum
     }
 
     override def toString(): String = {

@@ -1,25 +1,37 @@
 import java.lang.Math
 import scala.util.Random
 
-class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Double) {
+class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Double, ilb:Double, iub:Double, function:String) {
+    var lb:Double = ilb
+    var ub:Double = iub
     var c1:Double = ic1
     var c2:Double = ic2
     var w:Double = iw
     var swarm_size:Int = iswarm_size
     var constraint_size:Int = iconstraint_size
     var r = scala.util.Random
-    var gbest_pos:Array[Double] = Array.fill(constraint_size){-100 + r.nextDouble()*200}
-    var gbest_score:Double = f1(gbest_pos)
+    var gbest_pos:Array[Double] = Array.fill(constraint_size){-lb + r.nextDouble()*(ub - lb)}
     var pswarm:Array[particle] = Array()
     var avg_eucl_d_time:Array[Double] = Array()
     var gbest_score_time:Array[Double] = Array()
+    var gbest_score:Double = function match{
+        case "f1" => f1(gbest_pos)
+        case "f2" => f2(gbest_pos)
+        case "f3" => f3(gbest_pos)
+        case "f24" => f24(gbest_pos)
+        case "f25" => f25(gbest_pos)
+    }
+    var num_particles_outside:Double = 0
+    var velocity_magnitude:Double = 0.0
+    var avg_velocity_magnitude:Array[Double] = Array()
     //var particle_1_pos:Array[Double] = Array()
     
     for (i <- 0 to swarm_size-1) {
-        var particle_pos:Array[Double] = Array.fill(constraint_size){-100 + r.nextDouble()*200}
-        pswarm = pswarm :+ new particle(particle_pos, constraint_size, c1, c2, w)
+        var particle_pos:Array[Double] = Array.fill(constraint_size){-lb + r.nextDouble()*(ub - lb)}
+        pswarm = pswarm :+ new particle(particle_pos, constraint_size, c1, c2, w, lb, ub, function)
     }
 
+    /*****************Functions******************/
     // [-100, 100]
     def f1(x:Array[Double]):Double = {
         x.map(el => Math.abs(el)).sum
@@ -57,8 +69,11 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         (step1.sum - (constraint_size*step2))
         
     }
+    /*****************END_Functions******************/
 
+    // Main method called for running the swarm for a specified number of epochs
     def runSwarm(epochs:Int):Unit = {
+        num_particles_outside = 0.0
         for (i <- 0 to epochs-1) {
             for (j <- 0 to swarm_size-1) {
                 pswarm(j).updateVelocity(gbest_pos)
@@ -68,12 +83,18 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                     gbest_score = pbest_score
                     gbest_pos = pbest_pos
                 }
+                if (pswarm(j).checkSearchSpace()) {
+                    num_particles_outside += 1.0
+                }
+                velocity_magnitude += pswarm(j).velocityMagnitude()
             }
             //particle_1_pos = particle_1_pos :+ f1(pswarm(0).pos)
 
             gbest_score_time = gbest_score_time :+ gbest_score
             avg_eucl_d_time = avg_eucl_d_time :+ avgEuclidianDistance()
+            avg_velocity_magnitude = avg_velocity_magnitude :+ (velocity_magnitude/swarm_size)
         }
+        
     }
 
     def globalBest():Double = {
@@ -83,6 +104,10 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     //def particle1Pos(): Array[Double] = {
     //    particle_1_pos
     //}
+
+    def percentageOutside():Double = {
+        (num_particles_outside/(swarm_size*5000.0))
+    }
 
     def avgParticle(): Array[Double] = {
         var avg_pos:Array[Double] = pswarm(0).pos
@@ -108,6 +133,10 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
     def getAvgGBest(): Array[Double] = {
         gbest_score_time
+    }
+
+    def getAvgVelocityMagnitude():Array[Double] = {
+        avg_velocity_magnitude
     }
 
     def printTests(): Unit = {
