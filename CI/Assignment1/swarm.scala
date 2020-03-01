@@ -8,21 +8,44 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     var swarm_size:Int = iswarm_size
     var constraint_size:Int = iconstraint_size
     var r = scala.util.Random
-    var gbest_pos:Array[Double] = Array.fill(constraint_size){-0.5 + r.nextDouble()*1}
-    var gbest_score:Double = f25(gbest_pos)
+    var gbest_pos:Array[Double] = Array.fill(constraint_size){-100 + r.nextDouble()*200}
+    var gbest_score:Double = f1(gbest_pos)
     var pswarm:Array[particle] = Array()
     var avg_eucl_d_time:Array[Double] = Array()
     var gbest_score_time:Array[Double] = Array()
+    //var particle_1_pos:Array[Double] = Array()
     
     for (i <- 0 to swarm_size-1) {
-        var particle_pos:Array[Double] = Array.fill(constraint_size){-0.5 + r.nextDouble()*1}
+        var particle_pos:Array[Double] = Array.fill(constraint_size){-100 + r.nextDouble()*200}
         pswarm = pswarm :+ new particle(particle_pos, constraint_size, c1, c2, w)
     }
 
-    def function(x:Array[Double]):Double = {
+    // [-100, 100]
+    def f1(x:Array[Double]):Double = {
         x.map(el => Math.abs(el)).sum
     }
 
+    // [−32.768, 32.768]
+    def f2(x:Array[Double]):Double = {
+        var part1:Double = x.map(el => Math.pow(el, 2)).sum
+        var part2:Double = x.map(el => Math.cos(2*Math.PI*el)).sum
+        (-20*Math.exp(-0.2*Math.sqrt((1/constraint_size)*part1)) - Math.exp((1/constraint_size)*part2) + 20 + Math.exp(1))
+    }
+
+    // [-10, 10]
+    def f3(x:Array[Double]):Double = {
+        var part1:Double = x.map(el => Math.sin(el)).product
+        var part2:Double = x.product
+        (part1 * Math.sqrt(part2))
+    }
+
+    // [0.25, 10]
+    def f24(x:Array[Double]):Double = {
+        var part1:Double = x.map(el => Math.sin(10*Math.sqrt(el))).sum
+        (-1*(1+part1))
+    }
+
+    // [-0.5, 0.5]
     def f25(x:Array[Double]):Double = {
         var step1:Array[Double] = Array()
         var j:Int = 0
@@ -46,6 +69,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                     gbest_pos = pbest_pos
                 }
             }
+            //particle_1_pos = particle_1_pos :+ f1(pswarm(0).pos)
+
             gbest_score_time = gbest_score_time :+ gbest_score
             avg_eucl_d_time = avg_eucl_d_time :+ avgEuclidianDistance()
         }
@@ -54,6 +79,10 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     def globalBest():Double = {
         gbest_score
     }
+
+    //def particle1Pos(): Array[Double] = {
+    //    particle_1_pos
+    //}
 
     def avgParticle(): Array[Double] = {
         var avg_pos:Array[Double] = pswarm(0).pos
@@ -71,6 +100,14 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             avg_eucl_d = avg_eucl_d + Math.sqrt((pswarm(i).pos.zip(avg_pos).map{case (a,b) => Math.pow((a-b), 2)}).sum)
         }
         (avg_eucl_d/swarm_size)
+    }
+
+    def getAvgEuclDist(): Array[Double] = {
+        avg_eucl_d_time
+    }
+
+    def getAvgGBest(): Array[Double] = {
+        gbest_score_time
     }
 
     def printTests(): Unit = {

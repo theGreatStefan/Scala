@@ -8,14 +8,36 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var c2:Double = ic2
     var w:Double = iw
     var r = scala.util.Random
-    var pbest_pos:Array[Double] = Array.fill(velocity_size){-0.5 + r.nextDouble()*1}
-    var pbest_score:Double = f25(pbest_pos)
+    var pbest_pos:Array[Double] = Array.fill(velocity_size){-100 + r.nextDouble()*200}
+    var pbest_score:Double = f1(pbest_pos)
     var velocity:Array[Double] = Array.fill(velocity_size){0.0}
 
+    // [-100, 100]
     def f1(x:Array[Double]):Double = {
         x.map(el => Math.abs(el)).sum
     }
 
+    // [−32.768, 32.768]
+    def f2(x:Array[Double]):Double = {
+        var part1:Double = x.map(el => Math.pow(el, 2)).sum
+        var part2:Double = x.map(el => Math.cos(2*Math.PI*el)).sum
+        (-20*Math.exp(-0.2*Math.sqrt((1/velocity_size)*part1)) - Math.exp((1/velocity_size)*part2) + 20 + Math.exp(1))
+    }
+
+    // [-10, 10]
+    def f3(x:Array[Double]):Double = {
+        var part1:Double = x.map(el => Math.sin(el)).product
+        var part2:Double = x.product
+        (part1 * Math.sqrt(part2))
+    }
+
+    // [0.25, 10]
+    def f24(x:Array[Double]):Double = {
+        var part1:Double = x.map(el => Math.sin(10*Math.sqrt(el))).sum
+        (-1*(1+part1))
+    }
+
+    // [-0.5, 0.5]
     def f25(x:Array[Double]):Double = {
         var step1:Array[Double] = Array()
         var j:Int = 0
@@ -59,7 +81,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     }
 
     def checkBestPos():Unit = {
-        var pos_score:Double = f25(pos)
+        var pos_score:Double = f1(pos)
         if (pos_score < pbest_score) {
             pbest_score = pos_score
             pbest_pos = pos
