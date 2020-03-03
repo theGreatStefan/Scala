@@ -23,7 +23,14 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     /*****************Functions******************/
     // [-100, 100]
     def f1(x:Array[Double]):Double = {
-        x.map(el => Math.abs(el)).sum
+        var my_total:Double = 0.0
+        //println("------------------------")
+        for (i <- 0 to x.length-1) {
+            my_total = my_total + Math.abs(x(i))
+            //println("x(i): "+x(i))
+        }
+        //println("Total: "+my_total)
+        my_total
     }
 
     // [−32.768, 32.768]
@@ -62,7 +69,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
 
     def updateVelocity(gbest_pos:Array[Double]):Unit = {
         
-        var r1j:Array[Double] = Array.fill(velocity_size){r.nextDouble()}
+        /*var r1j:Array[Double] = Array.fill(velocity_size){r.nextDouble()}
         var r2j:Array[Double] = Array.fill(velocity_size){r.nextDouble()}
 
         // Cognitive part of the velocity update
@@ -78,14 +85,26 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         // Add cognitive and social parts to the velocity * w
         velocity = velocity.map(el => w*el)
         velocity = velocity.zip(cognitive).map{case (a,b) => a+b}
-        velocity = velocity.zip(social).map{case (a,b) => a+b}
+        velocity = velocity.zip(social).map{case (a,b) => a+b}*/
+        var r1:Double = 0.0
+        var r2:Double = 0.0
+        for (i <- 0 to velocity_size-1) {
+            r1 = r.nextDouble()
+            r2 = r.nextDouble()
+
+            var cognitive:Double = c1*r1*(pbest_pos(i) - pos(i))
+            var social:Double = c2*r2*(gbest_pos(i) - pos(i))
+            velocity(i) = w*velocity(i)+cognitive+social
+        }
 
         updatePos()
 
     }
 
     def updatePos():Unit = {
-        pos = pos.zip(velocity).map{case (a,b) => a+b}
+        for (i <- 0 to velocity_size-1) {
+            pos(i) += velocity(i)
+        }
 
         checkBestPos()
     }
@@ -117,7 +136,19 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     }
 
     def velocityMagnitude():Double = {
-        velocity.map(el => Math.pow(el, 2)).sum
+        var my_total:Double = 0.0
+        for (i <- 0 to velocity_size-1) {
+            my_total += Math.pow(velocity(i), 2)
+        }
+        Math.sqrt(my_total)
+    }
+
+    def velocityClamping1(k:Double):Double = {
+        var pos_min_max:(Double, Double) = (Double.MaxValue, Double.MinValue)
+        pos_min_max = pos.foldLeft((pos(0), pos(0)))
+        { case ((min, max), e) => (math.min(min, e), math.max(max, e))}
+
+        k*(pos_min_max._2-pos_min_max._1)
     }
 
     override def toString(): String = {

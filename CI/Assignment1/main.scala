@@ -8,7 +8,7 @@ object main extends App {
 
     //var particle1_pos:Array[Double] = Array()
     for (i <- 0 to 30) {
-        var swarm1 = new swarm(30, 30, 0.7, 0.7, 0.9, -0.5, 0.5, "f1")
+        var swarm1 = new swarm(30, 30, 0.7, 0.7, 0.9, -100, 100, "f1")
         swarm1.runSwarm(5000)
         //allEuclDist = allEuclDist :+ swarm1.getAvgEuclDist()
         avgEuclDist = avgEuclDist.zip(swarm1.getAvgEuclDist()).map{case (a,b) => a+b}
@@ -39,5 +39,6 @@ object main extends App {
     println(avgPersentageLeft)    
     println("\nAverage velocity magnitude over time:")
     (for (i <- 0 to avgVelocityMagnitude.length-1) yield (println(avgVelocityMagnitude(i))))
+    println()
 
 }
