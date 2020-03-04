@@ -77,14 +77,15 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
     // Main method called for running the swarm for a specified number of epochs
     def runSwarm(epochs:Int):Unit = {
+        var v_max:Array[Double] = Array()
         num_particles_outside = 0.0
         for (i <- 0 to epochs-1) {
+            v_max = velocityClamping1(0.1)
             for (j <- 0 to swarm_size-1) {
-                pswarm(j).updateVelocity(gbest_pos)
+                //pswarm(j).updateVelocity(gbest_pos)
+                pswarm(j).updateVelocityClamp1(gbest_pos, v_max)
                 var pbest_score:Double = pswarm(j).pbest_score
                 if (pbest_score < gbest_score) {
-                    //println("gbestscore was: "+gbest_score)
-                    //println("gbestscore is:  "+pbest_score)
                     gbest_score = pbest_score
                     gbest_pos = pswarm(j).pbest_pos.clone()
                 }
@@ -129,15 +130,9 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
     def avgEuclidianDistance():Double = {
         avg_pos = avgParticle()
-        //var avg_eucl_d:Double = Math.sqrt((pswarm(0).pos.zip(avg_pos).map{case (a,b) => Math.pow((a-b), 2)}).sum)
         var avg_eucl_d:Double = 0.0
         var avg_eucl_d_curr:Double = 0.0
-        /*for (i <- 0 to constraint_size-1) {
-            avg_eucl_d += Math.pow(pswarm(0).pos(i)-avg_pos(i), 2)
-        }
-        avg_eucl_d = Math.sqrt(avg_eucl_d)*/
         for (i <- 0 to swarm_size-1) {
-            //avg_eucl_d = avg_eucl_d + Math.sqrt((pswarm(i).pos.zip(avg_pos).map{case (a,b) => Math.pow((a-b), 2)}).sum)
             for (j <- 0 to constraint_size-1) {
                 avg_eucl_d_curr += Math.pow(pswarm(i).pos(j)-avg_pos(j), 2)
             }
@@ -157,6 +152,27 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
     def getAvgVelocityMagnitude():Array[Double] = {
         avg_velocity_magnitude
+    }
+
+    def velocityClamping1(k:Double):Array[Double] = {
+        var arr:Array[Double] = Array.fill(constraint_size){0.0}
+        var max_val:Double = Double.MinValue
+        var min_val:Double = Double.MaxValue
+        var curr_val:Double = 0.0
+        for (i <- 0 to constraint_size-1) {
+            for (j <- 0 to swarm_size-1) {
+                curr_val = pswarm(j).pos(i)
+                if (curr_val > max_val) {
+                    max_val = curr_val
+                } else if (curr_val < min_val) {
+                    min_val = curr_val
+                }
+            }
+            arr(i) = k*(max_val-min_val)
+            max_val = Double.MinValue
+            min_val = Double.MaxValue
+        }
+        arr
     }
 
     def printTests(): Unit = {
