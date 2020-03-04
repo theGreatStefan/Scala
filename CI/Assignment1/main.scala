@@ -6,33 +6,44 @@ object main extends App {
     var avgPersentageLeft:Double = 0
     var avgVelocityMagnitude:Array[Double] = Array.fill(5000){0}
 
-    //var particle1_pos:Array[Double] = Array()
     for (i <- 0 to 30) {
         var swarm1 = new swarm(30, 30, 0.7, 0.7, 0.9, -100, 100, "f1")
         swarm1.runSwarm(5000)
-        //allEuclDist = allEuclDist :+ swarm1.getAvgEuclDist()
-        avgEuclDist = avgEuclDist.zip(swarm1.getAvgEuclDist()).map{case (a,b) => a+b}
-        avgGBest = avgGBest.zip(swarm1.getAvgGBest()).map{case (a,b) => a+b}
+        
+        var avgEuc:Array[Double] = swarm1.getAvgEuclDist().clone()
+        for (j <- 0 to avgEuclDist.length-1) {
+            avgEuclDist(j) += avgEuc(j)
+        }
+
+        var avgGb:Array[Double] = swarm1.getAvgGBest().clone()
+        for (j <- 0 to avgGb.length-1) {
+            avgGBest(j) += avgGb(j)
+        }
+
         avgPersentageLeft += swarm1.percentageOutside()
-        avgVelocityMagnitude = avgVelocityMagnitude.zip(swarm1.getAvgVelocityMagnitude()).map{case (a,b) => a+b}
-        //particle1_pos = swarm1.particle1Pos()
+
+        var avgVm:Array[Double] = swarm1.getAvgVelocityMagnitude().clone()
+        for (j <- 0 to avgVelocityMagnitude.length-1) {
+            avgVelocityMagnitude(j) += avgVm(j)
+        }
     }
 
-    /*avgEuclDist = allEuclDist(1)
-    for (i <- 2 to 30) {
-        avgEuclDist = avgEuclDist.zip(allEuclDist(i)).map{case (a,b) => a+b}
-    }*/
-    avgEuclDist = avgEuclDist.map(el => el/30)
+    for (i <- 0 to avgEuclDist.length-1) {
+        avgEuclDist(i) = avgEuclDist(i)/30
+    }
  
-    avgGBest = avgGBest.map(el => el/30)
+    for (i <- 0 to avgGBest.length-1) {
+        avgGBest(i) = avgGBest(i)/30
+    }
 
     avgPersentageLeft = (avgPersentageLeft)/30
 
-    avgVelocityMagnitude = avgVelocityMagnitude.map(el => el/30)
+    for (i <- 0 to avgVelocityMagnitude.length-1) {
+        avgVelocityMagnitude(i) = avgVelocityMagnitude(i)/30
+    }
 
     println("Average Euclidian distance over time:")
     (for (i <- 0 to avgEuclDist.length-1) yield (println(avgEuclDist(i))))
-    //(for (i <- 0 to particle1_pos.length-1) yield (println(particle1_pos(i))))
     println("\nAverage global best score over time:")
     (for (i <- 0 to avgGBest.length-1) yield (println(avgGBest(i))))
     println("\nPercentage of particles that left the search area:")

@@ -83,8 +83,10 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                 pswarm(j).updateVelocity(gbest_pos)
                 var pbest_score:Double = pswarm(j).pbest_score
                 if (pbest_score < gbest_score) {
+                    //println("gbestscore was: "+gbest_score)
+                    //println("gbestscore is:  "+pbest_score)
                     gbest_score = pbest_score
-                    gbest_pos = pswarm(j).pbest_pos
+                    gbest_pos = pswarm(j).pbest_pos.clone()
                 }
                 if (pswarm(j).checkSearchSpace()) {
                     num_particles_outside += 1.0
@@ -111,7 +113,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     }
 
     def avgParticle(): Array[Double] = {
-        var avg_particle_pos:Array[Double] = pswarm(0).pos
+        var avg_particle_pos:Array[Double] = pswarm(0).pos.clone()
         for (i <- 1 to swarm_size-1) {
             //avg_particle_pos = avg_particle_pos.zip(pswarm(i).pos).map{case (a,b) => a+b}
             for (j <- 0 to constraint_size-1) {

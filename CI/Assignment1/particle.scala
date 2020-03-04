@@ -4,7 +4,7 @@ import scala.util.Random
 class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, iw:Double, ilb:Double, iub:Double, function:String) {
     var lb:Double = ilb
     var ub:Double = iub
-    var pos:Array[Double] = ipos
+    var pos:Array[Double] = ipos.clone()
     var velocity_size:Int = ivelocity_size
     var c1:Double = ic1
     var c2:Double = ic2
@@ -24,12 +24,9 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     // [-100, 100]
     def f1(x:Array[Double]):Double = {
         var my_total:Double = 0.0
-        //println("------------------------")
         for (i <- 0 to x.length-1) {
             my_total = my_total + Math.abs(x(i))
-            //println("x(i): "+x(i))
         }
-        //println("Total: "+my_total)
         my_total
     }
 
