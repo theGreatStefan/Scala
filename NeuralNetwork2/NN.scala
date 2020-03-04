@@ -14,35 +14,37 @@ import scala.util.Random
 
 class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncomming:Int){
 
-    var weights: Array[Double] = Array()
-    var input_nodes: Array[Double] = Array()
-    var hidden_nodes: Array[node] = Array()
-    var output_nodes: Array[node] = Array()
-
-    var numWeights:Int = hiddenLength*hiddenIncomming + outputLength*outputIncomming
-    
     var r = new Random(123)
-    
+    var numWeights:Int = hiddenLength*hiddenIncomming + outputLength*outputIncomming
+    var weights: Array[Double] = Array.fill(numWeights){2 * r.nextDouble() - 1}
+    var input_nodes: Array[Double] = Array()
+    var hidden_nodes: Array[node] = Array.fill(hiddenLength){new node(hiddenIncomming)}
+    var output_nodes: Array[node] = Array.fill(outputLength){new node(outputIncomming)}
+
     // Populate arrays
     // Hidden nodes
-    for (i <- 0 to hiddenLength-1) {
+    /*for (i <- 0 to hiddenLength-1) {
         hidden_nodes = hidden_nodes :+ (new node(hiddenIncomming))
-    }
+    }*/
 
     // Output nodes
-    for (i <- 0 to outputLength-1) {
+    /*for (i <- 0 to outputLength-1) {
         output_nodes = output_nodes :+ (new node(outputIncomming))
-    }
+    }*/
 
     // Weights
-    for (i <- 0 to numWeights-1) {
+    /*for (i <- 0 to numWeights-1) {
         weights = weights :+ (2 * r.nextDouble() - 1)
-    }
+    }*/
 
-    def activationFunc(x:Double): Double = sigmoid(x)
+    def activationFunc(x:Double): Double = tanh(x)
 
     def sigmoid(x:Double): Double = { 
         (1/(1+Math.exp(-x)))
+    }
+
+    def tanh(x:Double): Double = {
+        ( (Math.exp(2*x)-1) / (Math.exp(2*x)+1) )
     }
 
     def runNN(inputs:Array[Double]): Array[Double] = {

@@ -5,3 +5,6 @@ compile:
 
 clean:
 	rm classes/*
+
+run:
+	scala -classpath classes Main
