@@ -25,7 +25,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     var num_particles_outside:Double = 0
     var velocity_magnitude:Double = 0.0
     var avg_velocity_magnitude:Array[Double] = Array.fill(5000){0}
-    var gbest_score_hist:Array[Double] = Array.fill(5){Double.MaxValue}
+    var gbest_score_hist:Array[Double] = Array.fill(5){0.0}
     
     for (i <- 0 to swarm_size-1) {
         var particle_pos:Array[Double] = Array.fill(constraint_size){lb + r.nextDouble()*(ub - lb)}
@@ -78,20 +78,16 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
     // Main method called for running the swarm for a specified number of epochs
     def runSwarm(epochs:Int):Unit = {
-        //var v_max:Array[Double] = Array.fill(constraint_size){ub}
-        var k:Double = 1.0
-        var v_max:Array[Double] = Array.fill(constraint_size){k*(ub-lb)}
-
-        var beta:Double = 1.0
+        var v_max:Array[Double] = gbest_pos.clone
+        var beta:Double = 0.1
         num_particles_outside = 0.0
         for (i <- 0 to epochs-1) {
             //v_max = velocityClampingNorm(0.1)
             //v_max = velocityClampingDynamic(beta, 5, v_max)
-            v_max = velocityClampingExponential(2, i, v_max)
+            //v_max = velocityClampingExponential(0.1, i, v_max)
             for (j <- 0 to swarm_size-1) {
-                //pswarm(j).updateVelocity(gbest_pos)
-                pswarm(j).updateVelocityClamp1(gbest_pos, v_max)
-                //pswarm(j).updateVelocityClamp2(gbest_pos, v_max)
+                pswarm(j).updateVelocity(gbest_pos)
+                //pswarm(j).updateVelocityClamp1(gbest_pos, v_max)
                 var pbest_score:Double = pswarm(j).pbest_score
                 if (pbest_score < gbest_score) {
                     gbest_score = pbest_score
@@ -109,7 +105,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             avg_eucl_d_time(i) = avgEuclidianDistance()
             avg_velocity_magnitude(i) = (velocity_magnitude/swarm_size)
             velocity_magnitude = 0.0
-            beta = 1-(i * (0.99/5000))
+            beta -= i * (0.99/5000)
             
         }
         
@@ -209,9 +205,12 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
     def velocityClampingExponential(alpha:Double, t:Double, v_max:Array[Double]):Array[Double] = {
         var arr:Array[Double] = Array.fill(constraint_size){0.0}
+        var max_val:Double = Double.MinValue
+        var min_val:Double = Double.MaxValue
+        var curr_val:Double = 0.0
 
         for (i <- 0 to constraint_size-1) {
-            arr(i) = (1-Math.pow((t/5000), alpha))*v_max(i)
+            arr(i) = (1-(t/5000))*v_max(i)
         }
         arr
     }

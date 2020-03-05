@@ -107,28 +107,14 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         var cognitive:Double = 0.0
         var social:Double = 0.0
         var check_val:Double = 0.0
-        var new_vel:Array[Double] = velocity.clone()
         for (i <- 0 to velocity_size-1) {
             r1 = r.nextDouble()
             r2 = r.nextDouble()
 
             cognitive = c1*r1*(pbest_pos(i) - pos(i))
             social = c2*r2*(gbest_pos(i) - pos(i))
-            new_vel(i) = w*velocity(i)+cognitive+social
-
-        }
-
-        for (i <- 0 to velocity_size-1) {
-            check_val += Math.pow(new_vel(i), 2)
-        }
-        check_val = Math.sqrt(check_val)
-
-        if (check_val <= v_max(0)) {
-            velocity = new_vel.clone()
-        } else {
-            for (i <- 0 to velocity_size-1) {
-                velocity(i) = (v_max(i)/check_val)*new_vel(i)
-            }
+            check_val = w*velocity(i)+cognitive+social
+            velocity(i) = if (Math.abs(check_val) < v_max(i)) {check_val} else {-1*check_val}
         }
 
         updatePos()
