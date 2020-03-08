@@ -14,9 +14,9 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var pbest_score:Double = function match{
             case "f1" => f1(pbest_pos)
             case "f2" => f2(pbest_pos)
-            case "f3" => f3(pbest_pos)
+            case "f5" => f5(pbest_pos)
+            case "f12" => f12(pbest_pos)
             case "f24" => f24(pbest_pos)
-            case "f25" => f25(pbest_pos)
         }
     var velocity:Array[Double] = Array.fill(velocity_size){0.0}
 
@@ -25,42 +25,47 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     def f1(x:Array[Double]):Double = {
         var my_total:Double = 0.0
         for (i <- 0 to x.length-1) {
-            my_total = my_total + Math.abs(x(i))
+            my_total += Math.abs(x(i))
         }
         my_total
     }
 
     // [−32.768, 32.768]
     def f2(x:Array[Double]):Double = {
-        var part1:Double = x.map(el => Math.pow(el, 2)).sum
-        var part2:Double = x.map(el => Math.cos(2*Math.PI*el)).sum
-        (-20*Math.exp(-0.2*Math.sqrt((1/velocity_size)*part1)) - Math.exp((1/velocity_size)*part2) + 20 + Math.exp(1))
+        var part1:Double = 0.0
+        var part2:Double = 0.0
+        for (i <- 0 to x.length-1) {
+            part1 += Math.pow(x(i), 2)
+            part2 += Math.cos(2*Math.PI*x(i))
+        }
+        (-20*Math.exp(-0.2*Math.sqrt((1/x.length)*part1)) - Math.exp((1/x.length)*part2) + 20 + Math.exp(1))
     }
 
-    // [-10, 10]
-    def f3(x:Array[Double]):Double = {
-        var part1:Double = x.map(el => Math.sin(el)).product
-        var part2:Double = x.product
-        (part1 * Math.sqrt(part2))
+    // [-100, 100]
+    def f5(x:Array[Double]):Double = {
+        var part1:Double = 0.0
+        for (i <- 0 to x.length-1) {
+            part1 += Math.pow(Math.pow(10, 6), (i-1)/(x.length-1))*Math.pow(x(i), 2)
+        }
+        part1
+    }
+
+    // [-5.12, 5.12]
+    def f12(x:Array[Double]):Double = {
+        var part1:Double = 0.0
+        for (i <- 0 to x.length-1) {
+            part1 += (Math.pow(x(i), 2) - 10*Math.cos(2*Math.PI*x(i)))
+        }
+        (10*x.length+part1)
     }
 
     // [0.25, 10]
     def f24(x:Array[Double]):Double = {
-        var part1:Double = x.map(el => Math.sin(10*Math.sqrt(el))).sum
-        (-1*(1+part1))
-    }
-
-    // [-0.5, 0.5]
-    def f25(x:Array[Double]):Double = {
-        var step1:Array[Double] = Array()
-        var j:Int = 0
-        while (j < velocity_size-1) {
-            step1 = step1 :+  (for (i <- 1 to 20) yield (Math.pow(0.5,i)*Math.cos(2*Math.PI*Math.pow(3,i)*(x(j)+0.5)))).sum
-            j+=1
+        var part1:Double = 0.0
+        for (i <- 0 to x.length-1) {
+            part1 += Math.sin(10*Math.sqrt(x(i)))
         }
-        var step2:Double = (for (i <- 1 to 20) yield (Math.pow(0.5,i)*Math.cos(Math.PI*Math.pow(3,i)))).sum
-        (step1.sum - (velocity_size*step2))
-        
+        (-1*(1+part1))
     }
     /*****************END_Functions******************/
 
@@ -146,9 +151,9 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         var pos_score:Double = function match{
             case "f1" => f1(pos)
             case "f2" => f2(pos)
-            case "f3" => f3(pos)
+            case "f5" => f5(pos)
+            case "f12" => f12(pos)
             case "f24" => f24(pos)
-            case "f25" => f25(pos)
         }
         if (pos_score < pbest_score) {
             pbest_score = pos_score
