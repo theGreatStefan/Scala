@@ -1,4 +1,4 @@
-all: compile
+all: 	compile run py
 
 compile:
 	scalac -d classes *.scala
@@ -8,3 +8,6 @@ clean:
 
 run:
 	scala -classpath classes main
+
+py:
+	python3 plotResults.py

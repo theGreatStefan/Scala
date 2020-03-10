@@ -87,6 +87,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
 
     }
 
+    // regular clamping
     def updateVelocityClamp1(gbest_pos:Array[Double], v_max:Array[Double]):Unit = {
         var r1:Double = 0.0
         var r2:Double = 0.0
@@ -106,6 +107,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         updatePos()
     }
 
+    // normalised clamping
     def updateVelocityClamp2(gbest_pos:Array[Double], v_max:Array[Double]):Unit = {
         var r1:Double = 0.0
         var r2:Double = 0.0
