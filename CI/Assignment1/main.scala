@@ -8,7 +8,7 @@ object main extends App {
     var avgPersentageLeft:Double = 0
     var avgVelocityMagnitude:Array[Double] = Array.fill(5000){0}
     
-    val filename = "data/f24/f24_ck4_6.csv"
+    val filename = "data/f24/f24_cd_6.csv"
     val pw = new PrintWriter(new File(filename))
 
     for (i <- 0 to 30) {

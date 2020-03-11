@@ -85,14 +85,13 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     // Main method called for running the swarm for a specified number of epochs
     def runSwarm(epochs:Int):Unit = {
         //var v_max:Array[Double] = Array.fill(constraint_size){ub}
-        var k:Double = 0.9
+        var k:Double = 1.0
         var v_max:Array[Double] = Array.fill(constraint_size){k*(ub-lb)}
 
         var beta:Double = 1.0
         num_particles_outside = 0.0
         for (i <- 0 to epochs-1) {
-            //v_max = velocityClampingNorm(0.1)
-            //v_max = velocityClampingDynamic(beta, 5, v_max)
+            v_max = velocityClampingDynamic(beta, 5, v_max)
             //v_max = velocityClampingExponential(2, i, v_max)
             for (j <- 0 to swarm_size-1) {
                 //pswarm(j).updateVelocity(gbest_pos)
