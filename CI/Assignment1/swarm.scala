@@ -106,7 +106,6 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                     num_particles_outside += 1.0
                 }
                 velocity_magnitude += pswarm(j).velocityMagnitude()
-                //pswarm(j).updateVelocity(gbest_pos)
                 
             }
 

@@ -1,4 +1,4 @@
-all: 	compile run py
+all: 	compile
 
 compile:
 	scalac -d classes *.scala

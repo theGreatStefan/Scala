@@ -12,6 +12,7 @@ object main extends App {
     val pw = new PrintWriter(new File(filename))
 
     for (i <- 0 to 30) {
+        // swarm params => swam_size, dimensions, c1, c2, w, lower_bound, upper_bound, function 
         var swarm1 = new swarm(30, 30, 0.7, 0.7, 0.9, -100, 100, "f5")
         swarm1.runSwarm(5000)
         
