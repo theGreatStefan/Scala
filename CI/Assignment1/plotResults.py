@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
-data = list(csv.reader(open("data/f24/f24_cd_6.csv")))
+data = list(csv.reader(open("data/f5/f5_ce_4.csv")))
 
 avgEucl = []
 avgGbest = []

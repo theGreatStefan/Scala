@@ -17,8 +17,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     var gbest_score_time:Array[Double] = Array.fill(5000){0}
     var gbest_score:Double = function match{
         case "f1" => f1(gbest_pos)
-        case "f2" => f2(gbest_pos)
         case "f5" => f5(gbest_pos)
+        case "f6" => f6(gbest_pos)
         case "f12" => f12(gbest_pos)
         case "f24" => f24(gbest_pos)
         }
@@ -42,17 +42,6 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         my_total
     }
 
-    // [−32.768, 32.768]
-    def f2(x:Array[Double]):Double = {
-        var part1:Double = 0.0
-        var part2:Double = 0.0
-        for (i <- 0 to x.length-1) {
-            part1 += Math.pow(x(i), 2)
-            part2 += Math.cos(2*Math.PI*x(i))
-        }
-        (-20*Math.exp(-0.2*Math.sqrt((1/x.length)*part1)) - Math.exp((1/x.length)*part2) + 20 + Math.exp(1))
-    }
-
     // [-100, 100]
     def f5(x:Array[Double]):Double = {
         var part1:Double = 0.0
@@ -60,6 +49,17 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             part1 += Math.pow(Math.pow(10, 6), (i-1)/(x.length-1))*Math.pow(x(i), 2)
         }
         part1
+    }
+
+    // [-600, 600]
+    def f6(x:Array[Double]):Double = {
+        var part1:Double = 0.0
+        var part2:Double = 1.0
+        for (i <- 0 to x.length-1) {
+            part1 += Math.pow(x(i), 2)
+            part2 *= Math.cos(x(i)/Math.sqrt(i))
+        }
+        (1+(1/4000)*part1-part2)
     }
 
     // [-5.12, 5.12]
@@ -85,14 +85,14 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     // Main method called for running the swarm for a specified number of epochs
     def runSwarm(epochs:Int):Unit = {
         //var v_max:Array[Double] = Array.fill(constraint_size){ub}
-        var k:Double = 1.0
+        var k:Double = 0.3
         var v_max:Array[Double] = Array.fill(constraint_size){k*(ub-lb)}
 
         var beta:Double = 1.0
         num_particles_outside = 0.0
         for (i <- 0 to epochs-1) {
-            v_max = velocityClampingDynamic(beta, 5, v_max)
-            //v_max = velocityClampingExponential(2, i, v_max)
+            //v_max = velocityClampingDynamic(beta, 5, v_max)
+            v_max = velocityClampingExponential(1.5, i, v_max)
             for (j <- 0 to swarm_size-1) {
                 //pswarm(j).updateVelocity(gbest_pos)
                 pswarm(j).updateVelocityClamp1(gbest_pos, v_max)

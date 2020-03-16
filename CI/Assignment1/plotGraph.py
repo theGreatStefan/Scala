@@ -2,13 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
-data1 = list(csv.reader(open("data/f12/f12_nc_4.csv")))
-data2 = list(csv.reader(open("data/f12/f12_cd_4.csv")))
-data3 = list(csv.reader(open("data/f12/f12_cn1_4.csv")))
-data4 = list(csv.reader(open("data/f12/f12_cn4_4.csv")))
-data5 = list(csv.reader(open("data/f12/f12_ck1_4.csv")))
-data6 = list(csv.reader(open("data/f12/f12_ck4_4.csv")))
-#data7 = list(csv.reader(open("data/f24/f24_cd_6.csv")))
+data1 = list(csv.reader(open("data/f5/f5_nc_4.csv")))
+data2 = list(csv.reader(open("data/f5/f5_cd_4.csv")))
+data3 = list(csv.reader(open("data/f5/f5_cn1_4.csv")))
+data4 = list(csv.reader(open("data/f5/f5_cn4_4.csv")))
+data5 = list(csv.reader(open("data/f5/f5_ck1_4.csv")))
+data6 = list(csv.reader(open("data/f5/f5_ck4_4.csv")))
+data7 = list(csv.reader(open("data/f5/f5_ce_4.csv")))
 
 avgEucl1 = []
 avgGbest1 = []
@@ -28,6 +28,9 @@ avgVelMag5 = []
 avgEucl6 = []
 avgGbest6 = []
 avgVelMag6 = []
+avgEucl7 = []
+avgGbest7 = []
+avgVelMag7 = []
 time = list(range(0, 5000))
 
 for i in time:
@@ -49,6 +52,9 @@ for i in time:
     avgEucl6.append(float(data6[i][0]))
     avgGbest6.append(float(data6[i][1]))
     avgVelMag6.append(float(data6[i][2]))
+    avgEucl7.append(float(data7[i][0]))
+    avgGbest7.append(float(data7[i][1]))
+    avgVelMag7.append(float(data7[i][2]))
 
 
 #plt.subplot(3,1,1)
@@ -59,6 +65,7 @@ plt.plot(time, avgEucl3, label="normal clamping 0.1")
 plt.plot(time, avgEucl4, label="normal clamping 0.9")
 plt.plot(time, avgEucl5, label="basic clamping 0.1")
 plt.plot(time, avgEucl6, label="basic clamping 0.9")
+plt.plot(time, avgEucl7, label="exponential clamping 1.5")
 plt.title("Diversity over time")
 plt.ylabel("Average Euclidean distance")
 plt.xlabel("Time")
@@ -72,6 +79,7 @@ plt.plot(time, avgGbest3, label="normal clamping 0.1")
 plt.plot(time, avgGbest4, label="normal clamping 0.9")
 plt.plot(time, avgGbest5, label="basic clamping 0.1")
 plt.plot(time, avgGbest6, label="basic clamping 0.9")
+plt.plot(time, avgGbest7, label="exponential clamping 1.5")
 plt.title("Qualtity of global best over time")
 plt.ylabel("Average Global best")
 plt.xlabel("Time")
@@ -85,6 +93,7 @@ plt.plot(time, avgVelMag3, label="normal clamping 0.1")
 plt.plot(time, avgVelMag4, label="normal clamping 0.9")
 plt.plot(time, avgVelMag5, label="basic clamping 0.1")
 plt.plot(time, avgVelMag6, label="basic clamping 0.9")
+plt.plot(time, avgVelMag7, label="exponential clamping 1.5")
 plt.title("Velocity magnitude over time")
 plt.ylabel("Velocity magnitude")
 plt.xlabel("Time")

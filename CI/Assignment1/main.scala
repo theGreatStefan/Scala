@@ -8,11 +8,11 @@ object main extends App {
     var avgPersentageLeft:Double = 0
     var avgVelocityMagnitude:Array[Double] = Array.fill(5000){0}
     
-    val filename = "data/f24/f24_cd_6.csv"
+    val filename = "data/f5/f5_ce_4.csv"
     val pw = new PrintWriter(new File(filename))
 
     for (i <- 0 to 30) {
-        var swarm1 = new swarm(30, 30, 0.5, 0.5, 1.0, 0.25, 10, "f24")
+        var swarm1 = new swarm(30, 30, 0.7, 0.7, 0.9, -100, 100, "f5")
         swarm1.runSwarm(5000)
         
         var avgEuc:Array[Double] = swarm1.getAvgEuclDist().clone()

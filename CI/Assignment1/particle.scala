@@ -13,8 +13,8 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var pbest_pos:Array[Double] = Array.fill(velocity_size){lb + r.nextDouble()*(ub-lb)}
     var pbest_score:Double = function match{
             case "f1" => f1(pbest_pos)
-            case "f2" => f2(pbest_pos)
             case "f5" => f5(pbest_pos)
+            case "f6" => f6(pbest_pos)
             case "f12" => f12(pbest_pos)
             case "f24" => f24(pbest_pos)
         }
@@ -30,17 +30,6 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         my_total
     }
 
-    // [−32.768, 32.768]
-    def f2(x:Array[Double]):Double = {
-        var part1:Double = 0.0
-        var part2:Double = 0.0
-        for (i <- 0 to x.length-1) {
-            part1 += Math.pow(x(i), 2)
-            part2 += Math.cos(2*Math.PI*x(i))
-        }
-        (-20*Math.exp(-0.2*Math.sqrt((1/x.length)*part1)) - Math.exp((1/x.length)*part2) + 20 + Math.exp(1))
-    }
-
     // [-100, 100]
     def f5(x:Array[Double]):Double = {
         var part1:Double = 0.0
@@ -48,6 +37,17 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             part1 += Math.pow(Math.pow(10, 6), (i-1)/(x.length-1))*Math.pow(x(i), 2)
         }
         part1
+    }
+
+    // [-600, 600]
+    def f6(x:Array[Double]):Double = {
+        var part1:Double = 0.0
+        var part2:Double = 1.0
+        for (i <- 0 to x.length-1) {
+            part1 += Math.pow(x(i), 2)
+            part2 *= Math.cos(x(i)/Math.sqrt(i))
+        }
+        (1+(1/4000)*part1-part2)
     }
 
     // [-5.12, 5.12]
@@ -152,8 +152,8 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     def checkBestPos():Unit = {
         var pos_score:Double = function match{
             case "f1" => f1(pos)
-            case "f2" => f2(pos)
             case "f5" => f5(pos)
+            case "f6" => f6(pos)
             case "f12" => f12(pos)
             case "f24" => f24(pos)
         }
