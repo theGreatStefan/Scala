@@ -2113,3 +2113,4 @@ WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/C
 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment1'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment1'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment1'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
