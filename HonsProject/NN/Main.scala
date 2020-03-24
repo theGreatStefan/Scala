@@ -2,7 +2,7 @@ import java.lang.Math
 
 object Main extends App{
     var inputs:Array[Double] = Array(1,2,3,4,5,6)
-    var nn = new NN(10, 6, 1, 10)
+    var nn = new NN(10, 6, 3, 10)
     nn.runNN(inputs)
 
     /*println("\n*********Updating Weights*********\n")
