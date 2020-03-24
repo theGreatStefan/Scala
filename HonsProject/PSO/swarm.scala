@@ -25,17 +25,17 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     
     for (i <- 0 to swarm_size-1) {
         var particle_pos:Array[Double] = Array.fill(constraint_size){lb + r.nextDouble()*(ub - lb)}
-        pswarm = pswarm :+ new particle(particle_pos, constraint_size, c1, c2, w, lb, ub, function)
+        pswarm = pswarm :+ new particle(particle_pos, constraint_size, c1, c2, w, lb, ub)
 
         if (i==0) {
             pswarm(i).setPrevNeighbour(swarm_size-1)
-            pswarm(i).setNextNeighbour(j+1)
-        } else if (j==(swarm_size-1)) {
-            pswarm(i).setPrevNeighbour(j-1)
+            pswarm(i).setNextNeighbour(i+1)
+        } else if (i==(swarm_size-1)) {
+            pswarm(i).setPrevNeighbour(i-1)
             pswarm(i).setNextNeighbour(0)
         } else {
-            pswarm(i).setPrevNeighbour(j-1)
-            pswarm(i).setNextNeighbour(j+1)
+            pswarm(i).setPrevNeighbour(i-1)
+            pswarm(i).setNextNeighbour(i+1)
         }
     }
 
@@ -48,13 +48,37 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     var rSIs:Array[Double] = Array.fill(stockData.length){0.0}
 
     for (i <- 0 to stockData.length-1) {
-        aroonUps(i) = AroonUp(j, 14)
-        aroonDowns(i) = AroonDown(j, 14)
-        percentageBBands(i) = PercentageBBand(j, 20, 2.0)
-        var macdTuple = MACD(j, 9, 12, 26)
+        aroonUps(i) = AroonUp(i, 14)
+        aroonDowns(i) = AroonDown(i, 14)
+        percentageBBands(i) = PercentageBBand(i, 20, 2.0)
+        var macdTuple = MACD(i, 9, 12, 26)
         mACDs1(i) = macdTuple._1
         mACDs2(i) = macdTuple._2
-        rSIs(i) = RSI(j, 14)
+        rSIs(i) = RSI(i, 14)
+    }
+
+    // Normalise TMIs
+    var aUpMax:Double = aroonUps.max
+    var aUpMin:Double = aroonUps.min
+    var aDownMax:Double = aroonDowns.max
+    var aDownMin:Double = aroonDowns.min
+    var pBMax:Double = percentageBBands.max
+    var pBMin:Double = percentageBBands.min
+    var mAC1Max:Double = mACDs1.max
+    var mAC1Min:Double = mACDs1.min
+    var mAC2Max:Double = mACDs2.max
+    var mAC2Min:Double = mACDs2.min
+    var rSIMax:Double = rSIs.max
+    var rSIMin:Double = rSIs.min
+
+    for (i <- 0 to stockData.length-1) {
+        aroonUps(i) = (aroonUps(i) - aUpMin) / (aUpMax - aUpMin)
+        aroonDowns(i) = (aroonDowns(i) - aDownMin) / (aDownMax - aDownMin)
+        percentageBBands(i) = (percentageBBands(i) - pBMin) / (pBMax - pBMin)
+        mACDs1(i) = (mACDs1(i) - mAC1Min) / (mAC1Max - mAC1Min)
+        mACDs2(i) = (mACDs2(i) - mAC2Min) / (mAC2Max - mAC2Min)
+        rSIs(i) = (rSIs(i) - rSIMin) / (rSIMax - rSIMin)
+        
     }
     //*********** TMI time series END
 
@@ -97,7 +121,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         var ema_c = priceMomentum(t) * (2/(c+1)) + (prevPricesMomentum_c.sum/c) * (100-(2/(c+1)))
 
         var momentumTrigger:Double = ema_c
-        (priceMomentum, momentumTrigger)
+        (priceMomentum(t), momentumTrigger)
     }
 
     def RSI(t:Int, p:Int):Double = {
@@ -133,22 +157,19 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     def runSwarm(epochs:Int):Unit = {
         var TMIs:Array[Double] = Array.fill(6){0.0}
 
-        //init_nbest_score()
-
         for (i <- 0 to epochs-1) {
 
-            // TODO: At a later stage, add this as a 2d array and only calc once before running the swarm
-            // Run through the entire TMI time series
-            for (j <- 0 to 100) {
+            // Run through the entire TMI time series until 31st March 2006
+            for (j <- 0 to 1570) {
                 TMIs(0) = aroonUps(j)
                 TMIs(1) = aroonDowns(j)
                 TMIs(2) = percentageBBands(j)
                 TMIs(3) = mACDs1(j)
                 TMIs(4) = mACDs2(j)
                 TMIs(5) = rSIs(j)
-                // TODO: TMI values to be normalised to [-1, 1]
+
                 for (k <- 0 to swarm_size-1) {
-                    pswarm(k).runNN(TMIs)
+                    pswarm(k).runNN(TMIs, stockData(j), j)
                 }
                 
             }
@@ -213,7 +234,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         maxSR = SRs.max
         minSR = SRs.min
 
-        fitness = ( (netProfits(1)-minNetProfit) \ (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) \ (maxSR-minSR) )
+        fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
 
         fitness
     }

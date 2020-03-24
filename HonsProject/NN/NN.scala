@@ -37,14 +37,18 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
         weights = weights :+ (2 * r.nextDouble() - 1)
     }*/
 
-    def activationFunc(x:Double): Double = tanh(x)
+    def activationFunc(x:Double): Double = leakyReLU(x)
 
-    def sigmoid(x:Double): Double = { 
+    def sigmoid(x:Double): Double = {
         (1/(1+Math.exp(-x)))
     }
 
     def tanh(x:Double): Double = {
         ( (Math.exp(2*x)-1) / (Math.exp(2*x)+1) )
+    }
+
+    def leakyReLU(x:Double): Double = {
+        ( Math.max(0.01*x, x) )
     }
 
     def runNN(inputs:Array[Double]): Array[Double] = {

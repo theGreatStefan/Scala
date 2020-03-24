@@ -1,7 +1,7 @@
 import java.lang.Math
 import scala.util.Random
 
-class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, iw:Double, ilb:Double, iub:Double, function:String) {
+class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, iw:Double, ilb:Double, iub:Double) {
     var init_investableAmount:Double = 1000000
     var investableAmount:Double = 1000000
     var prev_investableAmount:Double = 1000000
@@ -10,7 +10,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var capitalLosses:Double = 0.0;
     var transactionCost:Double = 0.0;
     // 100 to change to the amount of data points
-    var returnsRatios:Array[Double] = Array.fill(100){0.0}
+    var returnsRatios:Array[Double] = Array.fill(1570){0.0}
 
     var lb:Double = ilb
     var ub:Double = iub
@@ -55,7 +55,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     def runNN(TMIs:Array[Double], price:Double, runNum:Int):Unit = {
         var results:Array[Double] = Array()
         var maxIndex:Int = 0
-        var maxValue:Int = 0
+        var maxValue:Double = 0
         // Run NN here
         // Make decision
         for (i <- 0 to 2) {
@@ -78,7 +78,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
 
     def buy(price:Double):Unit = {
         if (investableAmount != 0.0) {
-            stocks = investableAmount / amount
+            stocks = investableAmount / price
             transactionCost += investableAmount*0.0005
             prev_investableAmount = investableAmount
             investableAmount = 0.0
@@ -137,11 +137,11 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         next_neighbour = index
     }
 
-    def getPrevNeighbour():Unit = {
-        prev_neighbour
+    def getPrevNeighbour():Int = {
+        (prev_neighbour)
     }
-    def getNextNeighbour():Unit = {
-        next_neighbour
+    def getNextNeighbour():Int = {
+        (next_neighbour)
     }
     
 
