@@ -6,11 +6,11 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var investableAmount:Double = 1000000
     var prev_investableAmount:Double = 1000000
     var stocks:Double = 0.0
-    var capitalGains:Double = 0.0;
-    var capitalLosses:Double = 0.0;
-    var transactionCost:Double = 0.0;
-    // 100 to change to the amount of data points
-    var returnsRatios:Array[Double] = Array.fill(1570){0.0}
+    var capitalGains:Double = 0.0
+    var capitalLosses:Double = 0.0
+    var transactionCost:Double = 0.0
+    // 1570 to change to the amount of data points
+    var returnsRatios:Array[Double] = Array.fill(1571){0.0}
 
     var lb:Double = ilb
     var ub:Double = iub
@@ -25,6 +25,8 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var velocity:Array[Double] = Array.fill(velocity_size){0.0}
     var prev_neighbour:Int = 0
     var next_neighbour:Int = 0
+
+    var nn = new NN(10, 6, 3, 10)
 
     /*****************Functions******************/
     
@@ -53,10 +55,14 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     }
 
     def runNN(TMIs:Array[Double], price:Double, runNum:Int):Unit = {
-        var results:Array[Double] = Array()
+        var results:Array[Double] = Array(1,2,3)
+        //var results:Array[Double] = Array()
         var maxIndex:Int = 0
         var maxValue:Double = 0
+
         // Run NN here
+        nn.updateWeights(pbest_pos)
+        results = nn.runNN(TMIs)
         // Make decision
         for (i <- 0 to 2) {
             if (results(i) > maxValue) {
@@ -65,6 +71,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             }
         }
         // make transaction
+        //println(runNum)
         maxIndex match {
             case 0 => buy(price)
             case 1 => sell(price)
@@ -77,28 +84,41 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     }
 
     def buy(price:Double):Unit = {
+        //println("----------------Buy--------------")
+        //println("At price: "+price)
         if (investableAmount != 0.0) {
+            //println("Has money: "+investableAmount)
             stocks = investableAmount / price
+            //println("Baught stocks: "+stocks)
             transactionCost += investableAmount*0.0005
             prev_investableAmount = investableAmount
             investableAmount = 0.0
         }
+        //println("No money")
     }
 
     def sell(price:Double):Unit = {
+        //println("----------------Sell--------------")
+        //println("At price: "+price)
         if (stocks != 0.0) {
+            //println("Has Stocks: "+stocks)
             investableAmount = stocks*price
+            //println("Sold for: "+investableAmount)
             if (investableAmount - prev_investableAmount > 0) {
                 capitalGains += investableAmount-prev_investableAmount
+                //println("Capital gains increase to: "+capitalGains)
             } else {
                 capitalLosses += prev_investableAmount - investableAmount
+                //println("Capital losses increase to: "+capitalLosses)
             }
             transactionCost += prev_investableAmount*0.0005
+            stocks = 0.0
         }
+        //println("No stocks")
     }
 
     def hold():Unit = {
-
+        //println("----------------hold-------------")
     }
 
     def getNetProfit():Double = {
@@ -142,6 +162,17 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     }
     def getNextNeighbour():Int = {
         (next_neighbour)
+    }
+
+    def reset():Unit = {
+        capitalGains = 0.0
+        capitalLosses = 0.0
+        init_investableAmount = 1000000
+        investableAmount = 1000000
+        prev_investableAmount = 1000000
+        stocks = 0.0
+        transactionCost = 0.0
+        returnsRatios = Array.fill(1571){0.0}
     }
     
 

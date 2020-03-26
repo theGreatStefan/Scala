@@ -38,6 +38,10 @@ class readData(file_path:String, file_name:String) {
         openVal(i)
     }
 
+    def getOpenTimeSeries():Array[Double] = {
+        openVal
+    }
+
     def getHigh(i:Int):Double = {
         high(i)
     }

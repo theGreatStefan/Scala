@@ -57,9 +57,9 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
         updateHiddenNeurons()
         updateOutputNeurons()
 
-        for (i <- 0 to outputLength-1) {
+        /*for (i <- 0 to outputLength-1) {
             println(output_nodes(i).toString())
-        }
+        }*/
 
         output_nodes.map(el => el.activatedNum)
         

@@ -10,15 +10,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     var swarm_size:Int = iswarm_size
     var constraint_size:Int = iconstraint_size
     var r = scala.util.Random
-    var gbest_pos:Array[Double] = Array.fill(constraint_size){lb + r.nextDouble()*(ub - lb)}
     var pswarm:Array[particle] = Array()
-    var avg_pos:Array[Double] = Array()
-    var avg_eucl_d_time:Array[Double] = Array.fill(5000){0}
-    var gbest_score_time:Array[Double] = Array.fill(5000){0}
-    var gbest_score:Double = 0.0
-    var num_particles_outside:Double = 0.0
-    var velocity_magnitude:Double = 0.0
-    var avg_velocity_magnitude:Array[Double] = Array.fill(5000){0}
     var nbest_pos:Array[Array[Double]] = Array.fill(swarm_size){Array.fill(constraint_size){lb + r.nextDouble()*(ub - lb)}}
     var nbest_score:Array[Double] = Array.fill(swarm_size){0.0}
     var priceMomentum:Array[Double] = Array.fill(stockData.length){0.0}
@@ -168,7 +160,9 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                 TMIs(4) = mACDs2(j)
                 TMIs(5) = rSIs(j)
 
+                // TODO: takes very long
                 for (k <- 0 to swarm_size-1) {
+                    //println("******** particle "+k+" *************")
                     pswarm(k).runNN(TMIs, stockData(j), j)
                 }
                 
@@ -178,15 +172,26 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
             for (j <- 0 to swarm_size-1) {
                 pswarm(j).checkBestPos(nbest_score(j));
-                checkNBest(j, nbest_score(j), pswarm(j).pbest_pos)
+            }
+            for (j <- 0 to swarm_size-1) {
+                checkNBest(j, pswarm(j).pbest_score, pswarm(j).pbest_pos)
             }
             for (j <- 0 to swarm_size-1) {
                 pswarm(j).updateVelocity(nbest_pos(j))
                 pswarm(j).updatePos()
             }
+            println("Run number: "+i)
+            println(toString())
+
+            // Reset particles
+            for (j <- 0 to swarm_size-1) {
+                pswarm(j).reset()
+            }
         }
+        
     }
 
+    // TODO: not sure if this is correct. Should it be nbest(i) of pswarm(i).pbest_score (?)
     def checkNBest(j:Int, j_score:Double, j_pos:Array[Double]):Unit = {
         var prev_j:Int = pswarm(j).getPrevNeighbour()
         var next_j:Int = pswarm(j).getNextNeighbour()
@@ -223,11 +228,17 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         var fitness:Double = 0.0
 
         netProfits(0) = pswarm(pswarm(index).getPrevNeighbour()).getNetProfit
+        println("net profit prev N: "+netProfits(0))
         netProfits(1) = pswarm(index).getNetProfit()
+        println("net profit curr N: "+netProfits(1))
         netProfits(2) = pswarm(pswarm(index).getNextNeighbour()).getNetProfit
+        println("net profit next N: "+netProfits(2))
         SRs(0) = pswarm(pswarm(index).getPrevNeighbour()).getSharpRatio
+        println("SharpeRatio prev N: "+SRs(0))
         SRs(1) = pswarm(index).getSharpRatio()
+        println("SharpeRatio curr N: "+SRs(1))
         SRs(2) = pswarm(pswarm(index).getNextNeighbour()).getSharpRatio
+        println("SharpeRatio next N: "+SRs(2))
         
         maxNetProfit = netProfits.max
         minNetProfit = netProfits.min
@@ -236,11 +247,16 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
         fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
 
+        println(fitness)
         fitness
     }
-
-    def globalBest():Double = {
-        gbest_score
-    }
     
+    override def toString(): String = {
+        "Net profit: "+pswarm(5).getNetProfit()+
+        "\nCapital gains: "+pswarm(5).capitalGains+
+        "\nCapital losses: "+pswarm(5).capitalLosses+
+        "\nStocks: "+pswarm(5).stocks+
+        "\nPrice: "+stockData(1570)
+    }
+
 }
