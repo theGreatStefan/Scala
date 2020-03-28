@@ -105,7 +105,7 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
 
         // Activated number
         for (i <- 0 to outputLength-1) {
-            output_nodes(i).setActivatedNum( activationFunc(output_nodes(i).sum()) )
+            output_nodes(i).setActivatedNum( sigmoid(output_nodes(i).sum()) )
         }
     }
 

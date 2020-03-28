@@ -20,13 +20,19 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var c2:Double = ic2
     var w:Double = iw
     var r = scala.util.Random
-    var pbest_pos:Array[Double] = Array.fill(velocity_size){lb + r.nextDouble()*(ub-lb)}
+    var pbest_pos:Array[Double] = pos.clone()
     var pbest_score:Double = 0.0
     var velocity:Array[Double] = Array.fill(velocity_size){0.0}
     var prev_neighbour:Int = 0
     var next_neighbour:Int = 0
 
-    var nn = new NN(10, 6, 3, 10)
+    var nn = new NN(4, 6, 3, 4)
+
+    var pbest_net_profit:Double = Double.MinValue
+    var pbest_sharpe_ratio:Double = Double.MinValue
+    var numBought:Double = 0.0
+    var numSold:Double = 0.0
+    var numHeld:Double = 0.0
 
     /*****************Functions******************/
     
@@ -55,14 +61,16 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     }
 
     def runNN(TMIs:Array[Double], price:Double, runNum:Int):Unit = {
-        var results:Array[Double] = Array(1,2,3)
-        //var results:Array[Double] = Array()
+        //var results:Array[Double] = Array(1,2,3)
+        var results:Array[Double] = Array()
         var maxIndex:Int = 0
         var maxValue:Double = 0
 
         // Run NN here
         nn.updateWeights(pbest_pos)
         results = nn.runNN(TMIs)
+        //println("Neural network response:")
+        //for (i <- 0 to results.length-1) yield (println(results(i)))
         // Make decision
         for (i <- 0 to 2) {
             if (results(i) > maxValue) {
@@ -93,6 +101,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             transactionCost += investableAmount*0.0005
             prev_investableAmount = investableAmount
             investableAmount = 0.0
+            numBought += 1
         }
         //println("No money")
     }
@@ -113,12 +122,14 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             }
             transactionCost += prev_investableAmount*0.0005
             stocks = 0.0
+            numSold += 1
         }
         //println("No stocks")
     }
 
     def hold():Unit = {
         //println("----------------hold-------------")
+        numHeld += 1
     }
 
     def getNetProfit():Double = {
@@ -132,17 +143,32 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         for (i <- 0 to returnsRatios.length-1){
             stddev += Math.pow(returnsRatios(i)-mean, 2)
         }
-        stddev = Math.sqrt(stddev/(returnsRatios.length-1))
+        stddev = Math.sqrt(stddev/(returnsRatios.length))
 
-        ( (returnsRatio(init_investableAmount)-0.03) / stddev )
+        if (stddev != 0) {
+            ( (returnsRatio(init_investableAmount)-0.03) / stddev )
+        } else {
+            (Double.MinValue) // TODO: is this correct (?)
+        }
     }
 
     // Checks if the realative fitness is better now than it was
     // TODO: Still unsure if this is the optimal way to do it since we are comparing fitnesses and not actually performance
-    def checkBestPos(fitness:Double):Unit = {
-        if (fitness > pbest_score) {
+    /*def checkBestPos(fitness:Double):Unit = {
+        if (fitness >= pbest_score) {
             pbest_score = fitness
             pbest_pos = pos
+        }
+    }*/
+
+    def checkBestPos(fitness:Double):Unit = {
+        pbest_score = fitness
+        var currFit:Double = relativeFitnessCurr()
+        var pbestFit:Double = relativeFitnessPBest()
+        if (currFit > pbestFit) {
+            pbest_pos = pos
+            pbest_net_profit = getNetProfit()
+            pbest_sharpe_ratio = getSharpRatio()
         }
     }
 
@@ -164,15 +190,86 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         (next_neighbour)
     }
 
+    def getPos():Array[Double] = {
+        pos
+    }
+
     def reset():Unit = {
         capitalGains = 0.0
         capitalLosses = 0.0
+        transactionCost = 0.0
         init_investableAmount = 1000000
         investableAmount = 1000000
         prev_investableAmount = 1000000
         stocks = 0.0
-        transactionCost = 0.0
         returnsRatios = Array.fill(1571){0.0}
+        numBought = 0.0
+        numSold = 0.0
+        numHeld = 0.0
+    }
+
+    def relativeFitnessCurr():Double = {
+        var netProfits:Array[Double] = Array.fill(2){0.0}
+        var SRs:Array[Double] = Array.fill(2){0.0}
+        var maxNetProfit:Double = 0.0
+        var minNetProfit:Double = 0.0
+        var maxSR:Double = 0.0
+        var minSR:Double = 0.0
+        var fitness:Double = 0.0
+
+        netProfits(0) = pbest_net_profit
+        netProfits(1) = getNetProfit()
+        SRs(0) = pbest_sharpe_ratio
+        SRs(1) = getSharpRatio()
+        
+        maxNetProfit = netProfits.max
+        minNetProfit = netProfits.min
+        maxSR = SRs.max
+        minSR = SRs.min
+
+        if (maxNetProfit-minNetProfit == 0 && maxSR-minSR == 0) {
+            fitness = 0.0
+        } else if (maxNetProfit-minNetProfit == 0) {
+            fitness = ( (SRs(1)-minSR) / (maxSR-minSR) )
+        } else if (maxSR - minSR == 0) {
+            fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) )
+        } else {
+            fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
+        }
+
+        fitness
+    }
+
+    def relativeFitnessPBest():Double = {
+        var netProfits:Array[Double] = Array.fill(2){0.0}
+        var SRs:Array[Double] = Array.fill(2){0.0}
+        var maxNetProfit:Double = 0.0
+        var minNetProfit:Double = 0.0
+        var maxSR:Double = 0.0
+        var minSR:Double = 0.0
+        var fitness:Double = 0.0
+
+        netProfits(0) = getNetProfit()
+        netProfits(1) = pbest_net_profit
+        SRs(0) = getSharpRatio()
+        SRs(1) = pbest_sharpe_ratio
+        
+        maxNetProfit = netProfits.max
+        minNetProfit = netProfits.min
+        maxSR = SRs.max
+        minSR = SRs.min
+
+        if (maxNetProfit-minNetProfit == 0 && maxSR-minSR == 0) {
+            fitness = 0.0
+        } else if (maxNetProfit-minNetProfit == 0) {
+            fitness = ( (SRs(1)-minSR) / (maxSR-minSR) )
+        } else if (maxSR - minSR == 0) {
+            fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) )
+        } else {
+            fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
+        }
+
+        fitness
     }
     
 

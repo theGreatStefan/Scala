@@ -1,5 +1,6 @@
 import java.lang.Math
 import scala.util.Random
+import scala.concurrent.duration.Duration.Infinite
 
 class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Double, ilb:Double, iub:Double, stockData:Array[Double]) {
     var lb:Double = ilb
@@ -11,9 +12,13 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     var constraint_size:Int = iconstraint_size
     var r = scala.util.Random
     var pswarm:Array[particle] = Array()
-    var nbest_pos:Array[Array[Double]] = Array.fill(swarm_size){Array.fill(constraint_size){lb + r.nextDouble()*(ub - lb)}}
+    //var nbest_pos:Array[Array[Double]] = Array.fill(swarm_size){Array.fill(constraint_size){lb + r.nextDouble()*(ub - lb)}}
+    var nbest_pos:Array[Array[Double]] = Array.fill(swarm_size){Array.fill(constraint_size){0.0}}
     var nbest_score:Array[Double] = Array.fill(swarm_size){0.0}
+    var fitness_score:Array[Double] = Array.fill(swarm_size){0.0}
     var priceMomentum:Array[Double] = Array.fill(stockData.length){0.0}
+
+    var HallOfFame:Array[HOFParticle] = Array.fill(6){new HOFParticle()}
     
     for (i <- 0 to swarm_size-1) {
         var particle_pos:Array[Double] = Array.fill(constraint_size){lb + r.nextDouble()*(ub - lb)}
@@ -43,7 +48,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         aroonUps(i) = AroonUp(i, 14)
         aroonDowns(i) = AroonDown(i, 14)
         percentageBBands(i) = PercentageBBand(i, 20, 2.0)
-        var macdTuple = MACD(i, 9, 12, 26)
+        var macdTuple = MACD(i, 12, 26, 9)
         mACDs1(i) = macdTuple._1
         mACDs2(i) = macdTuple._2
         rSIs(i) = RSI(i, 14)
@@ -71,6 +76,13 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         mACDs2(i) = (mACDs2(i) - mAC2Min) / (mAC2Max - mAC2Min)
         rSIs(i) = (rSIs(i) - rSIMin) / (rSIMax - rSIMin)
         
+        /*println(i+" AroonUp: "+aroonUps(i))
+        println(i+" AroonDown: "+aroonDowns(i))
+        println(i+" pBand: "+percentageBBands(i))
+        println(i+" MACD1: "+mACDs1(i))
+        println(i+" MACD2: "+mACDs2(i))
+        println(i+" RSI: "+rSIs(i))*/
+
     }
     //*********** TMI time series END
 
@@ -136,9 +148,14 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         }
         totalLoss = Math.abs(totalLoss)
 
-        var rs:Double = totalGain/totalLoss
-        var rsi:Double = 100 * (1-(1/(1+rs)))
-
+        var rsi:Double = 0.0
+        if (totalLoss == 0) {
+            rsi = 100
+        } else {
+            var rs:Double = totalGain/totalLoss
+            rsi = 100 * (1-(1/(1+rs)))
+        }
+        
         rsi
     }
 
@@ -148,8 +165,17 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     // Synchronous lbest PSO
     def runSwarm(epochs:Int):Unit = {
         var TMIs:Array[Double] = Array.fill(6){0.0}
+        var globalFitnesses:Array[Double] = Array.fill(swarm_size){0.0}
+        var maxFitnessIndex:Int = 0
+        var HOFFitnesses:Array[Double] = Array.fill(6){0.0}
+        var minHOFFitnessIndex:Int = 0
+        var HOF_Final:Array[particle] = Array()
 
         for (i <- 0 to epochs-1) {
+            // Reset particles
+            for (j <- 0 to swarm_size-1) {
+                pswarm(j).reset()
+            }
 
             // Run through the entire TMI time series until 31st March 2006
             for (j <- 0 to 1570) {
@@ -160,7 +186,6 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                 TMIs(4) = mACDs2(j)
                 TMIs(5) = rSIs(j)
 
-                // TODO: takes very long
                 for (k <- 0 to swarm_size-1) {
                     //println("******** particle "+k+" *************")
                     pswarm(k).runNN(TMIs, stockData(j), j)
@@ -171,24 +196,86 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             calc_nbest_scores()
 
             for (j <- 0 to swarm_size-1) {
-                pswarm(j).checkBestPos(nbest_score(j));
+                pswarm(j).checkBestPos(fitness_score(j));
             }
             for (j <- 0 to swarm_size-1) {
-                checkNBest(j, pswarm(j).pbest_score, pswarm(j).pbest_pos)
+                checkNBest(j, fitness_score(j), pswarm(j).pbest_pos)
             }
             for (j <- 0 to swarm_size-1) {
                 pswarm(j).updateVelocity(nbest_pos(j))
                 pswarm(j).updatePos()
-            }
-            println("Run number: "+i)
-            println(toString())
 
-            // Reset particles
-            for (j <- 0 to swarm_size-1) {
-                pswarm(j).reset()
+                globalFitnesses(j) = relativeFitnessGroup(j)
             }
+
+            /**************Hall Of Fame*****************/
+            // Find best strategy
+            maxFitnessIndex = globalFitnesses.indexOf(globalFitnesses.max)
+            // Add to Hall of fame
+            HallOfFame(0).setPos(pswarm(maxFitnessIndex).getPos())
+            HallOfFame(0).setNetProfit(pswarm(maxFitnessIndex).getNetProfit())
+            HallOfFame(0).setSharpeRatio(pswarm(maxFitnessIndex).getSharpRatio())
+            for (j <- 0 to 5) {
+                HOFFitnesses(j) = relativeFitnessHOF(j)
+            }
+            minHOFFitnessIndex = HOFFitnesses.indexOf(HOFFitnesses.min)
+            if (minHOFFitnessIndex != 0) {
+                HallOfFame(minHOFFitnessIndex).setPos(HallOfFame(0).getPos)
+                HallOfFame(minHOFFitnessIndex).setNetProfit(HallOfFame(0).getNetProfit)
+                HallOfFame(minHOFFitnessIndex).setSharpeRatio(HallOfFame(0).getSharpeRatio)
+            }
+            /**************Hall Of Fame END**************/
+
+            // final sell
+            /*for (j <- 0 to swarm_size-1) {
+                pswarm(j).sell(stockData(1570))
+            }*/
+
+            /*println("-------------------------------")
+            println("Run number: "+i)
+            for (i <- 0 to swarm_size-1) {
+                println("Particle "+i)
+                println(toString(i)+"\n")
+            }*/
+
         }
-        
+        for (i <- 0 to swarm_size-1) {
+            println("Particle "+i)
+            println(toString(i)+"\n")
+        }
+
+        for (i <- 1 to 5) {
+            println("Hall of fame "+i+": "+HallOfFame(i).getNetProfit)
+        }
+
+        // Run the Hall of fame against new data
+        // Create new particles from the Hall of fame
+        for (i <- 0 to 4) {
+            HOF_Final = HOF_Final :+ new particle(HallOfFame(i+1).getPos, constraint_size, c1, c2, w, lb, ub)
+        }
+        for (i <- 1571 to stockData.length-1) {
+            TMIs(0) = aroonUps(i)
+            TMIs(1) = aroonDowns(i)
+            TMIs(2) = percentageBBands(i)
+            TMIs(3) = mACDs1(i)
+            TMIs(4) = mACDs2(i)
+            TMIs(5) = rSIs(i)
+
+            for (j <- 0 to 4) {
+                //println("******** particle "+k+" *************")
+                HOF_Final(j).runNN(TMIs, stockData(i), i-1571)
+            }
+                
+        }
+        // final sell
+        for (i <- 0 to 4) {
+            HOF_Final(i).sell(stockData(stockData.length-1))
+        }
+        for (i <- 0 to 4) {
+            println("Hall Of Fame Particle "+(i+1))
+            println("Net Profit: "+HOF_Final(i).getNetProfit())
+            println("Stocks: "+HOF_Final(i).stocks)
+        }
     }
 
     // TODO: not sure if this is correct. Should it be nbest(i) of pswarm(i).pbest_score (?)
@@ -196,24 +283,24 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         var prev_j:Int = pswarm(j).getPrevNeighbour()
         var next_j:Int = pswarm(j).getNextNeighbour()
 
-        if (nbest_score(prev_j) > j_score && nbest_score(prev_j) > nbest_score(next_j)) {
-            nbest_score(j) = nbest_score(prev_j)
-            nbest_pos(j) = nbest_pos(prev_j)
+        if (fitness_score(prev_j) >= j_score && fitness_score(prev_j) >= fitness_score(next_j)) {
+            nbest_score(j) = fitness_score(prev_j)
+            nbest_pos(j) = pswarm(prev_j).pbest_pos
 
-        } else if (j_score > nbest_score(prev_j) && j_score > nbest_score(next_j)) {
+        } else if (j_score >= fitness_score(prev_j) && j_score >= fitness_score(next_j)) {
             nbest_score(j) = j_score
-            nbest_pos(j) = j_pos
+            nbest_pos(j) = pswarm(j).pbest_pos
 
-        } else if (nbest_score(next_j) > nbest_score(prev_j) && nbest_score(next_j) > j_score) {
-            nbest_score(j) = nbest_score(next_j)
-            nbest_pos(j) = nbest_pos(next_j)
+        } else if (fitness_score(next_j) >= fitness_score(prev_j) && fitness_score(next_j) >= j_score) {
+            nbest_score(j) = fitness_score(next_j)
+            nbest_pos(j) = pswarm(next_j).pbest_pos
         }
 
     }
 
     def calc_nbest_scores():Unit = {
         for (i <- 0 to swarm_size-1) {
-            nbest_score(i) = relativeFitness(i)
+            fitness_score(i) = relativeFitness(i)
         }
     }
 
@@ -228,35 +315,111 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         var fitness:Double = 0.0
 
         netProfits(0) = pswarm(pswarm(index).getPrevNeighbour()).getNetProfit
-        println("net profit prev N: "+netProfits(0))
+        //println("net profit prev N: "+netProfits(0))
         netProfits(1) = pswarm(index).getNetProfit()
-        println("net profit curr N: "+netProfits(1))
+        //println("net profit curr N: "+netProfits(1))
         netProfits(2) = pswarm(pswarm(index).getNextNeighbour()).getNetProfit
-        println("net profit next N: "+netProfits(2))
+        //println("net profit next N: "+netProfits(2))
         SRs(0) = pswarm(pswarm(index).getPrevNeighbour()).getSharpRatio
-        println("SharpeRatio prev N: "+SRs(0))
+        //println("SharpeRatio prev N: "+SRs(0))
         SRs(1) = pswarm(index).getSharpRatio()
-        println("SharpeRatio curr N: "+SRs(1))
+        //println("SharpeRatio curr N: "+SRs(1))
         SRs(2) = pswarm(pswarm(index).getNextNeighbour()).getSharpRatio
-        println("SharpeRatio next N: "+SRs(2))
+        //println("SharpeRatio next N: "+SRs(2))
         
         maxNetProfit = netProfits.max
         minNetProfit = netProfits.min
         maxSR = SRs.max
         minSR = SRs.min
 
-        fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
+        if (maxNetProfit-minNetProfit == 0 && maxSR-minSR == 0) {
+            fitness = Double.MinValue
+        } else if (maxNetProfit-minNetProfit == 0) {
+            fitness = ( (SRs(1)-minSR) / (maxSR-minSR) )
+        } else if (maxSR - minSR == 0) {
+            fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) )
+        } else {
+            fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
+        }
 
-        println(fitness)
+        //println("Fitness: "+fitness)
+        fitness
+    }
+
+    def relativeFitnessGroup(index:Int):Double = {
+        var netProfits:Array[Double] = Array.fill(swarm_size){0.0}
+        var SRs:Array[Double] = Array.fill(swarm_size){0.0}
+        var maxNetProfit:Double = 0.0
+        var minNetProfit:Double = 0.0
+        var maxSR:Double = 0.0
+        var minSR:Double = 0.0
+        var fitness:Double = 0.0
+
+        for (i <- 0 to swarm_size-1) {
+            netProfits(i) = pswarm(i).getNetProfit
+            SRs(i) = pswarm(i).getSharpRatio()
+        }
+        
+        maxNetProfit = netProfits.max
+        minNetProfit = netProfits.min
+        maxSR = SRs.max
+        minSR = SRs.min
+
+        if (maxNetProfit-minNetProfit == 0 && maxSR-minSR == 0) {
+            fitness = Double.MinValue
+        } else if (maxNetProfit-minNetProfit == 0) {
+            fitness = ( (SRs(index)-minSR) / (maxSR-minSR) )
+        } else if (maxSR - minSR == 0) {
+            fitness = ( (netProfits(index)-minNetProfit) / (maxNetProfit-minNetProfit) )
+        } else {
+            fitness = ( (netProfits(index)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(index)-minSR) / (maxSR-minSR) )
+        }
+
+        fitness
+    }
+
+    def relativeFitnessHOF(index:Int):Double = {
+        var netProfits:Array[Double] = Array.fill(6){0.0}
+        var SRs:Array[Double] = Array.fill(6){0.0}
+        var maxNetProfit:Double = 0.0
+        var minNetProfit:Double = 0.0
+        var maxSR:Double = 0.0
+        var minSR:Double = 0.0
+        var fitness:Double = 0.0
+
+        for (i <- 0 to 5) {
+            netProfits(i) = HallOfFame(i).getNetProfit
+            SRs(i) = HallOfFame(i).getSharpeRatio()
+        }
+        
+        maxNetProfit = netProfits.max
+        minNetProfit = netProfits.min
+        maxSR = SRs.max
+        minSR = SRs.min
+
+        if (maxNetProfit-minNetProfit == 0 && maxSR-minSR == 0) {
+            fitness = Double.MinValue
+        } else if (maxNetProfit-minNetProfit == 0) {
+            fitness = ( (SRs(index)-minSR) / (maxSR-minSR) )
+        } else if (maxSR - minSR == 0) {
+            fitness = ( (netProfits(index)-minNetProfit) / (maxNetProfit-minNetProfit) )
+        } else {
+            fitness = ( (netProfits(index)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(index)-minSR) / (maxSR-minSR) )
+        }
+
         fitness
     }
     
-    override def toString(): String = {
-        "Net profit: "+pswarm(5).getNetProfit()+
-        "\nCapital gains: "+pswarm(5).capitalGains+
-        "\nCapital losses: "+pswarm(5).capitalLosses+
-        "\nStocks: "+pswarm(5).stocks+
-        "\nPrice: "+stockData(1570)
+    def toString(i:Int): String = {
+        "Net profit: "+pswarm(i).getNetProfit()+
+        "\nCapital gains: "+pswarm(i).capitalGains+
+        "\nCapital losses: "+pswarm(i).capitalLosses+
+        "\nStocks: "+pswarm(i).stocks+
+        "\nPrice: "+stockData(1570)+
+        "\nBought:"+pswarm(i).numBought+
+        "\nSold:"+pswarm(i).numSold+
+        "\nHeld:"+pswarm(i).numHeld
+        //"Net profit: "+pswarm(i).pbest_net_profit
     }
 
 }
