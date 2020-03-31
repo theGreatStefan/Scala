@@ -2,6 +2,7 @@ all: compile
 
 compile:
 	scalac -d classes *.scala
+	clear
 
 clean:
 	rm classes/*

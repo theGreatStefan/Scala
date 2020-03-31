@@ -20,6 +20,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var c2:Double = ic2
     var w:Double = iw
     var r = scala.util.Random
+    r.setSeed(321)
     var pbest_pos:Array[Double] = pos.clone()
     var pbest_score:Double = 0.0
     var velocity:Array[Double] = Array.fill(velocity_size){0.0}
@@ -67,7 +68,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         var maxValue:Double = 0
 
         // Run NN here
-        nn.updateWeights(pbest_pos)
+        nn.updateWeights(pos)
         results = nn.runNN(TMIs)
         //println("Neural network response:")
         //for (i <- 0 to results.length-1) yield (println(results(i)))
@@ -80,6 +81,11 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         }
         // make transaction
         //println(runNum)
+        /*if (runNum == 2133-1571) {
+            println("Previous investible ammount: "+prev_investableAmount)
+            println("Current investible ammount: "+investableAmount)
+        }*/
+
         maxIndex match {
             case 0 => buy(price)
             case 1 => sell(price)
@@ -98,7 +104,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             //println("Has money: "+investableAmount)
             stocks = investableAmount / price
             //println("Baught stocks: "+stocks)
-            transactionCost += investableAmount*0.0005
+            transactionCost += (investableAmount*0.0005)
             prev_investableAmount = investableAmount
             investableAmount = 0.0
             numBought += 1
@@ -114,13 +120,13 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             investableAmount = stocks*price
             //println("Sold for: "+investableAmount)
             if (investableAmount - prev_investableAmount > 0) {
-                capitalGains += investableAmount-prev_investableAmount
+                capitalGains += (investableAmount - prev_investableAmount)
                 //println("Capital gains increase to: "+capitalGains)
             } else {
-                capitalLosses += prev_investableAmount - investableAmount
+                capitalLosses += (prev_investableAmount - investableAmount)
                 //println("Capital losses increase to: "+capitalLosses)
             }
-            transactionCost += prev_investableAmount*0.0005
+            transactionCost += (prev_investableAmount*0.0005)
             stocks = 0.0
             numSold += 1
         }
@@ -143,12 +149,12 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         for (i <- 0 to returnsRatios.length-1){
             stddev += Math.pow(returnsRatios(i)-mean, 2)
         }
-        stddev = Math.sqrt(stddev/(returnsRatios.length))
+        stddev = Math.sqrt(stddev/(returnsRatios.length))*Math.sqrt(252)
 
         if (stddev != 0) {
-            ( (returnsRatio(init_investableAmount)-0.03) / stddev )
+            ( ( (Math.pow(1+returnsRatio(init_investableAmount), 1/(1571.0/252.0))-1 ) - 0.03) / stddev )
         } else {
-            (Double.MinValue) // TODO: is this correct (?)
+            0.0 //(Double.MinValue) // TODO: is this correct (?)
         }
     }
 
@@ -206,6 +212,14 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         numBought = 0.0
         numSold = 0.0
         numHeld = 0.0
+    }
+
+    def getVelocityMagnitude(): Double = {
+        var total:Double = 0.0
+        for (i <- 0 to velocity_size-1) {
+            total += Math.pow(velocity(i), 2)
+        }
+        Math.sqrt(total)
     }
 
     def relativeFitnessCurr():Double = {

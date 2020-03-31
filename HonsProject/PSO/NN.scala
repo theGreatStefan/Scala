@@ -14,9 +14,8 @@ import scala.util.Random
 
 class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncomming:Int){
 
-    var r = new Random(123)
     var numWeights:Int = hiddenLength*hiddenIncomming + outputLength*outputIncomming
-    var weights: Array[Double] = Array.fill(numWeights){2 * r.nextDouble() - 1}
+    var weights: Array[Double] = Array.fill(numWeights){0.0}
     var input_nodes: Array[Double] = Array()
     var hidden_nodes: Array[node] = Array.fill(hiddenLength){new node(hiddenIncomming)}
     var output_nodes: Array[node] = Array.fill(outputLength){new node(outputIncomming)}
@@ -37,7 +36,7 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
         weights = weights :+ (2 * r.nextDouble() - 1)
     }*/
 
-    def activationFunc(x:Double): Double = leakyReLU(x)
+    def activationFunc(x:Double): Double = sigmoid(x)
 
     def sigmoid(x:Double): Double = {
         (1/(1+Math.exp(-x)))
@@ -52,7 +51,7 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
     }
 
     def runNN(inputs:Array[Double]): Array[Double] = {
-        input_nodes = inputs
+        input_nodes = inputs.clone()
 
         updateHiddenNeurons()
         updateOutputNeurons()
@@ -61,14 +60,14 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
             println(output_nodes(i).toString())
         }*/
 
-        output_nodes.map(el => el.activatedNum)
+        output_nodes.map(el => el.getactivatedNum())
     }
 
     /**
       * Update the weights vector
       */
     def updateWeights(x:Array[Double]): Unit = {
-        weights = x
+        weights = x.clone()
     }
 
     /**
@@ -78,9 +77,9 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
         var weightedSynops:Double = 0.0
         // Weighted number
         for (i <- 0 to hiddenLength-1) {
-            for (j <- 1 to hiddenIncomming) {
-                weightedSynops = weights( (hiddenIncomming*i + j) -1)
-                hidden_nodes(i).addSynopsValue( input_nodes(j-1) * weightedSynops , j)
+            for (j <- 0 to hiddenIncomming-1) {
+                weightedSynops = weights( (hiddenIncomming*i + j) )
+                hidden_nodes(i).addSynopsValue( input_nodes(j) * weightedSynops , j)
             }
         }
 
@@ -97,9 +96,9 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
     def updateOutputNeurons(): Unit = {
         var weightedSynops:Double = 0.0
         for (i <- 0 to outputLength-1) {
-            for (j <- 1 to outputIncomming) {
-                weightedSynops = weights( hiddenLength*hiddenIncomming+(outputIncomming*i + j) -1)
-                output_nodes(i).addSynopsValue( hidden_nodes(j-1).getactivatedNum() * weightedSynops , j)
+            for (j <- 0 to outputIncomming-1) {
+                weightedSynops = weights( hiddenLength*hiddenIncomming+(outputIncomming*i + j) )
+                output_nodes(i).addSynopsValue( hidden_nodes(j).getactivatedNum() * weightedSynops , j)
             }
         }
 
