@@ -36,7 +36,7 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
         weights = weights :+ (2 * r.nextDouble() - 1)
     }*/
 
-    def activationFunc(x:Double): Double = sigmoid(x)
+    def activationFunc(x:Double): Double = leakyReLU(x)
 
     def sigmoid(x:Double): Double = {
         (1/(1+Math.exp(-x)))

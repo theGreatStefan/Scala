@@ -1,15 +1,18 @@
 import java.lang.Math
 
 class node(numIncomming:Int) {
-    var totalArray:Array[Double] = Array.fill(numIncomming){0.0}
+    //var totalArray:Array[Double] = Array.fill(numIncomming){0.0}
+    var total:Double = 0.0
     var activatedNum:Double = 0.0
 
     def addSynopsValue(value:Double, index:Int) {
-        totalArray(index) = value
+        //totalArray(index) = value
+        total += value
     }
 
     def sum():Double = {
-        totalArray.sum
+        //totalArray.sum
+        total
     }
 
     def getactivatedNum(): Double = {
@@ -18,6 +21,7 @@ class node(numIncomming:Int) {
 
     def setActivatedNum(x:Double) {
         activatedNum = x
+        total = 0
     }
 
     override def toString(): String = {
@@ -26,10 +30,6 @@ class node(numIncomming:Int) {
         "\nSum of all weighted inputs: "+sum()+
         "\nValue after activation: "+activatedNum+
         "\n----------------------------------------------"
-    }
-
-    def *(x:Double): Double = {
-        sum()*x
     }
 
 }

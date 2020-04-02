@@ -20,7 +20,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var c2:Double = ic2
     var w:Double = iw
     var r = scala.util.Random
-    r.setSeed(321)
+    //r.setSeed(321)
     var pbest_pos:Array[Double] = pos.clone()
     var pbest_score:Double = 0.0
     var velocity:Array[Double] = Array.fill(velocity_size){0.0}
@@ -61,7 +61,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         }
     }
 
-    def runNN(TMIs:Array[Double], price:Double, runNum:Int):Unit = {
+    def runNN(TMIs:Array[Double], price:Double, runNum:Int, hof:Boolean):Unit = {
         //var results:Array[Double] = Array(1,2,3)
         var results:Array[Double] = Array()
         var maxIndex:Int = 0
@@ -81,10 +81,10 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         }
         // make transaction
         //println(runNum)
-        /*if (runNum == 2133-1571) {
+        if (hof && runNum == 2133-1571) {
             println("Previous investible ammount: "+prev_investableAmount)
             println("Current investible ammount: "+investableAmount)
-        }*/
+        }
 
         maxIndex match {
             case 0 => buy(price)
@@ -144,17 +144,17 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
 
     // 3% for USA, 6% for EU
     def getSharpRatio():Double = {
-        var mean:Double = (returnsRatios.sum / returnsRatios.length)
+        var mean:Double = (returnsRatios.sum / (returnsRatios.length).toDouble)
         var stddev:Double = 0.0
         for (i <- 0 to returnsRatios.length-1){
             stddev += Math.pow(returnsRatios(i)-mean, 2)
         }
-        stddev = Math.sqrt(stddev/(returnsRatios.length))*Math.sqrt(252)
+        stddev = Math.sqrt(stddev/(returnsRatios.length-1))*Math.sqrt(1571.0)
 
         if (stddev != 0) {
             ( ( (Math.pow(1+returnsRatio(init_investableAmount), 1/(1571.0/252.0))-1 ) - 0.03) / stddev )
         } else {
-            0.0 //(Double.MinValue) // TODO: is this correct (?)
+            0.0//(Double.MinValue) // TODO: is this correct (?)
         }
     }
 
@@ -167,12 +167,13 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         }
     }*/
 
-    def checkBestPos(fitness:Double):Unit = {
-        pbest_score = fitness
+    // The current position's score should be either 0.0 or 2.0 as there are only two particles in the neighbourhood.
+    def checkBestPos():Unit = {
         var currFit:Double = relativeFitnessCurr()
         var pbestFit:Double = relativeFitnessPBest()
+        
         if (currFit > pbestFit) {
-            pbest_pos = pos
+            pbest_pos = pos.clone()
             pbest_net_profit = getNetProfit()
             pbest_sharpe_ratio = getSharpRatio()
         }
