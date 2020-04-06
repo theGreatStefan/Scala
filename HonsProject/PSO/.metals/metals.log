@@ -325,3 +325,4 @@ java.lang.AssertionError: assertion failed: bad position: [415:385]
 
 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+INFO  shutting down Metals

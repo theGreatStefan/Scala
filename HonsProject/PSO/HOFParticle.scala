@@ -29,4 +29,8 @@ class HOFParticle (){
         sharpe_ratio
     }
 
+    def isEqualTo(x:Array[Double]):Boolean = {
+        (pos sameElements x)
+    }
+
 }

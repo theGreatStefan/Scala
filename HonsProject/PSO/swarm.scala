@@ -16,13 +16,12 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     var r = scala.util.Random
     //r.setSeed(456)
     var pswarm:Array[particle] = Array()
-    //var nbest_pos:Array[Array[Double]] = Array.fill(swarm_size){Array.fill(constraint_size){lb + r.nextDouble()*(ub - lb)}}
     var nbest_pos:Array[Array[Double]] = Array.fill(swarm_size){Array.fill(constraint_size){0.0}}
     var nbest_score:Array[Double] = Array.fill(swarm_size){0.0}
     var fitness_score:Array[Double] = Array.fill(swarm_size){0.0}
     var priceMomentum:Array[Double] = Array.fill(stockData.length){0.0}
 
-    var HallOfFame:Array[HOFParticle] = Array.fill(6){new HOFParticle()}
+    var HallOfFame:Array[HOFParticle] = Array.fill(11){new HOFParticle()}
 
     var avg_velocity_magnitude:Array[Double] = Array.fill(350){0}
     var avg_euclidean_distance:Array[Double] = Array.fill(350){0}
@@ -116,7 +115,6 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         pBand
     }
 
-    // TODO Figure out if this is right
     def MACD(t:Int, a:Int, b:Int, c:Int):(Double,Double) = {
         var prevPrices_a:Array[Double] = stockData.slice(t-a+1, (t+1))
         var prevPrices_b:Array[Double] = stockData.slice(t-b+1, (t+1))
@@ -168,11 +166,17 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     // Synchronous lbest PSO
     def runSwarm(epochs:Int):Unit = {
         var TMIs:Array[Double] = Array.fill(6){0.0}
-        //var globalFitnesses:Array[Double] = Array.fill(swarm_size){0.0}
         var maxFitnessIndex:Int = 0
-        var HOFFitnesses:Array[Double] = Array.fill(6){0.0}
+        var HOFFitnesses:Array[Double] = Array.fill(11){0.0}
         var minHOFFitnessIndex:Int = 0
         var HOF_Final:Array[particle] = Array()
+
+        var netProfits:Array[Double] = Array.fill(swarm_size){0.0}
+        var SRs:Array[Double] = Array.fill(swarm_size){0.0}
+        var maxNetProfit:Double = 0.0
+        var minNetProfit:Double = 0.0
+        var maxSR:Double = 0.0
+        var minSR:Double = 0.0
 
         for (i <- 0 to epochs-1) {
             // Reset particles
@@ -191,30 +195,49 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
                 for (k <- 0 to swarm_size-1) {
                     //println("******** particle "+k+" *************")
-                    pswarm(k).runNN(TMIs, stockData(j), j, false)
+                    pswarm(k).runNN(TMIs.clone(), stockData(j), j, false)
                 }
                 
             }
 
+            // Global fitness
             for (j <- 0 to swarm_size-1) {
-                globalFitnesses(j) = relativeFitnessGroup(j)
+                netProfits(j) = pswarm(j).getNetProfit
+                SRs(j) = pswarm(j).getSharpRatio()
+            }
+            
+            maxNetProfit = netProfits.max
+            minNetProfit = netProfits.min
+            maxSR = SRs.max
+            minSR = SRs.min
+            
+            for (j <- 0 to swarm_size-1) {
+                globalFitnesses(j) = relativeFitnessGroup(j, netProfits(j), maxNetProfit, minNetProfit, SRs(j), maxSR, minSR)
             }
 
             /**************Hall Of Fame*****************/
+            var found = false
             // Find best strategy
             maxFitnessIndex = globalFitnesses.indexOf(globalFitnesses.max)
             // Add to Hall of fame
             HallOfFame(0).setPos(pswarm(maxFitnessIndex).getPos())
             HallOfFame(0).setNetProfit(pswarm(maxFitnessIndex).getNetProfit())
             HallOfFame(0).setSharpeRatio(pswarm(maxFitnessIndex).getSharpRatio())
-            for (j <- 0 to 5) {
-                HOFFitnesses(j) = relativeFitnessHOF(j)
+            for (j <- 1 to 10) {
+                if (HallOfFame(j).isEqualTo(HallOfFame(0).pos)) {
+                    found = true
+                }
             }
-            minHOFFitnessIndex = HOFFitnesses.indexOf(HOFFitnesses.min)
-            if (minHOFFitnessIndex != 0) {
-                HallOfFame(minHOFFitnessIndex).setPos(HallOfFame(0).getPos)
-                HallOfFame(minHOFFitnessIndex).setNetProfit(HallOfFame(0).getNetProfit)
-                HallOfFame(minHOFFitnessIndex).setSharpeRatio(HallOfFame(0).getSharpeRatio)
+            if (!found) {
+                for (j <- 0 to 10) {
+                    HOFFitnesses(j) = relativeFitnessHOF(j)
+                }
+                minHOFFitnessIndex = HOFFitnesses.indexOf(HOFFitnesses.min)
+                if (minHOFFitnessIndex != 0) {
+                    HallOfFame(minHOFFitnessIndex).setPos(HallOfFame(0).getPos.clone())
+                    HallOfFame(minHOFFitnessIndex).setNetProfit(HallOfFame(0).getNetProfit)
+                    HallOfFame(minHOFFitnessIndex).setSharpeRatio(HallOfFame(0).getSharpeRatio)
+                }
             }
             /**************Hall Of Fame END**************/
 
@@ -242,14 +265,14 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             println(toString(i)+"\n")
         }
 
-        for (i <- 1 to 5) {
+        for (i <- 1 to 10) {
             println("Hall of fame "+i+": "+HallOfFame(i).getNetProfit)
         }
 
         // Run the Hall of fame against new data
         // Create new particles from the Hall of fame
-        for (i <- 0 to 4) {
-            HOF_Final = HOF_Final :+ new particle(HallOfFame(i+1).getPos, constraint_size, c1, c2, w, lb, ub)
+        for (i <- 0 to 9) {
+            HOF_Final = HOF_Final :+ new particle(HallOfFame(i+1).getPos.clone(), constraint_size, c1, c2, w, lb, ub)
         }
         for (i <- 1571 to stockData.length-1) {
             TMIs(0) = aroonUps(i)
@@ -259,7 +282,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             TMIs(4) = mACDs2(i)
             TMIs(5) = rSIs(i)
 
-            for (j <- 0 to 4) {
+            for (j <- 0 to 9) {
                 if(i == stockData.length-1) {
                     println("******** particle "+j+" *************")
                 }
@@ -271,67 +294,16 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         /*for (i <- 0 to 4) {
             HOF_Final(i).sell(stockData(stockData.length-1))
         }*/
-        for (i <- 0 to 4) {
+        for (i <- 0 to 9) {
             println("Hall Of Fame Particle "+(i+1))
             println("Net Profit: "+HOF_Final(i).getNetProfit())
             println("Stocks: "+HOF_Final(i).stocks)
         }
 
-        /*for (i <- 0 to avg_velocity_magnitude.length-1) {
-            pw.write(avg_velocity_magnitude(i)+"\n")
-        }*/
         pw.close()
     }
 
     // TODO: not sure if this is correct. Should it be nbest(i) of pswarm(i).pbest_score (?)
-    /*def checkNBest(j:Int, j_score:Double):Unit = {
-        var prev_j:Int = pswarm(j).getPrevNeighbour()
-        var next_j:Int = pswarm(j).getNextNeighbour()
-
-        if (fitness_score(prev_j) >= j_score && fitness_score(prev_j) >= fitness_score(next_j)) {
-            nbest_score(j) = fitness_score(prev_j)
-            nbest_pos(j) = pswarm(prev_j).pos
-
-        } else if (j_score >= fitness_score(prev_j) && j_score >= fitness_score(next_j)) {
-            nbest_score(j) = j_score
-            nbest_pos(j) = pswarm(j).pos
-
-        } else if (fitness_score(next_j) >= fitness_score(prev_j) && fitness_score(next_j) >= j_score) {
-            nbest_score(j) = fitness_score(next_j)
-            nbest_pos(j) = pswarm(next_j).pos
-        } else {
-            println("prev: "+fitness_score(prev_j))
-            println("curr: "+fitness_score(j))
-            println("next: "+fitness_score(next_j))
-            println("Oops!!")
-            System.exit(0)
-        }
-
-    }*/
-    /*def checkNBest(j:Int):Unit = {
-        var prev_j:Int = pswarm(j).getPrevNeighbour()
-        var next_j:Int = pswarm(j).getNextNeighbour()
-
-        if (globalFitnesses(prev_j) >= globalFitnesses(j) && globalFitnesses(prev_j) >= globalFitnesses(next_j)) {
-            nbest_score(j) = globalFitnesses(prev_j)
-            nbest_pos(j) = pswarm(prev_j).pbest_pos
-
-        } else if (globalFitnesses(j) >= globalFitnesses(prev_j) && globalFitnesses(j) >= globalFitnesses(next_j)) {
-            nbest_score(j) = globalFitnesses(j)
-            nbest_pos(j) = pswarm(j).pbest_pos
-
-        } else if (globalFitnesses(next_j) >= globalFitnesses(prev_j) && globalFitnesses(next_j) >= globalFitnesses(j)) {
-            nbest_score(j) = globalFitnesses(next_j)
-            nbest_pos(j) = pswarm(next_j).pbest_pos
-        } else {
-            println("prev: "+fitness_score(prev_j))
-            println("curr: "+fitness_score(j))
-            println("next: "+fitness_score(next_j))
-            println("Oops!!")
-            System.exit(0)
-        }
-
-    }*/
     def checkNBest(curr_j:Int):Unit = {
         var prev_j:Int = pswarm(curr_j).getPrevNeighbour()
         var next_j:Int = pswarm(curr_j).getNextNeighbour()
@@ -343,15 +315,15 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
         if (fitnesses(0) >= fitnesses(1) && fitnesses(0) >= fitnesses(2)) {
             nbest_score(curr_j) = fitnesses(0)
-            nbest_pos(curr_j) = pswarm(prev_j).pbest_pos
+            nbest_pos(curr_j) = pswarm(prev_j).pbest_pos.clone()
 
         } else if (fitnesses(1) >= fitnesses(0) && fitnesses(1) >= fitnesses(2)) {
             nbest_score(curr_j) = fitnesses(1)
-            nbest_pos(curr_j) = pswarm(curr_j).pbest_pos
+            nbest_pos(curr_j) = pswarm(curr_j).pbest_pos.clone()
 
         } else if (fitnesses(2) >= fitnesses(0) && fitnesses(2) >= fitnesses(1)) {
             nbest_score(curr_j) = fitnesses(2)
-            nbest_pos(curr_j) = pswarm(next_j).pbest_pos
+            nbest_pos(curr_j) = pswarm(next_j).pbest_pos.clone()
         } else {
             println("prev: "+fitnesses(0))
             println("curr: "+fitnesses(1))
@@ -361,12 +333,6 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         }
 
     }
-
-    /*def calc_nbest_scores():Unit = {
-        for (i <- 0 to swarm_size-1) {
-            fitness_score(i) = relativeFitness(i)
-        }
-    }*/
 
     // Score between 0 and 2; 0 being the worst and 2 being the best
     /*def relativeFitness(index:Int):Double = {
@@ -436,48 +402,32 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         fitness
     }
 
-    def relativeFitnessGroup(index:Int):Double = {
-        var netProfits:Array[Double] = Array.fill(swarm_size){0.0}
-        var SRs:Array[Double] = Array.fill(swarm_size){0.0}
-        var maxNetProfit:Double = 0.0
-        var minNetProfit:Double = 0.0
-        var maxSR:Double = 0.0
-        var minSR:Double = 0.0
+    def relativeFitnessGroup(index:Int, netProfit:Double, maxNetProfit:Double, minNetProfit:Double, SR:Double, maxSR:Double, minSR:Double):Double = {
         var fitness:Double = 0.0
-
-        for (i <- 0 to swarm_size-1) {
-            netProfits(i) = pswarm(i).getNetProfit
-            SRs(i) = pswarm(i).getSharpRatio()
-        }
-        
-        maxNetProfit = netProfits.max
-        minNetProfit = netProfits.min
-        maxSR = SRs.max
-        minSR = SRs.min
 
         if (maxNetProfit-minNetProfit == 0 && maxSR-minSR == 0) {
             fitness = 0.0//Double.MinValue
         } else if (maxNetProfit-minNetProfit == 0) {
-            fitness = ( (SRs(index)-minSR) / (maxSR-minSR) )
+            fitness = ( (SR-minSR) / (maxSR-minSR) )
         } else if (maxSR - minSR == 0) {
-            fitness = ( (netProfits(index)-minNetProfit) / (maxNetProfit-minNetProfit) )
+            fitness = ( (netProfit-minNetProfit) / (maxNetProfit-minNetProfit) )
         } else {
-            fitness = ( (netProfits(index)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(index)-minSR) / (maxSR-minSR) )
+            fitness = ( (netProfit-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SR-minSR) / (maxSR-minSR) )
         }
 
         fitness
     }
 
     def relativeFitnessHOF(index:Int):Double = {
-        var netProfits:Array[Double] = Array.fill(6){0.0}
-        var SRs:Array[Double] = Array.fill(6){0.0}
+        var netProfits:Array[Double] = Array.fill(11){0.0}
+        var SRs:Array[Double] = Array.fill(11){0.0}
         var maxNetProfit:Double = 0.0
         var minNetProfit:Double = 0.0
         var maxSR:Double = 0.0
         var minSR:Double = 0.0
         var fitness:Double = 0.0
 
-        for (i <- 0 to 5) {
+        for (i <- 0 to 10) {
             netProfits(i) = HallOfFame(i).getNetProfit
             SRs(i) = HallOfFame(i).getSharpeRatio()
         }

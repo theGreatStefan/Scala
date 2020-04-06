@@ -2,7 +2,7 @@
 object main extends App {
     val file_path:String = "../Data/"
 
-    val data:readData = new readData(file_path, "BP.csv")
+    val data:readData = new readData(file_path, "RIO.csv")
     
     for (i <- 0 to 0) {
         var stockData:Array[Double] = data.getOpenTimeSeries()
