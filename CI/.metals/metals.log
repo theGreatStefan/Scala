@@ -1,0 +1,402 @@
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/CI'
+INFO  time: initialize in 0.74s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment1/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment1/swarm.scala
+INFO  no build target: using presentation compiler with only scala-library
+Apr 06, 2020 3:52:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 1702, 1702, 1715)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 1702, 1702, 1715)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 362, 362, 375)
+Apr 06, 2020 3:55:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Apr 06, 2020 3:57:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 443, 443, 456)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 443, 443, 456)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 449, 449, 462)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 449, 449, 462)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 449, 449, 462)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 663, 663, 676)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 573, 573, 588)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 615, 615, 628)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 573, 573, 588)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 722, 722, 735)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 728, 728, 741)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 728, 728, 741)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 728, 728, 742)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 728, 728, 741)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 728, 728, 741)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment1/particle.scala
+Apr 06, 2020 4:09:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 833, 833, 848)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 833, 833, 841)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 833, 833, 842)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 833, 833, 843)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 833, 833, 845)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 833, 833, 846)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 833, 833, 846)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 833, 833, 846)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 833, 833, 846)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 68, 68, 81)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 68, 68, 81)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 74, 74, 87)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 502, 502, 515)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 502, 502, 515)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 502, 502, 515)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 261, 261, 274)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 261, 261, 274)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 261, 261, 274)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 643, 643, 656)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 643, 643, 656)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 643, 643, 656)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 741, 741, 754)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 741, 741, 754)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 741, 741, 754)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 972, 972, 985)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 972, 972, 985)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 972, 972, 985)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment1/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Apr 06, 2020 4:45:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 200, 200, 215)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 200, 200, 208)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 200, 200, 209)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 200, 200, 210)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 200, 200, 211)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 200, 200, 212)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 200, 200, 212)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 200, 200, 212)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 206, 206, 221)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 206, 206, 214)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 206, 206, 215)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 206, 206, 216)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 206, 206, 218)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 206, 206, 219)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 206, 206, 219)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 206, 206, 219)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 206, 206, 219)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 145, 145, 160)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 145, 145, 153)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 145, 145, 154)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 145, 145, 155)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 145, 145, 158)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 145, 145, 158)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 145, 145, 158)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 145, 145, 158)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 199, 199, 214)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 199, 199, 207)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 199, 199, 208)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 199, 199, 209)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 199, 199, 211)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 199, 199, 212)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 199, 199, 212)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 199, 199, 212)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 759)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 752)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 753)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 752)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 759)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 752)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Int]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 754)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Int]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 754)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Int]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 754)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Int]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 754)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Int]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 744, 744, 754)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 856, 856, 871)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 856, 856, 864)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 856, 856, 865)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 856, 856, 866)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 856, 856, 867)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 856, 856, 868)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 856, 856, 869)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 856, 856, 869)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 856, 856, 869)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 74, 74, 87)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 659, 659, 679)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Apr 06, 2020 5:08:30 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 06, 2020 5:08:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 574, 574, 587)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 198, 198, 213)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 198, 198, 206)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 198, 198, 207)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 198, 198, 208)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 198, 198, 211)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 198, 198, 211)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 198, 198, 211)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 857, 857, 872)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 857, 857, 865)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 857, 857, 866)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 857, 857, 867)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 857, 857, 868)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 857, 857, 870)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 857, 857, 870)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 857, 857, 870)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 912, 912, 927)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 912, 912, 920)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 912, 912, 922)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 912, 912, 923)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 912, 912, 924)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 918, 918, 933)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 918, 918, 926)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 918, 918, 927)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 918, 918, 928)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 918, 918, 931)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 918, 918, 931)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 918, 918, 931)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 918, 918, 931)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Array[String]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 912, 912, 932)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment1/particle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment1/particle.scala
+Apr 06, 2020 5:41:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: offset 3573, count -1, length 3622
+java.lang.StringIndexOutOfBoundsException: offset 3573, count -1, length 3622
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+INFO  shutting down Metals
