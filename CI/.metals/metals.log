@@ -400,3 +400,30 @@ WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/bi
 WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
 WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
 INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/CI'
+INFO  time: initialize in 0.81s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 200, 200, 213)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment1/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+Apr 07, 2020 10:26:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 311
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 958, 958, 971)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 198, 198, 211)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 176, 176, 189)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+INFO  shutting down Metals

@@ -1,0 +1,804 @@
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'
+INFO  time: initialize in 0.71s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/main.scala, 200, 200, 213)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 854, 854, 867)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 621, 621, 634)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Char]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 915, 915, 926)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[Char]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 915, 915, 926)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+Apr 07, 2020 11:55:36 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 07, 2020 11:55:36 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+Apr 07, 2020 11:57:48 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: offset 2157, count -1, length 2416
+java.lang.StringIndexOutOfBoundsException: offset 2157, count -1, length 2416
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[binParticle]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 538, 538, 556)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[binParticle]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 538, 538, 556)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[binParticle]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 538, 538, 556)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[binParticle]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 538, 538, 556)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[binParticle]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 538, 538, 556)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'
+INFO  time: initialize in 0.84s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala in Array[String]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala, 854, 854, 867)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+Apr 09, 2020 9:56:30 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 09, 2020 9:56:30 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala in Array[Int]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/binSwarm.scala, 621, 621, 631)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMPSO.scala
+Apr 09, 2020 11:55:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala
+Apr 09, 2020 11:57:05 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+Apr 09, 2020 12:00:17 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 09, 2020 12:00:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+Apr 09, 2020 12:01:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: offset 1303, count -1, length 5386
+java.lang.StringIndexOutOfBoundsException: offset 1303, count -1, length 5386
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+Apr 09, 2020 12:01:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: offset 1312, count -1, length 5395
+java.lang.StringIndexOutOfBoundsException: offset 1312, count -1, length 5395
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+Apr 09, 2020 12:01:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: offset 1341, count -1, length 5426
+java.lang.StringIndexOutOfBoundsException: offset 1341, count -1, length 5426
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+Apr 09, 2020 12:02:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: offset 1349, count -1, length 5433
+java.lang.StringIndexOutOfBoundsException: offset 1349, count -1, length 5433
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 498, 498, 518)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 627, 627, 647)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 627, 627, 647)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 627, 627, 647)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 462, 462, 475)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 1778, 1778, 1793)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 1778, 1778, 1786)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 1778, 1778, 1787)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 1778, 1778, 1788)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 1778, 1778, 1789)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 1778, 1778, 1790)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 1778, 1778, 1791)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 1778, 1778, 1791)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+Apr 09, 2020 12:12:17 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 09, 2020 12:12:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/test.scala
+Apr 09, 2020 12:44:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+Apr 09, 2020 12:44:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 38, 38, 53)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 38, 38, 46)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 38, 38, 47)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 38, 38, 48)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 38, 38, 49)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 38, 38, 50)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 38, 38, 51)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 38, 38, 51)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 38, 38, 51)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 38, 38, 51)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 44, 44, 57)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 44, 44, 57)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 44, 44, 57)
+Apr 09, 2020 12:45:45 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 09, 2020 12:45:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 176, 176, 191)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 176, 176, 184)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 176, 176, 185)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 176, 176, 186)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 176, 176, 187)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 176, 176, 188)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 182, 182, 197)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 182, 182, 190)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 182, 182, 191)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 182, 182, 192)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 182, 182, 193)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 182, 182, 194)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 182, 182, 195)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 182, 182, 195)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 182, 182, 195)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 182, 182, 195)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 176, 176, 196)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 176, 176, 196)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/test.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/test.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 188, 188, 203)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 188, 188, 196)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 188, 188, 197)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 188, 188, 198)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 188, 188, 199)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 188, 188, 200)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 194, 194, 209)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 194, 194, 202)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 194, 194, 203)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 194, 194, 204)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[<error>]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 194, 194, 205)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 194, 194, 207)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 194, 194, 207)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 194, 194, 207)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/test.scala, 194, 194, 207)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/test.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/test.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/test.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala, 394, 394, 414)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala, 777, 777, 797)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala, 777, 777, 797)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala, 777, 777, 790)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala, 777, 777, 790)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 1195, 1195, 1215)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 70, 70, 90)
+something's wrong: no file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala, 70, 70, 90)
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binPSO.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMPSO.scala
+Apr 09, 2020 1:05:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binPSO.scala
+Apr 09, 2020 1:10:38 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 09, 2020 1:10:38 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMSwarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+Apr 09, 2020 2:05:46 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 2230, count -1, length 2445
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/CI/Assignment2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMPSO.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/AMParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/CI/Assignment2/binParticle.scala

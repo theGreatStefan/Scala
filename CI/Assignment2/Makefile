@@ -6,8 +6,11 @@ compile:
 clean:
 	rm classes/*
 
-run:
-	scala -classpath classes main
+runBin:
+	scala -classpath classes binPSO
+
+runAM:
+	scala -classpath classes AMPSO
 
 py:
 	python3 plotResults.py
