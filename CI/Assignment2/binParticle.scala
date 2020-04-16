@@ -10,6 +10,7 @@ class binParticle(ipos:Array[Array[Double]], ivelocity_size_x:Int, ivelocity_siz
     var c2:Double = ic2
     var w:Double = iw
     var r = scala.util.Random
+    //r.setSeed(5678)
     var pbest_pos:Array[Array[Double]] = pos.transpose.transpose
     var pbest_score:Double = 0.0
     var velocity:Array[Array[Double]] = Array.fill(velocity_size_y){Array.fill(velocity_size_x){0.0}}
@@ -68,7 +69,7 @@ class binParticle(ipos:Array[Array[Double]], ivelocity_size_x:Int, ivelocity_siz
         var str_init_length:Int = 0
         var leadingSpaces:Int = 0
         var totalLeadingSpaces:Int = 0
-        var w1:Double = Math.abs((Math.sin(2*Math.PI*runNum / (5))))
+        var w1:Double = Math.abs((Math.sin(2*Math.PI*runNum / (0.0005))))  //5
         var w2:Double = 1.0-w1
         //var w1:Double = 0.65
         //var w2:Double = 1.0-w1
@@ -111,13 +112,14 @@ class binParticle(ipos:Array[Array[Double]], ivelocity_size_x:Int, ivelocity_siz
             for (i <- 0 to velocity_size_y-1) {
                 currCh = representation(i)(j)
                 if (currCh != '-') {
-                    for (k <- i to velocity_size_y-1) {
+                    for (k <- (i+1) to velocity_size_y-1) {
                         tempCh = representation(k)(j)
                         if (currCh == tempCh) {
                             totalAllignments += 1
                         } else if (tempCh != '-') {
-                            //totalAllignments -= 2
-                            pos_penalty += 3
+                            totalAllignments -= 1
+                            totalLeadingSpaces += 1
+                            //pos_penalty += 1
                         }
                     }
                 }

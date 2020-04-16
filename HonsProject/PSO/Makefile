@@ -9,3 +9,6 @@ clean:
 
 run:
 	scala -classpath classes main
+
+runBH:
+	scala -classpath classes BH

@@ -10,7 +10,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var capitalLosses:Double = 0.0
     var transactionCost:Double = 0.0
     // 1570 to change to the amount of data points
-    var returnsRatios:Array[Double] = Array.fill(1571){0.0}
+    var returnsRatios:Array[Double] = Array.fill(1570){0.0}
 
     var lb:Double = ilb
     var ub:Double = iub
@@ -34,6 +34,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var numBought:Double = 0.0
     var numSold:Double = 0.0
     var numHeld:Double = 0.0
+
 
     /*****************Functions******************/
     
@@ -79,10 +80,10 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             }
         }
         
-        if (hof && runNum == 2133-1571) {
+        /*if (hof && runNum == 2133-1571) {
             println("Previous investible ammount: "+prev_investableAmount)
             println("Current investible ammount: "+investableAmount)
-        }
+        }*/
         // make transaction
         maxIndex match {
             case 0 => buy(price)
@@ -135,10 +136,10 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         for (i <- 0 to returnsRatios.length-1){
             stddev += Math.pow(returnsRatios(i)-mean, 2)
         }
-        stddev = Math.sqrt(stddev/(returnsRatios.length-1).toDouble)*Math.sqrt(1571.0)
+        stddev = Math.sqrt(stddev/(returnsRatios.length-1).toDouble)*Math.sqrt(1569.0)
         
         if (stddev != 0) {
-            ( ( (Math.pow(1+returnsRatio(init_investableAmount), 1/(1571.0/252.0))-1 ) - 0.03) / stddev )
+            ( ( (Math.pow(1+returnsRatio(init_investableAmount), (252.0/1569.0))-1 ) - 0.03) / stddev )
         } else {
             0.0//(Double.MinValue) // TODO: is this correct (?)
         }
@@ -200,18 +201,10 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         investableAmount = 1000000
         prev_investableAmount = 1000000
         stocks = 0.0
-        returnsRatios = Array.fill(1571){0.0}
+        returnsRatios = Array.fill(1569){0.0}
         numBought = 0.0
         numSold = 0.0
         numHeld = 0.0
-    }
-
-    def getVelocityMagnitude(): Double = {
-        var total:Double = 0.0
-        for (i <- 0 to velocity_size-1) {
-            total += Math.pow(velocity(i), 2)
-        }
-        Math.sqrt(total)
     }
 
     def relativeFitnessCurr():Double = {
@@ -277,8 +270,15 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
 
         fitness
     }
-    
 
+    def getVelocityMagnitude(): Double = {
+        var total:Double = 0.0
+        for (i <- 0 to velocity_size-1) {
+            total += Math.pow(velocity(i), 2)
+        }
+        Math.sqrt(total)
+    }
+    
     override def toString(): String = {
         "---------------------"+
         "\nCurrent velocity:  "+ (for (i <- 0 to velocity_size-1) yield (velocity(i))) +

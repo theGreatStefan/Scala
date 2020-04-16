@@ -68,10 +68,10 @@ class AMParticle(ipos:Array[Double], ibin_vec_x:Int, ibin_vec_y:Int, ic1:Double,
         var str_init_length:Int = 0
         var leadingSpaces:Int = 0
         var totalLeadingSpaces:Int = 0
-        var w1:Double = Math.abs((Math.sin(2*Math.PI*runNum / (5))))
-        var w2:Double = 1-w1
-        //var w1:Double = 0.65
-        //var w2:Double = 1.0-w1
+        //var w1:Double = Math.abs((Math.sin(2*Math.PI*runNum / (2500))))
+        //var w2:Double = 1-w1
+        var w1:Double = 0.65
+        var w2:Double = 1.0-w1
         var pos_penalty:Double = 0.0
         for (i <- 0 to bin_vec_y-1) {
             str = input(i)
@@ -111,13 +111,14 @@ class AMParticle(ipos:Array[Double], ibin_vec_x:Int, ibin_vec_y:Int, ic1:Double,
             for (i <- 0 to bin_vec_y-1) {
                 currCh = representation(i)(j)
                 if (currCh != '-') {
-                    for (k <- i to bin_vec_y-1) {
+                    for (k <- (i+1) to bin_vec_y-1) {
                         tempCh = representation(k)(j)
                         if (currCh == tempCh) {
                             totalAllignments += 1
                         } else if (tempCh != '-') {
-                            //totalAllignments -= 2
-                            pos_penalty += 3
+                            totalAllignments -= 1
+                            totalLeadingSpaces += 1
+                            //pos_penalty += 3
                         }
                     }
                 }

@@ -51,7 +51,7 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
     }
 
     def runNN(inputs:Array[Double]): Array[Double] = {
-        input_nodes = inputs.clone()
+        input_nodes = inputs
 
         updateHiddenNeurons()
         updateOutputNeurons()
@@ -79,7 +79,7 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
         for (i <- 0 to hiddenLength-1) {
             for (j <- 0 to hiddenIncomming-1) {
                 weightedSynops = weights( (hiddenIncomming*i + j) )
-                hidden_nodes(i).addSynopsValue( input_nodes(j) * weightedSynops , j)
+                hidden_nodes(i).addSynopsValue( input_nodes(j) * weightedSynops)
             }
         }
 
@@ -98,13 +98,13 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
         for (i <- 0 to outputLength-1) {
             for (j <- 0 to outputIncomming-1) {
                 weightedSynops = weights( hiddenLength*hiddenIncomming+(outputIncomming*i + j) )
-                output_nodes(i).addSynopsValue( hidden_nodes(j).getactivatedNum() * weightedSynops , j)
+                output_nodes(i).addSynopsValue( hidden_nodes(j).getactivatedNum() * weightedSynops)
             }
         }
 
         // Activated number
         for (i <- 0 to outputLength-1) {
-            output_nodes(i).setActivatedNum( leakyReLU(output_nodes(i).sum()) )
+            output_nodes(i).setActivatedNum( sigmoid(output_nodes(i).sum()) )
         }
     }
 
