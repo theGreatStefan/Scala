@@ -2,8 +2,8 @@ import java.io.PrintWriter
 import java.io.File
 
 object main extends App {
-    val file_path:String = "../Data/"
-    val data:readData = new readData(file_path, "XOM.csv")
+    val file_path:String = "../Data/SA/"
+    val data:readData = new readData(file_path, "SCP.csv")
     var stockData:Array[Double] = data.getOpenTimeSeries()
 
     //************ TMI time series
@@ -122,13 +122,13 @@ object main extends App {
 
     /***************END Technical Market Indicators****************/
     
-    var filename = "../testOutput/velocity.csv"
+    var filename = "../testOutput/SA/velocity.csv"
     val pw1 = new PrintWriter(new File(filename))
 
-    filename = "../testOutput/HOF.csv"
+    filename = "../testOutput/SA/HOF.csv"
     val pw2 = new PrintWriter(new File(filename))
 
-    filename = "../testOutput/CEPSO_XOM.csv"
+    filename = "../testOutput/SA/CEPSO_SCP.csv"
     val pw3 = new PrintWriter(new File(filename))
 
     var avgVelocityMag:Array[Double] = Array.fill(350){0.0}
@@ -145,7 +145,7 @@ object main extends App {
     var tempHOFnetProfit_in:Array[Double] = Array()
     var tempHOFnetProfit_out:Array[Double] = Array()
 
-    var runs:Int = 2
+    var runs:Int = 10
     
     for (i <- 0 to runs-1) {
         //var stockData:Array[Double] = data.getOpenTimeSeries()
@@ -175,6 +175,8 @@ object main extends App {
             HOFnetProfit_in(j) += tempHOFnetProfit_in(j)
             HOFnetProfit_out(j) += tempHOFnetProfit_out(j)
         }
+
+        println("Run "+(i+1)+" complete!")
         
     }
 

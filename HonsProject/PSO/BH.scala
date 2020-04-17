@@ -2,15 +2,15 @@ import java.io.PrintWriter
 import java.io.File
 
 object BH extends App {
-    val file_path:String = "../Data/"
-    val data:readData = new readData(file_path, "XOM.csv")
+    val file_path:String = "../Data/SALatest/"
+    val data:readData = new readData(file_path, "SBK.csv")
     var stockData:Array[Double] = data.getOpenTimeSeries()
 
     var init_investibleAmount:Double = 1000000.0
     var investibleAmount:Double = 1000000.0
     var stocks:Double = 0.0
 
-    var filename = "../testOutput/BH_XOM.csv"
+    var filename = "../testOutput/SALatest/BH_SBK.csv"
     val pw1 = new PrintWriter(new File(filename))
 
     // Buy stocks

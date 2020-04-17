@@ -2,25 +2,61 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
-data1 = list(csv.reader(open("../testOutput/velocity.csv")))
-data2 = list(csv.reader(open("../testOutput/HOF.csv")))
-data3 = list(csv.reader(open("../testOutput/bestNetProfit.csv")))
-data4 = list(csv.reader(open("../testOutput/BH_BP.csv")))
-data5 = list(csv.reader(open("../testOutput/BH_GE.csv")))
-data6 = list(csv.reader(open("../testOutput/BH_HSBC.csv")))
-data7 = list(csv.reader(open("../testOutput/BH_MSFT.csv")))
-data8 = list(csv.reader(open("../testOutput/BH_RIO.csv")))
-data9 = list(csv.reader(open("../testOutput/BH_T.csv")))
-data10 = list(csv.reader(open("../testOutput/BH_VOD.csv")))
-data11 = list(csv.reader(open("../testOutput/BH_XOM.csv")))
-data12 = list(csv.reader(open("../testOutput/CEPSO_BP.csv")))
-data13 = list(csv.reader(open("../testOutput/CEPSO_GE.csv")))
-data14 = list(csv.reader(open("../testOutput/CEPSO_HSBC.csv")))
-data15 = list(csv.reader(open("../testOutput/CEPSO_MSFT.csv")))
-data16 = list(csv.reader(open("../testOutput/CEPSO_RIO.csv")))
-data17 = list(csv.reader(open("../testOutput/CEPSO_T.csv")))
-data18 = list(csv.reader(open("../testOutput/CEPSO_VOD.csv")))
-data19 = list(csv.reader(open("../testOutput/CEPSO_XOM.csv")))
+#data1 = list(csv.reader(open("../testOutput/velocity.csv")))
+#data2 = list(csv.reader(open("../testOutput/HOF.csv")))
+#data3 = list(csv.reader(open("../testOutput/bestNetProfit.csv")))
+#data4 = list(csv.reader(open("../testOutput/BH_BP.csv")))
+#data5 = list(csv.reader(open("../testOutput/BH_GE.csv")))
+#data6 = list(csv.reader(open("../testOutput/BH_HSBC.csv")))
+#data7 = list(csv.reader(open("../testOutput/BH_MSFT.csv")))
+#data8 = list(csv.reader(open("../testOutput/BH_RIO.csv")))
+#data9 = list(csv.reader(open("../testOutput/BH_T.csv")))
+#data10 = list(csv.reader(open("../testOutput/BH_VOD.csv")))
+#data11 = list(csv.reader(open("../testOutput/BH_XOM.csv")))
+#data12 = list(csv.reader(open("../testOutput/CEPSO_BP.csv")))
+#data13 = list(csv.reader(open("../testOutput/CEPSO_GE.csv")))
+#data14 = list(csv.reader(open("../testOutput/CEPSO_HSBC.csv")))
+#data15 = list(csv.reader(open("../testOutput/CEPSO_MSFT.csv")))
+#data16 = list(csv.reader(open("../testOutput/CEPSO_RIO.csv")))
+#data17 = list(csv.reader(open("../testOutput/CEPSO_T.csv")))
+#data18 = list(csv.reader(open("../testOutput/CEPSO_VOD.csv")))
+#data19 = list(csv.reader(open("../testOutput/CEPSO_XOM.csv")))
+#data1 = list(csv.reader(open("../testOutput/SALatest/velocity.csv")))
+#data2 = list(csv.reader(open("../testOutput/SALatest/HOF.csv")))
+#data4 = list(csv.reader(open("../testOutput/SALatest/BH_AGL.csv")))
+#data5 = list(csv.reader(open("../testOutput/SALatest/BH_GFI.csv")))
+#data6 = list(csv.reader(open("../testOutput/SALatest/BH_IMP.csv")))
+#data7 = list(csv.reader(open("../testOutput/SALatest/BH_NED.csv")))
+#data8 = list(csv.reader(open("../testOutput/SALatest/BH_REM.csv")))
+#data9 = list(csv.reader(open("../testOutput/SALatest/BH_SBK.csv")))
+#data10 = list(csv.reader(open("../testOutput/SALatest/BH_SOL.csv")))
+#data11 = list(csv.reader(open("../testOutput/SALatest/BH_SNH.csv")))
+#data12 = list(csv.reader(open("../testOutput/SALatest/CEPSO_AGL.csv")))
+#data13 = list(csv.reader(open("../testOutput/SALatest/CEPSO_GFI.csv")))
+#data14 = list(csv.reader(open("../testOutput/SALatest/CEPSO_IMP.csv")))
+#data15 = list(csv.reader(open("../testOutput/SALatest/CEPSO_NED.csv")))
+#data16 = list(csv.reader(open("../testOutput/SALatest/CEPSO_REM.csv")))
+#data17 = list(csv.reader(open("../testOutput/SALatest/CEPSO_SBK.csv")))
+#data18 = list(csv.reader(open("../testOutput/SALatest/CEPSO_SOL.csv")))
+#data19 = list(csv.reader(open("../testOutput/SALatest/CEPSO_SNH.csv")))
+data1 = list(csv.reader(open("../testOutput/SA/velocity.csv")))
+data2 = list(csv.reader(open("../testOutput/SA/HOF.csv")))
+data4 = list(csv.reader(open("../testOutput/SA/BH_AGL.csv")))
+data5 = list(csv.reader(open("../testOutput/SA/BH_GFI.csv")))
+data6 = list(csv.reader(open("../testOutput/SA/BH_IMP.csv")))
+data7 = list(csv.reader(open("../testOutput/SA/BH_NED.csv")))
+data8 = list(csv.reader(open("../testOutput/SA/BH_REM.csv")))
+data9 = list(csv.reader(open("../testOutput/SA/BH_SBK.csv")))
+data10 = list(csv.reader(open("../testOutput/SA/BH_SOL.csv")))
+data11 = list(csv.reader(open("../testOutput/SA/BH_SNH.csv")))
+data12 = list(csv.reader(open("../testOutput/SA/CEPSO_AGL.csv")))
+data13 = list(csv.reader(open("../testOutput/SA/CEPSO_GFI.csv")))
+data14 = list(csv.reader(open("../testOutput/SA/CEPSO_IMP.csv")))
+data15 = list(csv.reader(open("../testOutput/SA/CEPSO_NED.csv")))
+data16 = list(csv.reader(open("../testOutput/SA/CEPSO_REM.csv")))
+data17 = list(csv.reader(open("../testOutput/SA/CEPSO_SBK.csv")))
+data18 = list(csv.reader(open("../testOutput/SA/CEPSO_SOL.csv")))
+data19 = list(csv.reader(open("../testOutput/SA/CEPSO_SNH.csv")))
 
 avgVelMag = []
 avgEuclDist = []
@@ -78,6 +114,15 @@ CEPSO_out.append(float(data18[0][1]))
 BH_out.append(float(data11[0][1]))
 CEPSO_out.append(float(data19[0][1]))
 
+avgBH_in = sum(BH_in)/8
+BH_in.append(avgBH_in)
+avgBH_out = sum(BH_out)/8
+BH_out.append(avgBH_out)
+avgCEPSO_in = sum(CEPSO_in)/8
+CEPSO_in.append(avgCEPSO_in)
+avgCEPSO_out = sum(CEPSO_out)/8
+CEPSO_out.append(avgCEPSO_out)
+
 # Velocity Magnitudes
 plt.plot(avgVelMag)
 plt.title("Velocity magnitude over time")
@@ -107,9 +152,9 @@ plt.ylabel("Returns (%)")
 plt.show()
 
 # Best Net Profit for in and out data samples
-ind = np.arange(1, 9)      # the x locations for the groups
+ind = np.arange(1, 10)      # the x locations for the groups
 width = 0.35                # the width of the bars
-labels = ['BP','GE','HSBC','MSFT','RIO','T','VOD','XOM']
+labels = ['AGL','GFI','IMP','NED','REM','SBK','SOL','SNH', 'AVG']
 
 p1 = plt.bar(ind, BH_in, width)
 p2 = plt.bar(ind+width, CEPSO_in, width)
@@ -121,9 +166,9 @@ plt.ylabel("Returns (%)")
 plt.show()
 
 # Best Net Profit for in and out data samples
-ind = np.arange(1, 9)      # the x locations for the groups
+ind = np.arange(1, 10)      # the x locations for the groups
 width = 0.35                # the width of the bars
-labels = ['BP','GE','HSBC','MSFT','RIO','T','VOD','XOM']
+labels = ['AGL','GFI','IMP','NED','REM','SBK','SOL','SNH', 'AVG']
 
 p1 = plt.bar(ind, BH_out, width)
 p2 = plt.bar(ind+width, CEPSO_out, width)
