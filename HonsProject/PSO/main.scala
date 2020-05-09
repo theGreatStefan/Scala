@@ -3,7 +3,7 @@ import java.io.File
 
 object main extends App {
     val file_path:String = "../Data/SA/"
-    val data:readData = new readData(file_path, "SCP.csv")
+    val data:readData = new readData(file_path, "SNH.csv")
     var stockData:Array[Double] = data.getOpenTimeSeries()
 
     //************ TMI time series
@@ -128,14 +128,16 @@ object main extends App {
     filename = "../testOutput/SA/HOF.csv"
     val pw2 = new PrintWriter(new File(filename))
 
-    filename = "../testOutput/SA/CEPSO_SCP.csv"
+    filename = "../testOutput/SA/CEPSO_Softplus_SNH.csv"
     val pw3 = new PrintWriter(new File(filename))
 
-    var avgVelocityMag:Array[Double] = Array.fill(350){0.0}
-    var avgEuclDist:Array[Double] = Array.fill(350){0.0}
-    var iterationBest:Array[Double] = Array.fill(350){0.0}
-    var HOFnetProfit_in:Array[Double] = Array.fill(350){0.0}
-    var HOFnetProfit_out:Array[Double] = Array.fill(350){0.0}
+    var epocs:Int = 350
+
+    var avgVelocityMag:Array[Double] = Array.fill(epocs){0.0}
+    var avgEuclDist:Array[Double] = Array.fill(epocs){0.0}
+    var iterationBest:Array[Double] = Array.fill(epocs){0.0}
+    var HOFnetProfit_in:Array[Double] = Array.fill(epocs){0.0}
+    var HOFnetProfit_out:Array[Double] = Array.fill(epocs){0.0}
     var avgBestNetProfit_in:Double = 0.0
     var avgBestNetProfit_out:Double = 0.0
 
@@ -145,18 +147,20 @@ object main extends App {
     var tempHOFnetProfit_in:Array[Double] = Array()
     var tempHOFnetProfit_out:Array[Double] = Array()
 
-    var runs:Int = 10
+    var runs:Int = 30
     
     for (i <- 0 to runs-1) {
         //var stockData:Array[Double] = data.getOpenTimeSeries()
             // fanin = 6; input nodes for the NN (?) 
-        var swarm1 = new swarm(150, 36, 1.496180, 1.496180, 0.729844, -1/(Math.sqrt(6)), 1/(Math.sqrt(6)), stockData, aroonUps,
+            // constraint size for 4 hidden nodes = 36
+            // constraint size for 6 hidden nodes = 54
+        var swarm1 = new swarm(150, 54, 1.496180, 1.496180, 0.729844, -1/(Math.sqrt(6)), 1/(Math.sqrt(6)), stockData, aroonUps,
                                                                                                                     aroonDowns,
                                                                                                                     percentageBBands,
                                                                                                                     mACDs1,
                                                                                                                     mACDs2,
                                                                                                                     rSIs) 
-        swarm1.runSwarm(350)
+        swarm1.runSwarm(epocs)
 
         avgBestNetProfit_in += swarm1.getBestHofNetProfit_in()
         avgBestNetProfit_out += swarm1.getBestHofNetProfit_out()
@@ -166,7 +170,7 @@ object main extends App {
         tempiterationBest = swarm1.getIterationBest()
         tempHOFnetProfit_in = swarm1.getHOFnetProfits_in()
         tempHOFnetProfit_out = swarm1.getHOFnetProfits_out()
-        for (j <- 0 to 349) {
+        for (j <- 0 to epocs-1) {
             avgVelocityMag(j) += tempVelocityMag(j)
             avgEuclDist(j) += tempEuclDist(j)
             iterationBest(j) += tempiterationBest(j)
@@ -183,7 +187,7 @@ object main extends App {
     avgBestNetProfit_in = avgBestNetProfit_in/runs
     avgBestNetProfit_out = avgBestNetProfit_out/runs
 
-    for (j <- 0 to 349) {
+    for (j <- 0 to epocs-1) {
         avgVelocityMag(j) = avgVelocityMag(j)/runs.toDouble
         avgEuclDist(j) = avgEuclDist(j)/runs.toDouble
         iterationBest(j) = iterationBest(j)/runs.toDouble
@@ -194,7 +198,7 @@ object main extends App {
         HOFnetProfit_out(j) = HOFnetProfit_out(j)/runs.toDouble
     }
 
-    for (i <- 0 to 349) {
+    for (i <- 0 to epocs-1) {
         pw1.write(avgVelocityMag(i)+","+avgEuclDist(i)+","+iterationBest(i)+","+HOFnetProfit_in+","+HOFnetProfit_out+"\n")
     }
     for (i <- 0 to HOFnetProfit_in.length-1) {

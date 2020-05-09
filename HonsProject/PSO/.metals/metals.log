@@ -1242,3 +1242,416 @@ Apr 17, 2020 4:29:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notif
 INFO: Unsupported notification method: $/setTraceNotification
 Apr 17, 2020 4:29:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'
+INFO  time: initialize in 0.81s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+Apr 28, 2020 3:24:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/BH.scala
+Apr 28, 2020 3:25:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.util.concurrent.CompletionException: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at scala.collection.immutable.StringOps$.apply$extension(StringOps.scala:41)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.lastIndexBetween(MetalsEnrichments.scala:408)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.pipeInScope(MultilineStringFormattingProvider.scala:93)
+	at scala.meta.internal.metals.MultilineStringFormattingProvider.$anonfun$withToken$1(MultilineStringFormattingProvider.scala:139)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/swarm.scala
+Apr 28, 2020 3:28:17 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 28, 2020 3:28:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+Apr 28, 2020 3:29:14 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 28, 2020 3:29:14 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+Apr 28, 2020 3:29:18 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Apr 28, 2020 3:29:18 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Apr 28, 2020 3:29:18 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Apr 28, 2020 3:29:19 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:44)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:402)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:394)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:379)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:415)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:52)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:92)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:120)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:77)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala, 291, 291, 304)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala, 5719, 5719, 5732)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/particle.scala
+Apr 28, 2020 3:44:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2409
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/Rule.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'
+INFO  time: initialize in 0.96s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/HOFParticle.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/node.scala
+May 06, 2020 4:47:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/swarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/PSO/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/PSO/swarm.scala, 3163, 3163, 3176)
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'
+INFO  time: initialize in 0.74s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+INFO  no build target: using presentation compiler with only scala-library
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala, 291, 291, 304)
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/swarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala, 5543, 5543, 5556)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/swarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'
+INFO  time: initialize in 0.87s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'
+INFO  time: initialize in 0.81s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'
+INFO  time: initialize in 0.73s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/NN.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala, 5490, 5490, 5503)
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/particle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+May 08, 2020 2:08:08 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+May 08, 2020 2:08:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/NN.scala
+May 08, 2020 2:10:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 496
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala, 5552, 5552, 5565)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala, 5552, 5552, 5565)
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/node.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'
+INFO  time: initialize in 0.78s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/PSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
+INFO  shutting down Metals

@@ -12,3 +12,6 @@ run:
 
 runBH:
 	scala -classpath classes BH
+
+runRule:
+	scala -classpath classes Rule

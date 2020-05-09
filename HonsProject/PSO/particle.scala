@@ -27,7 +27,9 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var prev_neighbour:Int = 0
     var next_neighbour:Int = 0
 
-    var nn = new NN(4, 6, 3, 4)
+    // Evangelos: hidden layer 4
+    var nn = new NN(6, 6, 3, 6)
+    //              ^        ^
 
     var pbest_net_profit:Double = Double.MinValue
     var pbest_sharpe_ratio:Double = Double.MinValue

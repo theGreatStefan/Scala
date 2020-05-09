@@ -18,6 +18,9 @@ class binParticle(ipos:Array[Array[Double]], ivelocity_size_x:Int, ivelocity_siz
     var maxNx:Array[Int] = imaxNx.clone()
     var input:Array[String] = iinput.clone()
 
+    var currPosValid:Boolean = true
+    var infeasibleCount:Double = 0
+
     var representation:Array[Array[Char]] = Array.fill(velocity_size_y){Array.fill(velocity_size_x){'-'}}
 
     for (i <- 0 to velocity_size_y-1) {
@@ -60,7 +63,6 @@ class binParticle(ipos:Array[Array[Double]], ivelocity_size_x:Int, ivelocity_siz
                 pos(i)(j) = if (check < prob(i)(j)) { 1.0 } else { 0.0 }
             }
         }
-
     }
 
     def evaluateFitness(runNum:Int):Unit = {
@@ -69,11 +71,22 @@ class binParticle(ipos:Array[Array[Double]], ivelocity_size_x:Int, ivelocity_siz
         var str_init_length:Int = 0
         var leadingSpaces:Int = 0
         var totalLeadingSpaces:Int = 0
-        var w1:Double = Math.abs((Math.sin(2*Math.PI*runNum / (0.0005))))  //5
+        //var w1:Double = Math.abs((Math.sin(2*Math.PI*runNum / (5))))  //5
+        //var w2:Double = 1.0-w1
+        var w1:Double = 0.5*Math.abs((Math.sin(2*Math.PI*(runNum+1.25) / (5))))+0.5
         var w2:Double = 1.0-w1
-        //var w1:Double = 0.65
+        //var w1:Double = Math.abs((Math.cos(0.0001*runNum+0.5)))
+        //var w2:Double = 1.0-w1
+        //var w1:Double = 0.75 //0.65
         //var w2:Double = 1.0-w1
         var pos_penalty:Double = 0.0
+
+        currPosValid = checkPosValidity()
+        if (!currPosValid) {
+            infeasibleCount+=1
+            return
+        }
+
         for (i <- 0 to velocity_size_y-1) {
             str = input(i)
             str_length = input(i).length()
@@ -81,14 +94,10 @@ class binParticle(ipos:Array[Array[Double]], ivelocity_size_x:Int, ivelocity_siz
             leadingSpaces = 0
             for (j <- 0 to velocity_size_x-1) {
                 if (pos(i)(j) == 1) {
+                    // Differentiates between leading and trailing spaces
                     if (str_length > 0) {
-                        if (maxNx(i) > leadingSpaces) {
-                            leadingSpaces+=1
-                            representation(i)(j) = '-'
-                        } else {
-                            representation(i)(j) = str.charAt(str_init_length-str_length)
-                            str_length-=1
-                        }
+                        leadingSpaces+=1
+                        representation(i)(j) = '-'
                     } else {
                         representation(i)(j) = '-'
                     }
@@ -107,31 +116,54 @@ class binParticle(ipos:Array[Array[Double]], ivelocity_size_x:Int, ivelocity_siz
         var currCh:Char = '0'
         var tempCh:Char = '0'
         var totalAllignments:Int = 0
+        var foundStr:String = ""
 
         for (j <- 0 to velocity_size_x-1) {
+            foundStr = ""
             for (i <- 0 to velocity_size_y-1) {
                 currCh = representation(i)(j)
-                if (currCh != '-') {
+                if (currCh != '-' && !foundStr.contains(currCh)) {
                     for (k <- (i+1) to velocity_size_y-1) {
                         tempCh = representation(k)(j)
                         if (currCh == tempCh) {
-                            totalAllignments += 1
+                            totalAllignments += 2
                         } else if (tempCh != '-') {
-                            totalAllignments -= 1
-                            totalLeadingSpaces += 1
+                            /*totalAllignments -= 1
+                            totalLeadingSpaces += 1*/
                             //pos_penalty += 1
                         }
                     }
+                    foundStr = foundStr+currCh
                 }
                 
             }
 
         }
         
-        pos_score = w1*totalAllignments + w2*(maxNx.sum - totalLeadingSpaces) - pos_penalty
+        pos_score = w1*totalAllignments + w2*(maxNx.sum - totalLeadingSpaces)
+    }
+
+    def checkPosValidity():Boolean = {
+        var count:Int = 0
+        for (i <- 0 to velocity_size_y-1) {
+            for (j <- 0 to velocity_size_x-1) {
+                if (pos(i)(j) == 0) {
+                    count+=1
+                }
+            }
+            
+            if (input(i).length() > count) {
+                return false
+            }
+            count = 0
+        }
+        return true
     }
 
     def updatePBestPos():Unit = {
+        if (!currPosValid) {
+            return
+        }
         if (pos_score > pbest_score) {
             pbest_score = pos_score
             pbest_pos = pos
@@ -144,6 +176,17 @@ class binParticle(ipos:Array[Array[Double]], ivelocity_size_x:Int, ivelocity_siz
             totalVM += Math.pow(velocity(i).sum, 2)
         }
         Math.sqrt(totalVM)
+    }
+
+    def printPos(): Unit = {
+        println("Position matrix "+ currPosValid)
+        for (i <- 0 to velocity_size_y-1) {
+            for (j <- 0 to velocity_size_x-1) {
+                print(pos(i)(j)+" ") 
+            }
+            println("")
+        }
+
     }
 
     override def toString(): String = {

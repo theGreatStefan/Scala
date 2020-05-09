@@ -12,6 +12,8 @@ class AMSwarm(iswarm_size:Int, iconstraint_size_x:Int, iconstraint_size_y:Int, i
 
     var velocityMag_overTime:Array[Double] = Array.fill(5000){0.0}
     var euclidean_distance_overTime:Array[Double] = Array.fill(5000){0.0}
+    var gbest_overTime:Array[Double] = Array.fill(5000){0.0}
+    var infeasibleCount:Double = 0
 
     // Calculate Array[ max leading spaces ]
     var maxNx:Array[Int] = Array.fill(constraint_size_y){0}
@@ -54,15 +56,21 @@ class AMSwarm(iswarm_size:Int, iconstraint_size_x:Int, iconstraint_size_y:Int, i
                 pswarm(j).updateBinVec()
             }
             //println(avgVelMag/swarm_size)
-            println("Gbest: "+gbest_score+", velMag: "+(avgVelMag/swarm_size))
+            //println("Gbest: "+gbest_score+", velMag: "+(avgVelMag/swarm_size))
             velocityMag_overTime(i) = (avgVelMag/swarm_size)
             euclidean_distance_overTime(i) = avgEuclidianDistance()
+            gbest_overTime(i) = gbest_score
             avgVelMag = 0.0
         }
         for (i <- 0 to swarm_size-1) {
-            println("******************************")
-            println(pswarm(i).toString())
+            infeasibleCount += pswarm(i).infeasibleCount
+            /*println("******************************")
+            println(pswarm(i).toString())*/
         }
+
+        infeasibleCount = infeasibleCount/swarm_size
+        /*println("Average number of infeasible solutions: "+infeasibleCount)
+        println("Average percentage of infeasible solutions: "+(infeasibleCount/epochs.toDouble)*100+"%")*/
         
     }
 

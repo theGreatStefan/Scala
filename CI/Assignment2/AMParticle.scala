@@ -17,6 +17,9 @@ class AMParticle(ipos:Array[Double], ibin_vec_x:Int, ibin_vec_y:Int, ic1:Double,
     var maxNx:Array[Int] = imaxNx.clone()
     var input:Array[String] = iinput.clone()
 
+    var currPosValid:Boolean = true
+    var infeasibleCount:Double = 0
+
     var representation:Array[Array[Char]] = Array.fill(bin_vec_y){Array.fill(bin_vec_x){'-'}}
 
     updateBinVec()
@@ -70,9 +73,21 @@ class AMParticle(ipos:Array[Double], ibin_vec_x:Int, ibin_vec_y:Int, ic1:Double,
         var totalLeadingSpaces:Int = 0
         //var w1:Double = Math.abs((Math.sin(2*Math.PI*runNum / (2500))))
         //var w2:Double = 1-w1
-        var w1:Double = 0.65
+        var w1:Double = 0.5*Math.abs((Math.sin(2*Math.PI*(runNum+1.25) / (5))))+0.5
         var w2:Double = 1.0-w1
+        //var w1:Double = Math.abs((Math.cos(0.0001*runNum+0.5)))
+        //var w2:Double = 1.0-w1
+        //var w1:Double = 0.75
+        //var w2:Double = 1.0-w1
         var pos_penalty:Double = 0.0
+
+        currPosValid = checkPosValidity()
+
+        if (!currPosValid) {
+            infeasibleCount+=1
+            return
+        }
+
         for (i <- 0 to bin_vec_y-1) {
             str = input(i)
             str_length = input(i).length()
@@ -81,13 +96,8 @@ class AMParticle(ipos:Array[Double], ibin_vec_x:Int, ibin_vec_y:Int, ic1:Double,
             for (j <- 0 to bin_vec_x-1) {
                 if (bin_vec(i)(j) == 1) {
                     if (str_length > 0) {
-                        if (maxNx(i) > leadingSpaces) {
-                            leadingSpaces+=1
-                            representation(i)(j) = '-'
-                        } else {
-                            representation(i)(j) = str.charAt(str_init_length-str_length)
-                            str_length-=1
-                        }
+                        leadingSpaces+=1
+                        representation(i)(j) = '-' 
                     } else {
                         representation(i)(j) = '-'
                     }
@@ -106,31 +116,54 @@ class AMParticle(ipos:Array[Double], ibin_vec_x:Int, ibin_vec_y:Int, ic1:Double,
         var currCh:Char = '0'
         var tempCh:Char = '0'
         var totalAllignments:Int = 0
+        var foundStr:String = ""
 
         for (j <- 0 to bin_vec_x-1) {
+            foundStr = ""
             for (i <- 0 to bin_vec_y-1) {
                 currCh = representation(i)(j)
-                if (currCh != '-') {
+                if (currCh != '-' && !foundStr.contains(currCh)) {
                     for (k <- (i+1) to bin_vec_y-1) {
                         tempCh = representation(k)(j)
                         if (currCh == tempCh) {
-                            totalAllignments += 1
+                            totalAllignments += 2
                         } else if (tempCh != '-') {
-                            totalAllignments -= 1
-                            totalLeadingSpaces += 1
+                            /*totalAllignments -= 1
+                            totalLeadingSpaces += 1*/
                             //pos_penalty += 3
                         }
                     }
+                    foundStr = foundStr+currCh
                 }
                 
             }
 
         }
         
-        pos_score = w1*totalAllignments + w2*(maxNx.sum - totalLeadingSpaces) - pos_penalty
+        pos_score = w1*totalAllignments + w2*(maxNx.sum - totalLeadingSpaces)
+    }
+
+    def checkPosValidity():Boolean = {
+        var count:Int = 0
+        for (i <- 0 to bin_vec_y-1) {
+            for (j <- 0 to bin_vec_x-1) {
+                if (bin_vec(i)(j) == 0) {
+                    count+=1
+                }
+            }
+            
+            if (input(i).length() > count) {
+                return false
+            }
+            count = 0
+        }
+        return true
     }
 
     def updatePBestPos():Unit = {
+        if (!currPosValid) {
+            return
+        }
         if (pos_score > pbest_score) {
             pbest_score = pos_score
             pbest_pos = pos

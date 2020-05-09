@@ -36,7 +36,7 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
         weights = weights :+ (2 * r.nextDouble() - 1)
     }*/
 
-    def activationFunc(x:Double): Double = leakyReLU(x)
+    def activationFunc(x:Double): Double = softplus(x)
 
     def sigmoid(x:Double): Double = {
         (1/(1+Math.exp(-x)))
@@ -48,6 +48,10 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
 
     def leakyReLU(x:Double): Double = {
         ( Math.max(0.01*x, x) )
+    }
+
+    def softplus(x:Double): Double = {
+        ( Math.log10(1+Math.exp(x)) )
     }
 
     def runNN(inputs:Array[Double]): Array[Double] = {
