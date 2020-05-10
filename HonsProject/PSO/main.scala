@@ -154,7 +154,7 @@ object main extends App {
             // fanin = 6; input nodes for the NN (?) 
             // constraint size for 4 hidden nodes = 36
             // constraint size for 6 hidden nodes = 54
-        var swarm1 = new swarm(150, 54, 1.496180, 1.496180, 0.729844, -1/(Math.sqrt(6)), 1/(Math.sqrt(6)), stockData, aroonUps,
+        var swarm1 = new swarm(150, 45, 1.496180, 1.496180, 0.729844, -1/(Math.sqrt(6)), 1/(Math.sqrt(6)), stockData, aroonUps,
                                                                                                                     aroonDowns,
                                                                                                                     percentageBBands,
                                                                                                                     mACDs1,

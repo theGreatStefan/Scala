@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
-data1 = list(csv.reader(open("SA/IMP.csv")))
+data1 = list(csv.reader(open("SA/SNH.csv")))
 
 timeseries = []
 timeseriesDates = []
@@ -18,3 +18,13 @@ plt.ylabel("Price")
 plt.xlabel("Time")
 plt.show()
 
+def f(x):
+    return np.log(1+np.exp(x))
+
+ts = []
+for i in np.arange(-3, 3, 0.1):
+    ts.append(f(i))
+
+plt.plot(np.arange(-3,3,0.1), ts)
+plt.ylim(-0.5,3)
+plt.show()

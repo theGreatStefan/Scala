@@ -51,7 +51,7 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
     }
 
     def softplus(x:Double): Double = {
-        ( Math.log10(1+Math.exp(x)) )
+        ( Math.log(1+Math.exp(x)) )
     }
 
     def runNN(inputs:Array[Double]): Array[Double] = {
