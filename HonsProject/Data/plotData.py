@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
-data1 = list(csv.reader(open("SA/SNH.csv")))
+data1 = list(csv.reader(open("SA/IMP.csv")))
 
 timeseries = []
 timeseriesDates = []

@@ -33,4 +33,12 @@ class HOFParticle (){
         (pos sameElements x)
     }
 
+    def penaltyFunction():Double = {
+        var total:Double = 0.0
+        for (i <- 0 to pos.length-1) {
+            total += Math.pow(pos(i), 2)
+        }
+        0.5*total
+    }
+
 }

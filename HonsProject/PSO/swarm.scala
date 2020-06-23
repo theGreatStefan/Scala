@@ -9,14 +9,17 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                                                                                                             iPercentageBands:Array[Double],
                                                                                                             iMACD1:Array[Double],
                                                                                                             iMACD2:Array[Double],
-                                                                                                            iRSIs:Array[Double]) {
+                                                                                                            iRSIs:Array[Double],
+                                                                                                            ivMax:Double) {
     var lb:Double = ilb
     var ub:Double = iub
+    var lambda:Double = 0.005    //0.001 < lambda < 0.1
     var c1:Double = ic1
     var c2:Double = ic2
     var w:Double = iw
     var swarm_size:Int = iswarm_size
     var constraint_size:Int = iconstraint_size
+    var vMax:Double = ivMax
     var r = scala.util.Random
     //r.setSeed(456)
     var pswarm:Array[particle] = Array.fill(swarm_size){null}
@@ -31,12 +34,13 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     var avg_velocity_magnitude:Array[Double] = Array.fill(350){0}
     var avg_euclidean_distance:Array[Double] = Array.fill(350){0}
     var iteration_best_netprofit:Array[Double] = Array.fill(350){0}
+    var avgPosVector:Array[Double] = Array.fill(constraint_size){0}
 
     var globalFitnesses:Array[Double] = Array.fill(swarm_size){0.0}
     
     for (i <- 0 to swarm_size-1) {
         var particle_pos:Array[Double] = Array.fill(constraint_size){lb + r.nextDouble()*(ub - lb)}
-        pswarm(i) = new particle(particle_pos, constraint_size, c1, c2, w, lb, ub)
+        pswarm(i) = new particle(particle_pos, constraint_size, c1, c2, w, lb, ub, lambda)
 
         if (i==0) {
             pswarm(i).setPrevNeighbour(swarm_size-1)
@@ -47,6 +51,13 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         } else {
             pswarm(i).setPrevNeighbour(i-1)
             pswarm(i).setNextNeighbour(i+1)
+        }
+    }
+
+    // Initialise the avg position vector
+    for (i <- 0 to swarm_size-1) {
+        for (j <- 0 to constraint_size-1) {
+            avgPosVector(j) += pswarm(i).pos(j)
         }
     }
 
@@ -147,7 +158,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
             var velocity_magnitudes:Double = 0.0
             for (j <- 0 to swarm_size-1) {
-                pswarm(j).updateVelocity(nbest_pos(j))
+                pswarm(j).updateVelocity(nbest_pos(j), vMax)
                 pswarm(j).updatePos()
 
                 velocity_magnitudes += pswarm(j).getVelocityMagnitude()
@@ -155,7 +166,16 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             avg_velocity_magnitude(i) = velocity_magnitudes/swarm_size
             avg_euclidean_distance(i) = avgEuclidianDistance()
 
+            for (i <- 0 to swarm_size-1) {
+                for (j <- 0 to constraint_size-1) {
+                    avgPosVector(j) += pswarm(i).pos(j)
+                }
+            }
 
+
+        }
+        for (i <- 0 to constraint_size-1) {
+            avgPosVector(i) = avgPosVector(i)/(epochs*swarm_size).toDouble
         }
         /*for (i <- 0 to swarm_size-1) {
             println("Particle "+i)
@@ -169,7 +189,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         // Run the Hall of fame against new data
         // Create new particles from the Hall of fame
         for (i <- 0 to 9) {
-            HOF_Final(i) = new particle(HallOfFame(i+1).getPos, constraint_size, c1, c2, w, lb, ub)
+            HOF_Final(i) = new particle(HallOfFame(i+1).getPos, constraint_size, c1, c2, w, lb, ub, lambda)
         }
         for (i <- 1569 to stockData.length-1) {
             TMIs(0) = aroonUps(i)
@@ -258,7 +278,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
         }
 
-        fitness
+        (fitness-lambda*pswarm(curr_j).penaltyFunction())
     }
 
     def relativeFitnessGroup(index:Int, netProfit:Double, maxNetProfit:Double, minNetProfit:Double, SR:Double, maxSR:Double, minSR:Double):Double = {
@@ -274,7 +294,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             fitness = ( (netProfit-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SR-minSR) / (maxSR-minSR) )
         }
 
-        fitness
+        (fitness-lambda*pswarm(index).penaltyFunction())
     }
 
     def relativeFitnessHOF(index:Int):Double = {
@@ -306,7 +326,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             fitness = ( (netProfits(index)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(index)-minSR) / (maxSR-minSR) )
         }
 
-        fitness
+        (fitness-lambda*HallOfFame(index).penaltyFunction())
     }
 
     def avgParticle(): Array[Double] = {

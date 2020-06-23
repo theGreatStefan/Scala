@@ -128,8 +128,11 @@ object main extends App {
     filename = "../testOutput/SA/HOF.csv"
     val pw2 = new PrintWriter(new File(filename))
 
-    filename = "../testOutput/SA/CEPSO_Softplus_SNH.csv"
+    filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_SNH.csv"
     val pw3 = new PrintWriter(new File(filename))
+
+    filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_SNH_avgPos.csv"
+    val pw4 = new PrintWriter(new File(filename))
 
     var epocs:Int = 350
 
@@ -140,12 +143,16 @@ object main extends App {
     var HOFnetProfit_out:Array[Double] = Array.fill(epocs){0.0}
     var avgBestNetProfit_in:Double = 0.0
     var avgBestNetProfit_out:Double = 0.0
+    var avgPosVec:Array[Double] = Array.fill(36){0.0}
 
     var tempVelocityMag:Array[Double] = Array()
     var tempEuclDist:Array[Double] = Array()
     var tempiterationBest:Array[Double] = Array()
     var tempHOFnetProfit_in:Array[Double] = Array()
     var tempHOFnetProfit_out:Array[Double] = Array()
+    var tempavgPosVec:Array[Double] = Array.fill(36){0.0}
+
+    var vMax:Double = 0.40
 
     var runs:Int = 30
     
@@ -154,12 +161,12 @@ object main extends App {
             // fanin = 6; input nodes for the NN (?) 
             // constraint size for 4 hidden nodes = 36
             // constraint size for 6 hidden nodes = 54
-        var swarm1 = new swarm(150, 45, 1.496180, 1.496180, 0.729844, -1/(Math.sqrt(6)), 1/(Math.sqrt(6)), stockData, aroonUps,
+        var swarm1 = new swarm(150, 36, 1.496180, 1.496180, 0.729844, -1/(Math.sqrt(6)), 1/(Math.sqrt(6)), stockData, aroonUps,
                                                                                                                     aroonDowns,
                                                                                                                     percentageBBands,
                                                                                                                     mACDs1,
                                                                                                                     mACDs2,
-                                                                                                                    rSIs) 
+                                                                                                                    rSIs, vMax) 
         swarm1.runSwarm(epocs)
 
         avgBestNetProfit_in += swarm1.getBestHofNetProfit_in()
@@ -179,6 +186,12 @@ object main extends App {
             HOFnetProfit_in(j) += tempHOFnetProfit_in(j)
             HOFnetProfit_out(j) += tempHOFnetProfit_out(j)
         }
+
+        avgPosVec = swarm1.avgPosVector.clone()
+        //tempavgPosVec = swarm1.avgPosVector.clone()
+        //for (j <- 0 to 36-1) {
+        //    avgPosVec(j) += swarm1.avgPosVector(j)
+        //}
 
         println("Run "+(i+1)+" complete!")
         
@@ -207,7 +220,13 @@ object main extends App {
 
     pw3.write(avgBestNetProfit_in+","+avgBestNetProfit_out+"\n")
 
+    for (i <- 0 to 36-1) {
+        //avgPosVec(i) = avgPosVec(i)/runs.toDouble
+        pw4.write(avgPosVec(i)+"\n")
+    }
+
     pw1.close()
     pw2.close()
     pw3.close()
+    pw4.close()
 }

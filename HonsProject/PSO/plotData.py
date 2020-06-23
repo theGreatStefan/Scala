@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import csv
+import seaborn as sns
 
 #data1 = list(csv.reader(open("../testOutput/velocity.csv")))
 #data2 = list(csv.reader(open("../testOutput/HOF.csv")))
@@ -49,14 +50,22 @@ data8 = list(csv.reader(open("../testOutput/SA/BH_REM.csv")))
 data9 = list(csv.reader(open("../testOutput/SA/BH_SBK.csv")))
 data10 = list(csv.reader(open("../testOutput/SA/BH_SOL.csv")))
 data11 = list(csv.reader(open("../testOutput/SA/BH_SNH.csv")))
-data12 = list(csv.reader(open("../testOutput/SA/CEPSO_Softplus_AGL.csv")))
-data13 = list(csv.reader(open("../testOutput/SA/CEPSO_Softplus_GFI.csv")))
-data14 = list(csv.reader(open("../testOutput/SA/CEPSO_Softplus_IMP.csv")))
-data15 = list(csv.reader(open("../testOutput/SA/CEPSO_Softplus_NED.csv")))
-data16 = list(csv.reader(open("../testOutput/SA/CEPSO_Softplus_REM.csv")))
-data17 = list(csv.reader(open("../testOutput/SA/CEPSO_Softplus_SBK.csv")))
-data18 = list(csv.reader(open("../testOutput/SA/CEPSO_Softplus_SOL.csv")))
-data19 = list(csv.reader(open("../testOutput/SA/CEPSO_Softplus_SNH.csv")))
+#data12 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_AGL.csv")))
+#data13 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_GFI.csv")))
+#data14 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_IMP.csv")))
+#data15 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_NED.csv")))
+#data16 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_REM.csv")))
+#data17 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_SBK.csv")))
+#data18 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_SOL.csv")))
+#data19 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_SNH.csv")))
+data12 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_AGL.csv")))    #01, 005, 001
+data13 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_GFI.csv")))
+data14 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_IMP.csv")))
+data15 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_NED.csv")))
+data16 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_REM.csv")))
+data17 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_SBK.csv")))
+data18 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_SOL.csv")))
+data19 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_SNH.csv")))
 data20 = list(csv.reader(open("../testOutput/SA/Rule_AGL.csv")))
 data21 = list(csv.reader(open("../testOutput/SA/Rule_GFI.csv")))
 data22 = list(csv.reader(open("../testOutput/SA/Rule_IMP.csv")))
@@ -66,14 +75,16 @@ data25 = list(csv.reader(open("../testOutput/SA/Rule_SBK.csv")))
 data26 = list(csv.reader(open("../testOutput/SA/Rule_SOL.csv")))
 data27 = list(csv.reader(open("../testOutput/SA/Rule_SNH.csv")))
 
-data28 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_AGL.csv")))
-data29 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_GFI.csv")))
-data30 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_IMP.csv")))
-data31 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_NED.csv")))
-data32 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_REM.csv")))
-data33 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_SBK.csv")))
-data34 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_SOL.csv")))
-data35 = list(csv.reader(open("../testOutput/SA/CEPSO_Stagnated_SNH.csv")))
+data28 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_AGL.csv")))
+data29 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_GFI.csv")))
+data30 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_IMP.csv")))
+data31 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_NED.csv")))
+data32 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_REM.csv")))
+data33 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_SBK.csv")))
+data34 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_SOL.csv")))
+data35 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_SNH.csv")))
+
+data36 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_SNH_avgPos.csv")))
 
 avgVelMag = []
 avgEuclDist = []
@@ -278,4 +289,14 @@ plt.plot(iterationBest)
 plt.title("Best Net Profit over time")
 plt.ylabel("Net Profit")
 plt.xlabel("Time")
+plt.show()
+
+avgPosVect = []
+for i in range(0, 35):
+    avgPosVect.append(float(data36[i][0]))
+
+plt.hist(avgPosVect, color = 'blue', edgecolor = 'black',bins = int(60/10))
+plt.show()
+
+sns.distplot(avgPosVect, kde=True, rug=True);
 plt.show()

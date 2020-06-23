@@ -1,7 +1,7 @@
 import java.lang.Math
 import scala.util.Random
 
-class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, iw:Double, ilb:Double, iub:Double) {
+class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, iw:Double, ilb:Double, iub:Double, ilambda:Double) {
     var init_investableAmount:Double = 1000000
     var investableAmount:Double = 1000000
     var prev_investableAmount:Double = 1000000
@@ -14,6 +14,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
 
     var lb:Double = ilb
     var ub:Double = iub
+    var lambda:Double = ilambda
     var pos:Array[Double] = ipos.clone()
     var velocity_size:Int = ivelocity_size
     var c1:Double = ic1
@@ -28,7 +29,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var next_neighbour:Int = 0
 
     // Evangelos: hidden layer 4
-    var nn = new NN(5, 6, 3, 5)
+    var nn = new NN(4, 6, 3, 4)
     //              ^        ^
 
     var pbest_net_profit:Double = Double.MinValue
@@ -42,7 +43,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     
     /*****************END_Functions******************/
 
-    def updateVelocity(nbest_pos:Array[Double]):Unit = {
+    def updateVelocity(nbest_pos:Array[Double], vMax:Double):Unit = {
         var r1:Double = 0.0
         var r2:Double = 0.0
         var cognitive:Double = 0.0
@@ -55,6 +56,12 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             cognitive = c1*r1*(pbest_pos(i) - pos(i))
             social = c2*r2*(nbest_pos(i) - pos(i))
             velocity(i) = w*velocity(i)+cognitive+social
+            // Element wise velocity clamping
+            if (velocity(i) > vMax) {
+                velocity(i) = vMax
+            } else if (velocity(i) < (-vMax)) {
+                velocity(i) = -vMax
+            }
         }
 
     }
@@ -238,7 +245,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
         }
 
-        fitness
+        (fitness-lambda*penaltyFunction())
     }
 
     def relativeFitnessPBest():Double = {
@@ -270,7 +277,23 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
         }
 
-        fitness
+        (fitness-lambda*penaltyFunctionPBest())
+    }
+
+    def penaltyFunction():Double = {
+        var total:Double = 0.0
+        for (i <- 0 to velocity_size-1) {
+            total += Math.pow(pos(i), 2)
+        }
+        0.5*total
+    }
+
+    def penaltyFunctionPBest():Double = {
+        var total:Double = 0.0
+        for (i <- 0 to velocity_size-1) {
+            total += Math.pow(pbest_pos(i), 2)
+        }
+        0.5*total
     }
 
     def getVelocityMagnitude(): Double = {
