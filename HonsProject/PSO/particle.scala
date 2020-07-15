@@ -142,15 +142,22 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     def getSharpRatio():Double = {
         var mean:Double = (returnsRatios.sum / (returnsRatios.length).toDouble)
         var stddev:Double = 0.0
+        var returnValue:Double = 0.0
         for (i <- 0 to returnsRatios.length-1){
             stddev += Math.pow(returnsRatios(i)-mean, 2)
         }
         stddev = Math.sqrt(stddev/(returnsRatios.length-1).toDouble)*Math.sqrt(1569.0)
         
         if (stddev != 0) {
-            ( ( (Math.pow(1+returnsRatio(init_investableAmount), (252.0/1569.0))-1 ) - 0.03) / stddev )
+            returnValue = ( ( (Math.pow(1+returnsRatio(init_investableAmount), (252.0/1569.0))-1 ) - 0.03) / stddev )
         } else {
-            0.0//(Double.MinValue) // TODO: is this correct (?)
+            returnValue = 0.0//(Double.MinValue) // TODO: is this correct (?)
+        }
+
+        if (returnValue.isNaN()) {
+            (0.0)
+        } else {
+            (returnValue)
         }
     }
     /*def getSharpRatio():Double = {

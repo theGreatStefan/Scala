@@ -128,10 +128,10 @@ object main extends App {
     filename = "../testOutput/SA/HOF.csv"
     val pw2 = new PrintWriter(new File(filename))
 
-    filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_SNH.csv"
+    filename = "../testOutput/SA/test_SNH.csv"
     val pw3 = new PrintWriter(new File(filename))
 
-    filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_SNH_avgPos.csv"
+    filename = "../testOutput/SA/test_SNH_avgPos.csv"
     val pw4 = new PrintWriter(new File(filename))
 
     var epocs:Int = 350

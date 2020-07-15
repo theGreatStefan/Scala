@@ -83,6 +83,7 @@ data32 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vma
 data33 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_SBK.csv")))
 data34 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_SOL.csv")))
 data35 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_SNH.csv")))
+#data35 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_SNH.csv")))
 
 data36 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_SNH_avgPos.csv")))
 
