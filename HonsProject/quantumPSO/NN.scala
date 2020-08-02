@@ -112,5 +112,12 @@ class NN (hiddenLength:Int, hiddenIncomming:Int, outputLength:Int, outputIncommi
         }
     }
 
+    /**
+      * Return the activated output of the hidden layer
+      */
+    def getHiddenLayerOutput():Array[Double] = {
+        hidden_nodes.map(el => el.getactivatedNum())
+    }
+
     
 }

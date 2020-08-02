@@ -18,9 +18,6 @@ object test extends App {
     for (i <- 0 to 99) {
         println(x(i))
     }*/
-    var num:Double = 1.7976931348623157E308+1.7976931348623157E308
+    var num = BigDecimal(1.234).setScale(5, BigDecimal.RoundingMode.DOWN).toDouble
     println(num)
-    if (num == Double.NaN) {
-        println("Found not a number")
-    }
 }

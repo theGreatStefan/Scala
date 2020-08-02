@@ -39,6 +39,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
     var globalFitnesses:Array[Double] = Array.fill(swarm_size){0.0}
 
+    var hiddenOutputsArr:Array[Double] = Array.fill(100){0.0}
+
     // Initialise the random quantum and neutral particles
     var quantumNeutral:Array[Boolean] = Array.fill(swarm_size){false}
     var counter=0
@@ -120,7 +122,6 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                 
             }
             
-
             // Global fitness
             for (j <- 0 to swarm_size-1) {
                 netProfits(j) = pswarm(j).getNetProfit()
@@ -194,8 +195,9 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                 }
             }
 
-
+            
         }
+        addToMap(epochs, 0)
         for (i <- 0 to constraint_size-1) {
             avgPosVector(i) = avgPosVector(i)/(epochs*swarm_size).toDouble
         }
@@ -460,6 +462,17 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             }
         }
         (Math.pow(1+arr.max/1000000.0, (252.0/564.0))-1)*100
+    }
+
+    def addToMap(epochs:Int, lbound:Double):Unit = {
+        var binWidth = (1.0 - 0.0)/100.0
+        var num:Double = 0.0
+        for (i <- 0 to swarm_size-1) {
+            for (j <- 0 to 100-1) {
+                num = BigDecimal(lbound+(binWidth*j)).setScale(2, BigDecimal.RoundingMode.DOWN).toDouble
+                hiddenOutputsArr(j) += pswarm(i).hiddenOutputs(num)/(epochs*swarm_size).toDouble
+            }
+        }
     }
     
     def toString(i:Int): String = {

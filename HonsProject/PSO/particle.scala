@@ -38,9 +38,12 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var numSold:Double = 0.0
     var numHeld:Double = 0.0
 
+    var hiddenOutputs = scala.collection.mutable.Map[Double, Int]()
+    initMap(1, 0, 100)
 
     /*****************Functions******************/
     
+
     /*****************END_Functions******************/
 
     def updateVelocity(nbest_pos:Array[Double], vMax:Double):Unit = {
@@ -80,6 +83,8 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         // Run NN 
         nn.updateWeights(pos)
         results = nn.runNN(TMIs)
+
+        addToMap(nn.getHiddenLayerOutput())
 
         // Make decision
         for (i <- 0 to 2) {
@@ -160,20 +165,6 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             (returnValue)
         }
     }
-    /*def getSharpRatio():Double = {
-        var mean:Double = (returnsRatios.sum / (returnsRatios.length).toDouble)
-        var stddev:Double = 0.0
-        for (i <- 0 to returnsRatios.length-1){
-            stddev += Math.pow(returnsRatios(i)-mean, 2)
-        }
-        stddev = Math.sqrt(stddev/(returnsRatios.length-1).toDouble)
-        
-        if (stddev != 0) {
-            ( ( returnsRatio(init_investableAmount) - 0.03) / stddev.toDouble )
-        } else {
-            0.0//(Double.MinValue) // TODO: is this correct (?)
-        }
-    }*/
 
     // Checks if the realative fitness is better now than it was
     def checkBestPos():Unit = {
@@ -253,6 +244,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         }
 
         (fitness-lambda*penaltyFunction())
+        //fitness
     }
 
     def relativeFitnessPBest():Double = {
@@ -285,6 +277,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         }
 
         (fitness-lambda*penaltyFunctionPBest())
+        //fitness
     }
 
     def penaltyFunction():Double = {
@@ -309,6 +302,24 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             total += Math.pow(velocity(i), 2)
         }
         Math.sqrt(total)
+    }
+
+    def initMap(ubound:Double, lbound:Double, numBins:Int):Unit = {
+        var binWidth = (ubound - lbound)/numBins.toDouble
+        var num:Double = 0
+        for (i <- 0 to numBins) {
+            num = BigDecimal(lbound+(binWidth*i)).setScale(2, BigDecimal.RoundingMode.DOWN).toDouble
+            hiddenOutputs += (num -> 0)
+            //println(num)
+        }
+    }
+
+    def addToMap(x:Array[Double]):Unit = {
+        var num:Double = 0
+        for (i <- 0 to x.length-1) {
+            num = BigDecimal(x(i)).setScale(2, BigDecimal.RoundingMode.DOWN).toDouble
+            hiddenOutputs(num) = hiddenOutputs(num)+1
+        }
     }
     
     override def toString(): String = {

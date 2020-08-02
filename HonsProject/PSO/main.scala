@@ -3,7 +3,7 @@ import java.io.File
 
 object main extends App {
     val file_path:String = "../Data/SA/"
-    val data:readData = new readData(file_path, "SNH.csv")
+    val data:readData = new readData(file_path, "NED.csv")
     var stockData:Array[Double] = data.getOpenTimeSeries()
 
     //************ TMI time series
@@ -128,11 +128,14 @@ object main extends App {
     filename = "../testOutput/SA/HOF.csv"
     val pw2 = new PrintWriter(new File(filename))
 
-    filename = "../testOutput/SA/test_SNH.csv"
+    filename = "../testOutput/SA/test_NED.csv"
     val pw3 = new PrintWriter(new File(filename))
 
-    filename = "../testOutput/SA/test_SNH_avgPos.csv"
+    filename = "../testOutput/SA/test_NED_avgPos.csv"
     val pw4 = new PrintWriter(new File(filename))
+
+    filename = "../testOutput/SA/test_NED_hist_adressed.csv"
+    val pw5 = new PrintWriter(new File(filename))
 
     var epocs:Int = 350
 
@@ -144,6 +147,7 @@ object main extends App {
     var avgBestNetProfit_in:Double = 0.0
     var avgBestNetProfit_out:Double = 0.0
     var avgPosVec:Array[Double] = Array.fill(36){0.0}
+    var hiddenOutputsArr:Array[Double] = Array.fill(101){0.0}
 
     var tempVelocityMag:Array[Double] = Array()
     var tempEuclDist:Array[Double] = Array()
@@ -151,6 +155,7 @@ object main extends App {
     var tempHOFnetProfit_in:Array[Double] = Array()
     var tempHOFnetProfit_out:Array[Double] = Array()
     var tempavgPosVec:Array[Double] = Array.fill(36){0.0}
+    var temphiddenOutputsArr:Array[Double] = Array()
 
     var vMax:Double = 0.40
 
@@ -192,6 +197,10 @@ object main extends App {
         //for (j <- 0 to 36-1) {
         //    avgPosVec(j) += swarm1.avgPosVector(j)
         //}
+        temphiddenOutputsArr = swarm1.hiddenOutputsArr.clone()
+        for (j <- 0 to 100) {
+            hiddenOutputsArr(j) += temphiddenOutputsArr(j)
+        }
 
         println("Run "+(i+1)+" complete!")
         
@@ -211,6 +220,10 @@ object main extends App {
         HOFnetProfit_out(j) = HOFnetProfit_out(j)/runs.toDouble
     }
 
+    for (j <- 0 to 100) {
+        hiddenOutputsArr(j) = temphiddenOutputsArr(j)/runs.toDouble
+    }
+
     for (i <- 0 to epocs-1) {
         pw1.write(avgVelocityMag(i)+","+avgEuclDist(i)+","+iterationBest(i)+","+HOFnetProfit_in+","+HOFnetProfit_out+"\n")
     }
@@ -225,8 +238,14 @@ object main extends App {
         pw4.write(avgPosVec(i)+"\n")
     }
 
+    for (i <- 0 to 100) {
+        pw5.write(hiddenOutputsArr(i)+"\n")
+        println(hiddenOutputsArr(i))
+    }
+
     pw1.close()
     pw2.close()
     pw3.close()
     pw4.close()
+    pw5.close()
 }

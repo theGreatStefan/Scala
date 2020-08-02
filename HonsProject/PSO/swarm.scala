@@ -37,6 +37,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     var avgPosVector:Array[Double] = Array.fill(constraint_size){0}
 
     var globalFitnesses:Array[Double] = Array.fill(swarm_size){0.0}
+
+    var hiddenOutputsArr:Array[Double] = Array.fill(101){0.0}
     
     for (i <- 0 to swarm_size-1) {
         var particle_pos:Array[Double] = Array.fill(constraint_size){lb + r.nextDouble()*(ub - lb)}
@@ -174,6 +176,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
 
         }
+        addToMap(epochs, 0)
         for (i <- 0 to constraint_size-1) {
             avgPosVector(i) = avgPosVector(i)/(epochs*swarm_size).toDouble
         }
@@ -279,6 +282,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         }
 
         (fitness-lambda*pswarm(curr_j).penaltyFunction())
+        //fitness
     }
 
     def relativeFitnessGroup(index:Int, netProfit:Double, maxNetProfit:Double, minNetProfit:Double, SR:Double, maxSR:Double, minSR:Double):Double = {
@@ -295,6 +299,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         }
 
         (fitness-lambda*pswarm(index).penaltyFunction())
+        //fitness
     }
 
     def relativeFitnessHOF(index:Int):Double = {
@@ -327,6 +332,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         }
 
         (fitness-lambda*HallOfFame(index).penaltyFunction())
+        //fitness
     }
 
     def avgParticle(): Array[Double] = {
@@ -390,6 +396,17 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             arr(i) = HOF_Final(i).getNetProfit()
         }
         (Math.pow(1+arr.max/1000000.0, (252.0/564.0))-1)*100
+    }
+
+    def addToMap(epochs:Int, lbound:Double):Unit = {
+        var binWidth = (1.0 - 0.0)/100.0
+        var num:Double = 0.0
+        for (i <- 0 to swarm_size-1) {
+            for (j <- 0 to 100) {
+                num = BigDecimal(lbound+(binWidth*j)).setScale(2, BigDecimal.RoundingMode.DOWN).toDouble
+                hiddenOutputsArr(j) += pswarm(i).hiddenOutputs(num)/(epochs*swarm_size).toDouble
+            }
+        }
     }
     
     def toString(i:Int): String = {

@@ -86,6 +86,8 @@ data35 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vma
 #data35 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax25_SNH.csv")))
 
 data36 = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_SNH_avgPos.csv")))
+data37 = list(csv.reader(open("../testOutput/SA/test_NED_hist_original.csv")))
+data38 = list(csv.reader(open("../testOutput/SA/test_NED_hist_adressed.csv")))
 
 avgVelMag = []
 avgEuclDist = []
@@ -102,6 +104,8 @@ Rule_out = []
 
 CEPSO_Stag_in = []
 CEPSO_Stag_out = []
+
+histo = []
 
 for i in range(0, 350):
     avgVelMag.append(float(data1[i][0]))
@@ -299,5 +303,26 @@ for i in range(0, 35):
 plt.hist(avgPosVect, color = 'blue', edgecolor = 'black',bins = int(60/10))
 plt.show()
 
-sns.distplot(avgPosVect, kde=True, rug=True);
+for i in range(0, 100):
+    histo.append(float(data37[i][0]))
+
+ind = np.arange(0, 100)
+width = 1.0
+p1 = plt.bar(ind, histo, width)
+plt.title("Histogram of hidden layer output with saturation")
+#plt.plot(histo)
+
 plt.show()
+
+histo = []
+for i in range(0, 100):
+    histo.append(float(data38[i][0]))
+
+ind = np.arange(0, 100)
+width = 1.0
+p1 = plt.bar(ind, histo, width)
+plt.title("Histogram of hidden layer output without saturation")
+#plt.plot(histo)
+
+plt.show()
+
