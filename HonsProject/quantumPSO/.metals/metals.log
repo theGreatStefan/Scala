@@ -3320,3 +3320,180 @@ WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/m
 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/main.scala
 INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'
+INFO  time: initialize in 0.8s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+Aug 03, 2020 3:05:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'
+INFO  time: initialize in 0.85s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+Aug 05, 2020 11:11:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+Aug 05, 2020 11:11:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Aug 05, 2020 11:11:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Aug 05, 2020 11:11:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Aug 05, 2020 11:11:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6
+INFO  no build target: using presentation compiler with only scala-library
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala, 1625, 1625, 1645)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala in Array[Array[Double]]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala, 1625, 1625, 1645)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala, 2405, 2405, 2418)
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/node.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/NN.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala, 2207, 2207, 2220)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala, 2207, 2207, 2220)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala, 12447, 12447, 12460)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala, 12447, 12447, 12460)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala, 12498, 12498, 12511)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala, 14527, 14527, 14540)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala, 291, 291, 304)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/particle.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/particle.scala, 1061, 1061, 1074)
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/particle.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala, 10060, 10060, 10073)
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSOOneOut/BH.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/test.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/particle.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/NN.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'
+INFO  time: initialize in 0.77s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/particle.scala
+Aug 05, 2020 3:41:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 213
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/node.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+Aug 05, 2020 3:53:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: offset 6280, count -1, length 18144
+java.lang.StringIndexOutOfBoundsException: offset 6280, count -1, length 18144
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+Aug 05, 2020 3:56:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 706
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala, 2168, 2168, 2181)
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'
+INFO  time: initialize in 1s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'
+INFO  time: initialize in 0.82s
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/swarm.scala
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/quantumPSO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/node.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/main.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/particle.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/NN.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSOOneOut/BH.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/test.scala
+WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/quantumPSO/Rule.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/Rule.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/quantumPSO/Rule.scala, 1746, 1746, 1759)
+INFO  shutting down Metals

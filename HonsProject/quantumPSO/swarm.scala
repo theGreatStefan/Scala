@@ -22,12 +22,10 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
     var vMax:Double = ivMax
     var rcloud:Double = 1.0
     var r = scala.util.Random
-    //r.setSeed(456)
     var pswarm:Array[particle] = Array.fill(swarm_size){null}
     var nbest_pos:Array[Array[Double]] = Array.fill(swarm_size){Array.fill(constraint_size){0.0}}
     var nbest_score:Array[Double] = Array.fill(swarm_size){0.0}
     var fitness_score:Array[Double] = Array.fill(swarm_size){0.0}
-    //var priceMomentum:Array[Double] = Array.fill(stockData.length){0.0}
 
     var HallOfFame:Array[HOFParticle] = Array.fill(11){new HOFParticle()}
     var HOF_Final:Array[particle] = Array.fill(10){null}
@@ -39,7 +37,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
     var globalFitnesses:Array[Double] = Array.fill(swarm_size){0.0}
 
-    var hiddenOutputsArr:Array[Double] = Array.fill(100){0.0}
+    //var hiddenOutputsArr:Array[Double] = Array.fill(100){0.0}
 
     // Initialise the random quantum and neutral particles
     var quantumNeutral:Array[Boolean] = Array.fill(swarm_size){false}
@@ -102,6 +100,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
         for (i <- 0 to epochs-1) {
             // Reset particles
+            println("\n[+] Iteration number "+(i+1))
             for (j <- 0 to swarm_size-1) {
                 pswarm(j).reset()
             }
@@ -116,7 +115,6 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                 TMIs(5) = rSIs(j)
 
                 for (k <- 0 to swarm_size-1) {
-                    //println("******** particle "+k+" *************")
                     pswarm(k).runNN(TMIs, stockData(j), j, false)
                 }
                 
@@ -152,6 +150,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             HallOfFame(0).setPos(pswarm(maxFitnessIndex).getPos())
             HallOfFame(0).setNetProfit(pswarm(maxFitnessIndex).getNetProfit())
             HallOfFame(0).setSharpeRatio(pswarm(maxFitnessIndex).getSharpRatio())
+            println("> Iteration best Net Profit: "+pswarm(maxFitnessIndex).getNetProfit())
+            println("> Iteration best Sharpe Ratio: "+pswarm(maxFitnessIndex).getSharpRatio())
             for (j <- 1 to 10) {
                 if (HallOfFame(j).isEqualTo(HallOfFame(0).pos)) {
                     found = true
@@ -166,11 +166,13 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                     HallOfFame(minHOFFitnessIndex).setPos(HallOfFame(0).getPos.clone())
                     HallOfFame(minHOFFitnessIndex).setNetProfit(HallOfFame(0).getNetProfit)
                     HallOfFame(minHOFFitnessIndex).setSharpeRatio(HallOfFame(0).getSharpeRatio)
+                    println("> Added to the Hall of Fame...")
                 }
             }
             /**************Hall Of Fame END**************/
 
             updateRcloud()
+            println("> Quantum cloud radius: "+rcloud)
 
             for (j <- 0 to swarm_size-1) {
                 pswarm(j).checkBestPos();
@@ -197,18 +199,10 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
             
         }
-        addToMap(epochs, 0)
+        //addToMap(epochs, 0)
         for (i <- 0 to constraint_size-1) {
             avgPosVector(i) = avgPosVector(i)/(epochs*swarm_size).toDouble
         }
-        /*for (i <- 0 to swarm_size-1) {
-            println("Particle "+i)
-            println(toString(i)+"\n")
-        }
-
-        for (i <- 1 to 10) {
-            println("Hall of fame "+i+": "+HallOfFame(i).getNetProfit)
-        }*/
 
         // Run the Hall of fame against new data
         // Create new particles from the Hall of fame
@@ -224,18 +218,10 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             TMIs(5) = rSIs(i)
 
             for (j <- 0 to 9) {
-                /*if(i == stockData.length-1) {
-                    println("******** particle "+j+" *************")
-                }*/
                 HOF_Final(j).runNN(TMIs, stockData(i), i-1569, true)
             }
                 
         }
-        
-        /*for (i <- 0 to 9) {
-            println("Hall Of Fame Particle "+(i+1))
-            println("Net Profit: "+HOF_Final(i).getNetProfit())
-        }*/
 
     }
 
@@ -279,7 +265,6 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         ((1.0/swarm_size.toDouble)*total)
     }
 
-    // TODO: not sure if this is correct. Should it be nbest(i) of pswarm(i).pbest_score (?)
     def checkNBest(curr_j:Int):Unit = {
         var prev_j:Int = pswarm(curr_j).getPrevNeighbour()
         var next_j:Int = pswarm(curr_j).getNextNeighbour()
@@ -333,7 +318,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         minSR = SRs.min
 
         if (maxNetProfit-minNetProfit == 0 && maxSR-minSR == 0) {
-            fitness = 0.0//Double.MinValue
+            fitness = 0.0
         } else if (maxNetProfit-minNetProfit == 0) {
             fitness = ( (SRs(1)-minSR) / (maxSR-minSR) )
         } else if (maxSR - minSR == 0) {
@@ -349,7 +334,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         var fitness:Double = 0.0
 
         if (maxNetProfit-minNetProfit == 0 && maxSR-minSR == 0) {
-            fitness = 0.0//Double.MinValue
+            fitness = 0.0
         } else if (maxNetProfit-minNetProfit == 0) {
             fitness = ( (SR-minSR) / (maxSR-minSR) )
         } else if (maxSR - minSR == 0) {
@@ -381,7 +366,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         minSR = SRs.min
 
         if (maxNetProfit-minNetProfit == 0 && maxSR-minSR == 0) {
-            fitness = 0.0//Double.MinValue
+            fitness = 0.0
         } else if (maxNetProfit-minNetProfit == 0) {
             fitness = ( (SRs(index)-minSR) / (maxSR-minSR) )
         } else if (maxSR - minSR == 0) {
@@ -464,7 +449,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         (Math.pow(1+arr.max/1000000.0, (252.0/564.0))-1)*100
     }
 
-    def addToMap(epochs:Int, lbound:Double):Unit = {
+    /*def addToMap(epochs:Int, lbound:Double):Unit = {
         var binWidth = (1.0 - 0.0)/100.0
         var num:Double = 0.0
         for (i <- 0 to swarm_size-1) {
@@ -473,7 +458,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                 hiddenOutputsArr(j) += pswarm(i).hiddenOutputs(num)/(epochs*swarm_size).toDouble
             }
         }
-    }
+    }*/
     
     def toString(i:Int): String = {
         "Net profit: "+pswarm(i).getNetProfit()+

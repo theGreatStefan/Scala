@@ -8,10 +8,4 @@ clean:
 	rm classes/*
 
 run:
-	scala -classpath classes main
-
-runBH:
-	scala -classpath classes BH
-
-runRule:
-	scala -classpath classes Rule
+	scala -classpath classes kNN

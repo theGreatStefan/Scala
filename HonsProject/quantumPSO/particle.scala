@@ -24,7 +24,6 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var w:Double = iw
     var quantum:Boolean = iquantum
     var r = scala.util.Random
-    //r.setSeed(321)
     var pbest_pos:Array[Double] = pos.clone()
     var pbest_score:Double = 0.0
     var velocity:Array[Double] = Array.fill(velocity_size){0.0}
@@ -41,18 +40,17 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     var numSold:Double = 0.0
     var numHeld:Double = 0.0
 
-    var hiddenOutputs = scala.collection.mutable.Map[Double, Int]()
-    initMap(1, 0, 100)
+    /*var hiddenOutputs = scala.collection.mutable.Map[Double, Int]()
+    initMap(1, 0, 100)*/
 
 
     /*****************Functions******************/
-    def initMap(ubound:Double, lbound:Double, numBins:Int):Unit = {
+    /*def initMap(ubound:Double, lbound:Double, numBins:Int):Unit = {
         var binWidth = (ubound - lbound)/numBins.toDouble
         var num:Double = 0
         for (i <- 0 to numBins-1) {
             num = BigDecimal(lbound+(binWidth*i)).setScale(2, BigDecimal.RoundingMode.DOWN).toDouble
             hiddenOutputs += (num -> 0)
-            //println(num)
         }
     }
 
@@ -62,7 +60,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             num = BigDecimal(x(i)).setScale(2, BigDecimal.RoundingMode.DOWN).toDouble
             hiddenOutputs(num) = hiddenOutputs(num)+1
         }
-    }
+    }*/
     
     /*****************END_Functions******************/
 
@@ -112,7 +110,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         nn.updateWeights(pos)
         results = nn.runNN(TMIs)
 
-        addToMap(nn.getHiddenLayerOutput())
+        //addToMap(nn.getHiddenLayerOutput())
 
         // Make decision
         for (i <- 0 to 2) {
@@ -122,13 +120,6 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             }
         }
         
-        /*if (hof && runNum == 2133-1571) {
-            println("Previous investible ammount: "+prev_investableAmount)
-            println("Current investible ammount: "+investableAmount)
-            println("Number times baught: "+numBought)
-            println("Number times sold: "+numSold)
-            println("Number times held: "+numHeld)
-        }*/
         // make transaction
         maxIndex match {
             case 0 => buy(price, 1)
@@ -136,11 +127,6 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             case 2 => hold()
             case _ => hold()
         }
-        /*if (results(0) > 0.1) {
-            buy(price, results(0))
-        } else if (results(0) < -0.1) {
-            sell(price, results(0))
-        }*/
 
         returnsRatios(runNum) = returnsRatio(init_investableAmount)
         
@@ -148,61 +134,25 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
 
     def buy(price:Double, percentage:Double):Unit = {
         if (investableAmount > 0.01) {
-            //println("Comencing Buy Action...")
-            //println("Investible amount: "+investableAmount)
-            //println("Price: "+price)
-            //println("Percentage: "+percentage)
             stocks += (investableAmount / price)
-            //investedAmount += investableAmount*percentage
-            //println("Invested amount: "+investedAmount)
             transactionCost += (investableAmount*0.0005)
             prev_investableAmount = investableAmount
             investableAmount = 0.0
-            //println("Stocks: "+stocks)
-            //println("Investible amount: "+investableAmount)
-            //println("Capital gains: "+capitalGains)
-            //println("Capital losses: "+capitalLosses)
-            //println("----------------------------------------")
             numBought += 1
         }
     }
 
     def sell(price:Double, percentage:Double):Unit = {
         if (stocks > 0.01) {
-            //println("Comencing Selling Action...")
-            //println("Price: "+price)
-            //println("Percentage: "+percentage)
-            //println("Investible amount before sale: "+investableAmount)
             investableAmount += stocks*price
             moneyIn = stocks*price
-            //println("Investible amount after sale:  "+investableAmount)
-            //println("Money in:  "+moneyIn)
-            //println("InvestedAmount:  "+investedAmount)
-            //println("InvestedAmount x percentage:  "+investedAmount*(-percentage))
             if (investableAmount - prev_investableAmount > 0) {
-                //println("Capital gains before: "+capitalGains)
                 capitalGains += (investableAmount - prev_investableAmount)
-                //println("Capital gains after:  "+capitalGains)
             } else {
                 capitalLosses += (prev_investableAmount - investableAmount)
             }
-            /*if (moneyIn - investedAmount*(-percentage) > 0) {
-                capitalGains += moneyIn - investedAmount*(-percentage)
-            } else {
-                capitalLosses +=  investedAmount*(-percentage) - moneyIn
-            }*/
-            //transactionCost += (prev_investableAmount*0.0005)
             transactionCost += (moneyIn*0.0005)
             stocks = 0.0
-            //prev_investableAmount = investableAmount
-            //investedAmount -= moneyIn
-            /*if (investedAmount < 0.0) {
-                investedAmount = 0.0
-            }*/
-            //println("Stocks: "+stocks)
-            //println("Capital gains: "+capitalGains)
-            //println("Capital losses: "+capitalLosses)
-            //println("----------------------------------------")
             numSold += 1
         }
     }
@@ -228,7 +178,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
         if (stddev != 0) {
             returnValue = ( ( (Math.pow(1+returnsRatio(init_investableAmount), (252.0/1569.0))-1 ) - 0.03) / stddev )
         } else {
-            returnValue = 0.0//(Double.MinValue) // TODO: is this correct (?)
+            returnValue = 0.0
         }
 
         if (returnValue.isNaN()) {
@@ -237,21 +187,7 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             (returnValue)
         }
     }
-    /*def getSharpRatio():Double = {
-        var mean:Double = (returnsRatios.sum / (returnsRatios.length).toDouble)
-        var stddev:Double = 0.0
-        for (i <- 0 to returnsRatios.length-1){
-            stddev += Math.pow(returnsRatios(i)-mean, 2)
-        }
-        stddev = Math.sqrt(stddev/(returnsRatios.length-1).toDouble)
-        
-        if (stddev != 0) {
-            ( ( returnsRatio(init_investableAmount) - 0.03) / stddev.toDouble )
-        } else {
-            0.0//(Double.MinValue) // TODO: is this correct (?)
-        }
-    }*/
-
+    
     // Checks if the realative fitness is better now than it was
     def checkBestPos():Unit = {
         var currFit:Double = relativeFitnessCurr()
@@ -310,9 +246,6 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     }
 
     def reset():Unit = {
-        /*println("Number times baught: "+numBought)
-        println("Number times sold: "+numSold)
-        println("Number times held: "+numHeld)*/
         capitalGains = 0.0
         capitalLosses = 0.0
         transactionCost = 0.0
