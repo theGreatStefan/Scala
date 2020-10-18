@@ -100,7 +100,6 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
 
         for (i <- 0 to epochs-1) {
             // Reset particles
-            println("\n[+] Iteration number "+(i+1))
             for (j <- 0 to swarm_size-1) {
                 pswarm(j).reset()
             }
@@ -150,8 +149,7 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             HallOfFame(0).setPos(pswarm(maxFitnessIndex).getPos())
             HallOfFame(0).setNetProfit(pswarm(maxFitnessIndex).getNetProfit())
             HallOfFame(0).setSharpeRatio(pswarm(maxFitnessIndex).getSharpRatio())
-            println("> Iteration best Net Profit: "+pswarm(maxFitnessIndex).getNetProfit())
-            println("> Iteration best Sharpe Ratio: "+pswarm(maxFitnessIndex).getSharpRatio())
+            
             for (j <- 1 to 10) {
                 if (HallOfFame(j).isEqualTo(HallOfFame(0).pos)) {
                     found = true
@@ -166,13 +164,11 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
                     HallOfFame(minHOFFitnessIndex).setPos(HallOfFame(0).getPos.clone())
                     HallOfFame(minHOFFitnessIndex).setNetProfit(HallOfFame(0).getNetProfit)
                     HallOfFame(minHOFFitnessIndex).setSharpeRatio(HallOfFame(0).getSharpeRatio)
-                    println("> Added to the Hall of Fame...")
                 }
             }
             /**************Hall Of Fame END**************/
 
             updateRcloud()
-            println("> Quantum cloud radius: "+rcloud)
 
             for (j <- 0 to swarm_size-1) {
                 pswarm(j).checkBestPos();

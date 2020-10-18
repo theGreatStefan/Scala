@@ -2966,3 +2966,4 @@ INFO  time: initialize in 0.81s
 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/PSO/particle.scala
 INFO  shutting down Metals
+                                                                                                                         

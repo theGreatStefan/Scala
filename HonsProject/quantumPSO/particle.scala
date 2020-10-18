@@ -43,7 +43,6 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
     /*var hiddenOutputs = scala.collection.mutable.Map[Double, Int]()
     initMap(1, 0, 100)*/
 
-
     /*****************Functions******************/
     /*def initMap(ubound:Double, lbound:Double, numBins:Int):Unit = {
         var binWidth = (ubound - lbound)/numBins.toDouble

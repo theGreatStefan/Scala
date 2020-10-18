@@ -3,7 +3,8 @@ import java.io.File
 
 object main extends App {
     val file_path:String = "../Data/SA/"
-    val data:readData = new readData(file_path, "AGL.csv")
+    val stock:String = "SOL"
+    val data:readData = new readData(file_path, stock+".csv")
     var stockData:Array[Double] = data.getOpenTimeSeries()
 
     //************ TMI time series
@@ -39,7 +40,6 @@ object main extends App {
     var rSIMax:Double = rSIs.max
     var rSIMin:Double = rSIs.min
 
-    println("[+] Calculating TMIs...")
     for (i <- 0 to stockData.length-1) {
         aroonUps(i) = 2*((aroonUps(i) - aUpMin) / (aUpMax - aUpMin))-1
         aroonDowns(i) = 2*((aroonDowns(i) - aDownMin) / (aDownMax - aDownMin))-1
@@ -129,18 +129,22 @@ object main extends App {
     filename = "../testOutput/SA/HOF.csv"
     val pw2 = new PrintWriter(new File(filename))
 
-    //filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_SNH.csv"
-    filename = "../testOutput/SA/Demo_AGL.csv"
+    filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_"+stock+".csv"
+    //filename = "../testOutput/SA/Demo_AGL.csv"
     val pw3 = new PrintWriter(new File(filename))
 
-    //filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_SNH_avgPos.csv"
-    filename = "../testOutput/SA/Demo_AGL_avgPos.csv"
+    filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_"+stock+"_avgPos.csv"
+    //filename = "../testOutput/SA/Demo_AGL_avgPos.csv"
     val pw4 = new PrintWriter(new File(filename))
 
-    filename = "../testOutput/SA/Demo_AGL_hist.csv"
-    val pw5 = new PrintWriter(new File(filename))
+    /*filename = "../testOutput/SA/Demo_AGL_hist.csv"
+    val pw5 = new PrintWriter(new File(filename))*/
+
+    filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_"+stock+"_netProfit_per_simulation.csv"
+    val pw6 = new PrintWriter(new File(filename))
 
     var epocs:Int = 350
+    var runs:Int = 30
 
     var avgVelocityMag:Array[Double] = Array.fill(epocs){0.0}
     var avgEuclDist:Array[Double] = Array.fill(epocs){0.0}
@@ -151,6 +155,8 @@ object main extends App {
     var avgBestNetProfit_out:Double = 0.0
     var avgPosVec:Array[Double] = Array.fill(36){0.0}
     //var hiddenOutputsArr:Array[Double] = Array.fill(200){0.0}
+    var in_netProfit_per_sim:Array[Double] = Array.fill(runs){0.0}
+    var out_netProfit_per_sim:Array[Double] = Array.fill(runs){0.0}
 
     var tempVelocityMag:Array[Double] = Array()
     var tempEuclDist:Array[Double] = Array()
@@ -162,8 +168,6 @@ object main extends App {
 
     var vMax:Double = 0.40
 
-    var runs:Int = 1//30
-    
     for (i <- 0 to runs-1) {
         //var stockData:Array[Double] = data.getOpenTimeSeries()
             // fanin = 6; input nodes for the NN 
@@ -176,12 +180,13 @@ object main extends App {
                                                                                                                     mACDs1,
                                                                                                                     mACDs2,
                                                                                                                     rSIs, vMax)
-        println("[+] Running swarm of size 150 with 36 constraints...")
         swarm1.runSwarm(epocs)
 
         avgBestNetProfit_in += swarm1.getBestHofNetProfit_in()
         avgBestNetProfit_out += swarm1.getBestHofNetProfit_out()
-        System.out.println("\n> Average best return ratio: "+avgBestNetProfit_out+"%")
+
+        in_netProfit_per_sim(i) = swarm1.getBestHofNetProfit_in()
+        out_netProfit_per_sim(i) = swarm1.getBestHofNetProfit_out()
 
         tempVelocityMag = swarm1.getAvgVelocityMagnitude
         tempEuclDist = swarm1.getAvgEuclidianDistance
@@ -245,9 +250,14 @@ object main extends App {
         println(hiddenOutputsArr(i))
     }*/
 
+    for (i <- 0 to runs-1) {
+        pw6.write(in_netProfit_per_sim(i)+","+out_netProfit_per_sim(i)+"\n")
+    }
+
     pw1.close()
     pw2.close()
     pw3.close()
     pw4.close()
     //pw5.close()
+    pw6.close()
 }

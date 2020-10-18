@@ -134,7 +134,11 @@ object main extends App {
     filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum_oneOut_SNH_avgPos.csv"
     val pw4 = new PrintWriter(new File(filename))
 
+    filename = "../testOutput/SA/Demo_AGL_netProfit_per_simulation.csv"
+    val pw6 = new PrintWriter(new File(filename))
+
     var epocs:Int = 350
+    var runs:Int = 30
 
     var avgVelocityMag:Array[Double] = Array.fill(epocs){0.0}
     var avgEuclDist:Array[Double] = Array.fill(epocs){0.0}
@@ -144,6 +148,8 @@ object main extends App {
     var avgBestNetProfit_in:Double = 0.0
     var avgBestNetProfit_out:Double = 0.0
     var avgPosVec:Array[Double] = Array.fill(36){0.0}
+    var in_netProfit_per_sim:Array[Double] = Array.fill(runs){0.0}
+    var out_netProfit_per_sim:Array[Double] = Array.fill(runs){0.0}
 
     var tempVelocityMag:Array[Double] = Array()
     var tempEuclDist:Array[Double] = Array()
@@ -154,8 +160,6 @@ object main extends App {
 
     var vMax:Double = 0.40
 
-    var runs:Int = 30
-    
     for (i <- 0 to runs-1) {
         //var stockData:Array[Double] = data.getOpenTimeSeries()
             // fanin = 6; input nodes for the NN (?) 
@@ -173,6 +177,8 @@ object main extends App {
         avgBestNetProfit_in += swarm1.getBestHofNetProfit_in()
         avgBestNetProfit_out += swarm1.getBestHofNetProfit_out()
         System.out.println("Average best: "+avgBestNetProfit_out)
+        in_netProfit_per_sim(i) = swarm1.getBestHofNetProfit_in()
+        out_netProfit_per_sim(i) = swarm1.getBestHofNetProfit_out()
 
         tempVelocityMag = swarm1.getAvgVelocityMagnitude
         tempEuclDist = swarm1.getAvgEuclidianDistance
@@ -227,8 +233,13 @@ object main extends App {
         pw4.write(avgPosVec(i)+"\n")
     }
 
+    for (i <- 0 to runs-1) {
+        pw6.write(in_netProfit_per_sim(i)+","+out_netProfit_per_sim(i)+"\n")
+    }
+
     pw1.close()
     pw2.close()
     pw3.close()
     pw4.close()
+    pw6.close()
 }
