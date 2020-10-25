@@ -60,11 +60,11 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             social = c2*r2*(nbest_pos(i) - pos(i))
             velocity(i) = w*velocity(i)+cognitive+social
             // Element wise velocity clamping
-            if (velocity(i) > vMax) {
+            /*if (velocity(i) > vMax) {
                 velocity(i) = vMax
             } else if (velocity(i) < (-vMax)) {
                 velocity(i) = -vMax
-            }
+            }*/
         }
 
     }
@@ -243,8 +243,8 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
         }
 
-        (fitness-lambda*penaltyFunction())
-        //fitness
+        //(fitness-lambda*penaltyFunction())
+        fitness
     }
 
     def relativeFitnessPBest():Double = {
@@ -276,8 +276,8 @@ class particle(ipos:Array[Double], ivelocity_size:Int, ic1:Double, ic2:Double, i
             fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
         }
 
-        (fitness-lambda*penaltyFunctionPBest())
-        //fitness
+        //(fitness-lambda*penaltyFunctionPBest())
+        fitness
     }
 
     def penaltyFunction():Double = {

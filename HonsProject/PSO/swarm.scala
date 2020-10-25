@@ -180,14 +180,6 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
         for (i <- 0 to constraint_size-1) {
             avgPosVector(i) = avgPosVector(i)/(epochs*swarm_size).toDouble
         }
-        /*for (i <- 0 to swarm_size-1) {
-            println("Particle "+i)
-            println(toString(i)+"\n")
-        }
-
-        for (i <- 1 to 10) {
-            println("Hall of fame "+i+": "+HallOfFame(i).getNetProfit)
-        }*/
 
         // Run the Hall of fame against new data
         // Create new particles from the Hall of fame
@@ -203,18 +195,11 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             TMIs(5) = rSIs(i)
 
             for (j <- 0 to 9) {
-                /*if(i == stockData.length-1) {
-                    println("******** particle "+j+" *************")
-                }*/
                 HOF_Final(j).runNN(TMIs, stockData(i), i-1569, true)
             }
                 
         }
         
-        /*for (i <- 0 to 9) {
-            println("Hall Of Fame Particle "+(i+1))
-            println("Net Profit: "+HOF_Final(i).getNetProfit())
-        }*/
 
     }
 
@@ -281,8 +266,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
         }
 
-        (fitness-lambda*pswarm(curr_j).penaltyFunction())
-        //fitness
+        //(fitness-lambda*pswarm(curr_j).penaltyFunction())
+        fitness
     }
 
     def relativeFitnessGroup(index:Int, netProfit:Double, maxNetProfit:Double, minNetProfit:Double, SR:Double, maxSR:Double, minSR:Double):Double = {
@@ -298,8 +283,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             fitness = ( (netProfit-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SR-minSR) / (maxSR-minSR) )
         }
 
-        (fitness-lambda*pswarm(index).penaltyFunction())
-        //fitness
+        //(fitness-lambda*pswarm(index).penaltyFunction())
+        fitness
     }
 
     def relativeFitnessHOF(index:Int):Double = {
@@ -331,8 +316,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             fitness = ( (netProfits(index)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(index)-minSR) / (maxSR-minSR) )
         }
 
-        (fitness-lambda*HallOfFame(index).penaltyFunction())
-        //fitness
+        //(fitness-lambda*HallOfFame(index).penaltyFunction())
+        fitness
     }
 
     def avgParticle(): Array[Double] = {
