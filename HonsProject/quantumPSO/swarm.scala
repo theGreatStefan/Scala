@@ -323,8 +323,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             fitness = ( (netProfits(1)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(1)-minSR) / (maxSR-minSR) )
         }
 
-        //(fitness-lambda*pswarm(curr_j).penaltyFunction())
-        fitness
+        (fitness-lambda*pswarm(curr_j).penaltyFunction())
+        //fitness
     }
 
     def relativeFitnessGroup(index:Int, netProfit:Double, maxNetProfit:Double, minNetProfit:Double, SR:Double, maxSR:Double, minSR:Double):Double = {
@@ -340,8 +340,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             fitness = ( (netProfit-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SR-minSR) / (maxSR-minSR) )
         }
         
-        //(fitness-lambda*pswarm(index).penaltyFunction())
-        fitness
+        (fitness-lambda*pswarm(index).penaltyFunction())
+        //fitness
     }
 
     def relativeFitnessHOF(index:Int):Double = {
@@ -373,8 +373,8 @@ class swarm(iswarm_size:Int, iconstraint_size:Int, ic1:Double, ic2:Double, iw:Do
             fitness = ( (netProfits(index)-minNetProfit) / (maxNetProfit-minNetProfit) ) + ( (SRs(index)-minSR) / (maxSR-minSR) )
         }
 
-        //(fitness-lambda*HallOfFame(index).penaltyFunction())
-        fitness
+        (fitness-lambda*HallOfFame(index).penaltyFunction())
+        //fitness
     }
 
     def avgParticle(): Array[Double] = {

@@ -262,11 +262,20 @@ plt.show()
 for i in range(0, 100):
     histo.append(float(data37[i][0])/21.0)
 
+'''ind = np.arange(0.5, 100.5)
+width = 1.0
+p1 = plt.bar(ind, histo, width)
+plt.title("Histogram of hidden layer output with saturation")'''
+#plt.plot(histo)
+labels = np.arange(0,1.2,0.2)
+labels = np.round(labels,2)
+ticks = np.arange(0,6)
+
 ind = np.arange(0.5, 100.5)
 width = 1.0
 p1 = plt.bar(ind, histo, width)
+plt.xticks(ticks*20, labels)
 plt.title("Histogram of hidden layer output with saturation")
-#plt.plot(histo)
 
 plt.show()
 
@@ -277,6 +286,7 @@ for i in range(0, 100):
 ind = np.arange(0.5, 100.5)
 width = 1.0
 p1 = plt.bar(ind, histo, width)
+plt.xticks(ticks*20, labels)
 plt.title("Histogram of hidden layer output without saturation")
 #plt.plot(histo)
 

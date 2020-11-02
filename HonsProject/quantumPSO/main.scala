@@ -130,18 +130,18 @@ object main extends App {
     val pw2 = new PrintWriter(new File(filename))
 
     //filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_"+stock+".csv"
-    filename = "../testOutput/SA/CEPSO_Sigmoid_quantum_"+stock+".csv"
+    filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum_"+stock+".csv"
     val pw3 = new PrintWriter(new File(filename))
 
     //filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_"+stock+"_avgPos.csv"
-    filename = "../testOutput/SA/CEPSO_Sigmoid_quantum_"+stock+"_avgPos.csv"
+    filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum_"+stock+"_avgPos.csv"
     val pw4 = new PrintWriter(new File(filename))
 
     /*filename = "../testOutput/SA/Demo_AGL_hist.csv"
     val pw5 = new PrintWriter(new File(filename))*/
 
     //filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_"+stock+"_netProfit_per_simulation.csv"
-    filename = "../testOutput/SA/CEPSO_Sigmoid_quantum_"+stock+"_netProfit_per_simulation.csv"
+    filename = "../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum_"+stock+"_netProfit_per_simulation.csv"
     val pw6 = new PrintWriter(new File(filename))
 
     var epocs:Int = 350
