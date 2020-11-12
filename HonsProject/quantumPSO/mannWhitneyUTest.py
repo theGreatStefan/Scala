@@ -9,8 +9,8 @@ stocks = ['AGL','GFI','IMP','NED','REM','SBK','SNH','SOL']
 for stock in stocks:
     print("[+] Stock: ",stock)
     CEQPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_"+stock+"_netProfit_per_simulation.csv")))
-    CEPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum_"+stock+"_netProfit_per_simulation.csv")))
-    #CEPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_"+stock+"_netProfit_per_simulation.csv")))
+    #CEQPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_quantum_"+stock+"_netProfit_per_simulation.csv")))
+    CEPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_"+stock+"_netProfit_per_simulation.csv")))
 
     CEQPSO_in = []
     CEQPSO_out = []
@@ -25,14 +25,15 @@ for stock in stocks:
         CEQPSO_in.append(float(CEQPSO_data[i][0]))
         CEQPSO_out.append(float(CEQPSO_data[i][1]))
 
-    mean_CEPSO_in = stats.mean(CEPSO_in)
-    mean_CEPSO_out = stats.mean(CEPSO_out)
-    mean_CEQPSO_in = stats.mean(CEQPSO_in)
-    mean_CEQPSO_out = stats.mean(CEQPSO_out)
-    print("[-] in_data:  ",mannwhitneyu(CEPSO_in, CEQPSO_in, alternative='less'))
+    mean_CEPSO_in = stats.median(CEPSO_in)
+    mean_CEPSO_out = stats.median(CEPSO_out)
+    mean_CEQPSO_in = stats.median(CEQPSO_in)
+    mean_CEQPSO_out = stats.median(CEQPSO_out)
+    '''print("[-] in_data:  ",mannwhitneyu(CEPSO_in, CEQPSO_in, alternative='less'))
     print("[-] in_data:  ",mannwhitneyu(CEQPSO_in, CEPSO_in, alternative='less'))
     print(" > Mean in data for CEPSO:",mean_CEPSO_in)
-    print(" > Mean in data for CEQPSO:",mean_CEQPSO_in)
+    print(" > Mean in data for CEQPSO:",mean_CEQPSO_in)'''
+    print("[-] out_data: ",mannwhitneyu(CEPSO_out, CEQPSO_out))
     print("[-] out_data: ",mannwhitneyu(CEPSO_out, CEQPSO_out, alternative='less'))
     print("[-] out_data: ",mannwhitneyu(CEQPSO_out, CEPSO_out, alternative='less'))
     print(" > Mean out data for CEPSO:",mean_CEPSO_out)

@@ -61,8 +61,10 @@ RULE_avg_in = 0
 RULE_avg_out = 0
 
 for stock in stocks:
-    CEQPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum_oneOut_"+stock+".csv")))
-    CEPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_"+stock+".csv")))
+    #CEQPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum_oneOut_"+stock+".csv")))
+    #CEPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_WeightDecay005_Vmax40_quantum10_"+stock+".csv")))
+    CEQPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_Sigmoid_quantum_"+stock+".csv")))
+    CEPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_"+stock+".csv")))
     #CEPSO_data = list(csv.reader(open("../testOutput/SA/CEPSO_"+stock+".csv")))
     BH_data = list(csv.reader(open("../testOutput/SA/BH_"+stock+".csv")))
     RULE_data = list(csv.reader(open("../testOutput/SA/Rule_"+stock+".csv")))
@@ -96,7 +98,7 @@ RULE_out.append(RULE_avg_out)
 # Best Net Profit for in data samples
 ind = np.arange(1, 10)      # the x locations for the groups
 width = 0.20                # the width of the bars
-labels = ['AGL','GFI','IMP','NED','REM','SBK','SOL','SNH', 'AVG']
+labels = ['AGL','GFI','IMP','NED','REM','SBK','SNH','SOL','AVG']
 
 p1 = plt.bar(ind, CEQPSO_in, width)
 p2 = plt.bar(ind+width, CEPSO_in, width)
@@ -104,7 +106,6 @@ p3 = plt.bar(ind+width*2, BH_in, width)
 p4 = plt.bar(ind+width*3, RULE_in, width)
 plt.xticks(ind+(width), labels)
 plt.legend((p1[0], p2[0], p3[0], p4[0]), ('CEQPSO', 'CEPSO', 'BH', 'Rule'))
-plt.title("Annualised returns (%) of in sample data")
 plt.xlabel("Stock")
 plt.ylabel("Returns (%)")
 plt.show()
@@ -112,7 +113,7 @@ plt.show()
 # Best Net Profit for out data samples
 ind = np.arange(1, 10)      # the x locations for the groups
 width = 0.20                # the width of the bars
-labels = ['AGL','GFI','IMP','NED','REM','SBK','SOL','SNH', 'AVG']
+labels = ['AGL','GFI','IMP','NED','REM','SBK','SNH','SOL','AVG']
 
 p1 = plt.bar(ind, CEQPSO_out, width)
 p2 = plt.bar(ind+width, CEPSO_out, width)
@@ -120,7 +121,6 @@ p3 = plt.bar(ind+width*2, BH_out, width)
 p4 = plt.bar(ind+width*3, RULE_out, width)
 plt.xticks(ind+(width), labels)
 plt.legend((p1[0], p2[0], p3[0], p4[0]), ('CEQPSO', 'CEPSO', 'BH', 'Rule'))
-plt.title("Annualised returns (%) of out sample data")
 plt.xlabel("Stock")
 plt.ylabel("Returns (%)")
 plt.show()
