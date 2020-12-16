@@ -1,0 +1,109 @@
+2020.11.18 09:25:33 INFO  Started: Metals version 0.9.5 in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo' for client vscode.
+2020.11.18 09:25:34 INFO  time: initialize in 1.12s
+2020.11.18 09:25:35 WARN  Build server is not auto-connectable.
+2020.11.18 09:25:35 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 09:25:35 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 09:25:35 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala
+2020.11.18 09:25:35 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/particle.scala
+2020.11.18 09:25:35 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/NN.scala
+2020.11.18 09:25:36 INFO  no build target: using presentation compiler with only scala-library
+Nov 18, 2020 9:25:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Nov 18, 2020 9:25:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Nov 18, 2020 9:25:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+2020.11.18 09:25:53 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 09:26:17 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 09:26:22 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala, 502, 502, 515)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala, 3816, 3816, 3829)
+2020.11.18 09:37:37 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala
+2020.11.18 09:44:24 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 09:44:24 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 09:44:26 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 09:44:35 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 09:45:57 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 09:46:59 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 09:48:04 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 09:48:57 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 09:49:43 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 09:51:25 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 09:52:39 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 09:53:58 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 09:57:27 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/BH.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala, 527, 527, 540)
+2020.11.18 15:59:02 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 15:59:02 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 15:59:52 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 15:59:52 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 15:59:53 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 15:59:55 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 15:59:56 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 16:00:04 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 16:00:04 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 16:02:30 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.18 16:04:04 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 16:04:06 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala
+2020.11.18 16:07:51 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.18 16:07:53 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/particle.scala
+2020.11.18 20:48:12 INFO  shutting down Metals
+2020.11.19 14:56:18 INFO  Started: Metals version 0.9.5 in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo' for client vscode.
+2020.11.19 14:56:19 INFO  time: initialize in 1.14s
+2020.11.19 14:56:21 WARN  Build server is not auto-connectable.
+2020.11.19 14:56:21 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.19 14:56:21 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala
+2020.11.19 14:56:21 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.19 14:56:23 INFO  no build target: using presentation compiler with only scala-library
+2020.11.19 14:56:42 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.19 14:56:48 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.19 15:00:46 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.19 17:08:13 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.19 17:08:41 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala
+2020.11.19 17:08:43 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/particle.scala
+2020.11.19 17:09:03 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/particle.scala
+2020.11.19 17:09:10 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/NN.scala
+2020.11.19 17:09:28 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/node.scala
+2020.11.19 17:09:48 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/readData.scala
+2020.11.19 17:10:03 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/Rule.scala
+2020.11.19 17:10:13 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/BH.scala
+2020.11.19 17:58:56 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala, 592, 592, 605)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala, 657, 657, 670)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala, 657, 657, 670)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala, 592, 592, 605)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala, 1770, 1770, 1783)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala, 3752, 3752, 3765)
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala, 4015, 4015, 4028)
+2020.11.19 22:33:51 INFO  shutting down Metals
+2020.11.20 09:45:24 INFO  Started: Metals version 0.9.5 in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo' for client vscode.
+2020.11.20 09:45:25 INFO  time: initialize in 1.16s
+2020.11.20 09:45:26 WARN  Build server is not auto-connectable.
+2020.11.20 09:45:26 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.20 09:45:26 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/NN.scala
+2020.11.20 09:45:26 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala
+2020.11.20 09:45:26 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/swarm.scala
+2020.11.20 09:45:26 WARN  no build target for: /home/stefan/Documents/github/Scala/HonsProject/Demo/particle.scala
+2020.11.20 09:45:29 INFO  no build target: using presentation compiler with only scala-library
+2020.11.20 09:48:14 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala in Array[Double]RangePosition(file:///home/stefan/Documents/github/Scala/HonsProject/Demo/main.scala, 527, 527, 540)
+2020.11.20 09:50:50 WARN  no build tool detected in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.11.20 13:29:46 INFO  shutting down Metals
+2020.11.21 12:06:22 INFO  Started: Metals version 0.9.5 in workspace '/home/stefan/Documents/github/Scala/HonsProject/Demo' for client vscode.
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@53cfbe97 rejected from java.util.concurrent.ThreadPoolExecutor@34abc02[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 1]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1355)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
